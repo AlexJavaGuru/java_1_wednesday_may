@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_Maksims_Leitans;
+package main.java.lv.javaguru.student_maksims_leitans;
 
 public class HelloWorld {
 
