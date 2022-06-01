@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Task_1_AB {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
-        //Input first number
+        //Input first number + example of print from task_15
         System.out.print("Please, input first number:");
         int firstNumber = inp.nextInt();
         //Input second number
