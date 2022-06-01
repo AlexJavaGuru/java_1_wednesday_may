@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ArtjomsB_homework_2.lesson_1.homework.level_4_junior;
+package main.java.lv.javaguru.student_ArtjomsB_homework.lesson_1.homework.level_4_junior;
 
 public class Task_11_AB {
     public static void main(String[] args) {
