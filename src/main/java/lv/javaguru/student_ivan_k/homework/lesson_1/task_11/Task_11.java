@@ -9,14 +9,6 @@ public class Task_11 {
 //        c = a + b;
 //        System.out.println("  C is  sum a + b  = " +   c);
 
-
-
-
-
-
-
-
-
     public static void main(String[] args) {
 
         int a,b,c;
@@ -26,10 +18,5 @@ public class Task_11 {
         c = a/b;
 
         System.out.println(" 50/3   =   "  +  c);
-
-
     }
-
-
-
 }
