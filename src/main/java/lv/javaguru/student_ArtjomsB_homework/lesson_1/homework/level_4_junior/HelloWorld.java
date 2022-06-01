@@ -2,7 +2,7 @@ package main.java.lv.javaguru.student_ArtjomsB_homework.lesson_1.homework.level_
 
 public class HelloWorld {
     public static void main(String[] args) {
-        var a = "ab";
+        String a = "ab";
         if (a == "ab") {
             System.out.println("Hello world");
         }
