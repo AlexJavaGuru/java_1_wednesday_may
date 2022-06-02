@@ -1,6 +1,6 @@
 package main.java.lv.javaguru.student_anton_papin;
 
-public class homework_task_11 {
+public class Homework_task_11 {
     public static void main(String[] args) {
         int x = 74;
                 int y = 36;
