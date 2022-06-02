@@ -1,6 +1,6 @@
 package main.java.lv.javaguru.student_anton_papin.lesson_2_homework.level_7;
 
-public class TaskTwentyNine {public static void main(String[] args) {
+public class SumTwoNumbers {public static void main(String[] args) {
 
     int numberOne = 10;
     int numberTwo = 20;
