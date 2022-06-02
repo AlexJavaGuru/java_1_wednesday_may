@@ -2,7 +2,7 @@ package main.java.lv.javaguru.student_anton_papin.lesson_2_homework.level_1;
 
 import java.util.Scanner;
 
-public class Task1 {
+public class TaskOne {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter two integers: ");
