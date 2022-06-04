@@ -7,7 +7,7 @@ public class ConsoleCalculator {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Task 1");
+        // Task 1
         System.out.println("Type first number...");
         int firstNumber = scanner.nextInt();
         System.out.println("Type second number...");
@@ -23,8 +23,7 @@ public class ConsoleCalculator {
         System.out.println("Multiplication of numbers " + firstNumber + " and " + secondNumber + " is " + multiplication);
         System.out.println("Division of numbers " + firstNumber + " and " + secondNumber + " is " + division);
 
-
-        System.out.println("Task 2");
+        // Task 2
         System.out.println("Type first number...");
         double firstDoubleNumber = scanner.nextDouble();
         System.out.println("Type second number...");
