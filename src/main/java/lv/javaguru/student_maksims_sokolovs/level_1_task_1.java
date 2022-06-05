@@ -7,9 +7,9 @@ public class level_1_task_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the first number ");
+        System.out.println("Enter the first number: ");
         int a = scanner.nextInt();
-        System.out.println("Enter the second number ");
+        System.out.println("Enter the second number: ");
         int b = scanner.nextInt();
 
         int add = a + b;
@@ -21,5 +21,6 @@ public class level_1_task_1 {
         System.out.println("The result of subtraction = " + (a - b));
         System.out.println("The result of multiplication = " + (a * b));
         System.out.println("Division result = " + ((double) a / b));
+
     }
 }
