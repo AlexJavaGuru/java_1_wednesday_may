@@ -27,4 +27,3 @@ public class level_1_task_2 {
     }
 
 }
-
