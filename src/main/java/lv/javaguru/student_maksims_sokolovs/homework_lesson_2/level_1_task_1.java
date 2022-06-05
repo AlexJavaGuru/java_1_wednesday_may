@@ -12,8 +12,8 @@ public class level_1_task_1 {
         System.out.println("Enter the second number: ");
         int b = scanner.nextInt();
 
-        int add = a + b;
-        int sub = a - b;
+        int sum = a + b;
+        int ded = a - b;
         int mul = a * b;
         int div = a / b;
 
