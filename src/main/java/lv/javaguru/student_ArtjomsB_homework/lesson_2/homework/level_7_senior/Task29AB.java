@@ -3,8 +3,8 @@ package main.java.lv.javaguru.student_ArtjomsB_homework.lesson_2.homework.level_
 public class Task29AB {
     public static void main(String[] args) {
 
-        int numberOne=10;
-        int numberTwo=20;
+        int numberOne = 10;
+        int numberTwo = 20;
 
         System.out.println("Number 1 = " + numberOne);
         System.out.println("Number 2 = " + numberTwo);

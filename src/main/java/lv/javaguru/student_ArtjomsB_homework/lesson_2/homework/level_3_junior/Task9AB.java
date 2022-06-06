@@ -8,8 +8,8 @@ public class Task9AB {
         System.out.print("Please,enter the number:");
         int num = inp.nextInt();
         //Cycle "For" output multiplication table from 1 to 10
-        for(int i=1; i<11; i++){
-            System.out.println(num + " * "  + i + " = " + (num*i) );
+        for(int i = 1; i < 11; i++){
+            System.out.println(num + " * "  + i + " = " + (num * i) );
         }
     }
 }
