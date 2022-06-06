@@ -13,5 +13,6 @@ public class RobotDemoCreative {
         int robot2BatteryLevel =init.inputBatteryLevel();
         Robot robotFour = new Robot(robotName2, robot2IsOn,robot2BatteryLevel);
         robotFour.robotStatus();
+        robotFour.chargeStatus();
     }
 }
