@@ -1,8 +1,8 @@
-package main.java.lv.javaguru.student_maksims_sokolovs.homework_lesson_2;
+package main.java.lv.javaguru.student_maksims_sokolovs.homework_lesson2;
 
 import java.util.Scanner;
 
-public class level_3_task_10 {
+public class Task10 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

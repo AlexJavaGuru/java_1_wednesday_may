@@ -1,8 +1,8 @@
-package main.java.lv.javaguru.student_maksims_sokolovs.homework_lesson_2;
+package main.java.lv.javaguru.student_maksims_sokolovs.homework_lesson2;
 
 import java.util.Scanner;
 
-public class level_1_task_2 {
+public class Task2 {
 
     public static void main(String[] args) {
 
