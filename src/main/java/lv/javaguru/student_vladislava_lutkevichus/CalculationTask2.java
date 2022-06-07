@@ -1,7 +1,7 @@
 package main.java.lv.javaguru.student_vladislava_lutkevichus;
 import java.util.Scanner;
 
-public class CalculationDouble {
+public class CalculationTask2 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 

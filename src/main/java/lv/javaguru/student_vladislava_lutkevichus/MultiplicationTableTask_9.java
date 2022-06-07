@@ -1,7 +1,7 @@
 package main.java.lv.javaguru.student_vladislava_lutkevichus;
 import java.util.Scanner;
 
-public class MultiplicationTable {
+public class MultiplicationTableTask_9 {
     public static void main(String[] args) {
         System.out.print("Input data: ");
 
