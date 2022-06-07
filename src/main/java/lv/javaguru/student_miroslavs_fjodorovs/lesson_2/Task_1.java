@@ -15,7 +15,7 @@ public class Task_1 {
        System.out.println(firstNumber + secondNumber);
        System.out.println(firstNumber - secondNumber);
        System.out.println(firstNumber * secondNumber);
-       System.out.println(firstNumber / secondNumber);
+       System.out.println(firstNumber / (double) secondNumber);
 
 
 
