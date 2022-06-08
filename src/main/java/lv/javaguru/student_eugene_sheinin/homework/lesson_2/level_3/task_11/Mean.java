@@ -7,15 +7,15 @@ public class Mean {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter first number:");
-        int num1 = scanner.nextInt();
-        System.out.println("Enter second number:");
-        int num2 = scanner.nextInt();
-        System.out.println("Enter third number:");
-        int num3 = scanner.nextInt();
-        int sum = num1 + num2 + num3;
-        double mean = (double) sum / 3;
+        int sum = 0;
+        int numCount = 3;
+        for(int i = 1; i <= numCount; i++) {
+            System.out.println("Enter " + i + "  number:");
+            sum += scanner.nextInt();
+        }
 
-        System.out.println(" Mean number : " + mean);
+        double mean = (double) sum / numCount;
+
+        System.out.printf("Sum is " + sum + " Mean number : %.2f ", mean);
     }
 }
