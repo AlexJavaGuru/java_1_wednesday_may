@@ -18,7 +18,7 @@ public class IntegerCalculator {
         int sum = firstNumber + secondNumber;
         int sub = firstNumber - secondNumber;
         int mul = firstNumber * secondNumber;
-        int div = firstNumber / secondNumber;
+        float div = (float) firstNumber / secondNumber;
 
         System.out.println( "sum: " + sum  + ", subtraction: " + sub + ", multiply: " + mul + ", division " + div);
     }
