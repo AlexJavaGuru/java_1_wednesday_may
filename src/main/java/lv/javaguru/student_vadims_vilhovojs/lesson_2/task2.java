@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class task2 {
     public static void main(String[] args) {
+
+        System.out.println("Specify two numbers with a comma");
         Scanner scanner = new Scanner (System.in);
         double variableA = scanner.nextDouble();
         double variableB = scanner.nextDouble();
