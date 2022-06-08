@@ -9,7 +9,7 @@ public class Scanner {
         System.out.println( numberA + numberB );
         System.out.println( numberA - numberB );
         System.out.println( numberA * numberB );
-        System.out.println( numberA / numberB );
+        System.out.println( numberA / (double) numberB );
 
     }
 }
