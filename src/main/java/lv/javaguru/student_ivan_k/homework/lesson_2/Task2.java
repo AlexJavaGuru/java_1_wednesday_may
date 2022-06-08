@@ -2,7 +2,7 @@ package main.java.lv.javaguru.student_ivan_k.homework.lesson_2;
 
 import java.util.Scanner;
 
-public class Task_2 {
+public class Task2 {
     public static void main(String[] args) {
         System.out.println("Enter two fractional numbers");
         System.out.println("Enter first number :");

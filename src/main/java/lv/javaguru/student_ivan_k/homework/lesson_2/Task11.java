@@ -7,7 +7,7 @@ import java.util.Scanner;
 //        (складывает все числа и делит на их количество).
 //
 //        Примечение: обратите внимание, что результат может быть дробным числом.
-public class Task_11 {
+public class Task11 {
     public static void main(String[] args) {
         System.out.println("Enter three numbers");
         Scanner scaner = new Scanner(System.in);

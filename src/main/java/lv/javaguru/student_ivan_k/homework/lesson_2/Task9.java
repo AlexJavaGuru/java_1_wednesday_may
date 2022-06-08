@@ -15,7 +15,7 @@ package main.java.lv.javaguru.student_ivan_k.homework.lesson_2;
 
 import java.util.Scanner;
 
-public class Task_9 {
+public class Task9 {
     public static void main(String[] args) {
         System.out.println("Input a number: ");
         Scanner scanner = new Scanner(System.in);

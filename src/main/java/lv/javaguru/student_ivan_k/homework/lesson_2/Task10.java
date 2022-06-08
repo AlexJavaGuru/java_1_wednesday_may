@@ -13,7 +13,7 @@ package main.java.lv.javaguru.student_ivan_k.homework.lesson_2;
 
 import java.util.Scanner;
 
-public class Task_10 {
+public class Task10 {
     public static void main(String[] args) {
         System.out.println("Enter the radius of the circle :");
         Scanner scanner = new Scanner(System.in);
