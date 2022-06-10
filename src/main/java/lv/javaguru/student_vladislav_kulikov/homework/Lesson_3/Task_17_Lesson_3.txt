@@ -1,0 +1,42 @@
+
+class BankAccount {
+
+    String ownerFirstName;
+    String ownerLastName;
+    int moneyAmount;
+
+    BankAccount(String getOwnerFirstName,
+                String getOwnerLastName,
+                int getMoneyAmount) {
+        this.ownerFirstName = getOwnerFirstName;
+        this.ownerLastName = getOwnerLastName;
+        this.moneyAmount = getMoneyAmount;
+    }
+
+    public String getOwnerFirstName() {
+        return this.ownerFirstName;
+    }
+
+    public String getOwnerLastName() {
+        return this.ownerLastName;
+    }
+
+    public int getMoneyAmount() {
+        return this.moneyAmount;
+    }
+
+}
+
+class BankAccountDemo {
+
+    public static void main(String[] args) {
+        BankAccount bankAccount = new BankAccount("Viktor", "Savonin", 100000);
+        String ownerLastName  = bankAccount.getOwnerLastName();
+        String ownerFirstName = bankAccount.getOwnerFirstName();
+        int moneyAmount = bankAccount.getMoneyAmount();
+        System.out.println("Owner first name = " + ownerFirstName);
+        System.out.println("Owner last name = " + ownerLastName);
+        System.out.println("Money amount = " + moneyAmount);
+    }
+
+}
