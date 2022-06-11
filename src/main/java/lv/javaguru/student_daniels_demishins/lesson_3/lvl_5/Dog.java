@@ -6,27 +6,27 @@ public class Dog {
     String color;
     String newcolor;
 
-    public Dog(String name, int age, String color,String newcolor){
+     Dog(String name, int age, String color,String newcolor){
         this.name=name;
         this.age=age;
         this.color=color;
         this.newcolor=newcolor;
     }
-    public void voice(){
+     void voice(){
         System.out.println("Wuf.... ");
         System.out.println(name+" "+name+" "+name);
         System.out.println("Yorick is "+age+" years old ");
     }
-    public void happyBirthday(){
+     void happyBirthday(){
         System.out.println("Happy Birthday");
     }
-    public void getAge() {
+     void getAge() {
         System.out.println("Yorick is "+3+" years old");
     }
-    public void color(){
+     void color(){
         System.out.println(color);
     }
-    public void changeColor(){
+     void changeColor(){
         System.out.println(newcolor);
     }
 }
