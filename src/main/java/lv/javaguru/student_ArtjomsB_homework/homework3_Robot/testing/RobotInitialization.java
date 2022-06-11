@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ArtjomsB_homework.homework3_Robot;
+package main.java.lv.javaguru.student_ArtjomsB_homework.homework3_Robot.testing;
 import java.util.Scanner;
 
 public class RobotInitialization {
@@ -11,8 +11,8 @@ public class RobotInitialization {
         return robotName;
     }
     public boolean onOrOff(){
-        System.out.println("Робот включён?");
-        System.out.print("Если робот включён напишите 'y', если робот выключен напишите 'n'");
+        System.out.println("Robot is on?");
+        System.out.print("If robot on - write 'y',if robot off - write 'n'");
         String choice = input.nextLine();
         switch (choice) {
             case "y" -> this.isRobotOn = true;

@@ -1,11 +1,11 @@
-package main.java.lv.javaguru.student_ArtjomsB_homework.homework3_Robot;
+package main.java.lv.javaguru.student_ArtjomsB_homework.homework3_Robot.testing;
 
 public class RobotDemoCreative {
     public static void main(String[] args) {
         //робот 3
         RobotInitialization init = new RobotInitialization();
         String robotName1 = init.getRobotName();
-        Robot robotThree = new Robot(robotName1,false,3);
+        RobotTest robotThree = new RobotTest(robotName1,false,3);
         robotThree.robotStatus();
         robotThree.switchOn();
         robotThree.robotStatus();
@@ -13,10 +13,14 @@ public class RobotDemoCreative {
         String robotName2 = init.getRobotName();
         boolean isRobot2On = init.onOrOff();
         int robot2BatteryLevel =init.inputBatteryLevel();
-        Robot robotFour = new Robot(robotName2, isRobot2On,robot2BatteryLevel);
+        RobotTest robotFour = new RobotTest(robotName2, isRobot2On,robot2BatteryLevel);
         robotFour.robotStatus();
         robotFour.chargeStatus();
         robotFour.switchOff();
+        robotFour.robotStatus();
+        robotFour.chargeRobot();
+        System.out.println();
+        System.out.println("Robot status");
         robotFour.robotStatus();
     }
 }
