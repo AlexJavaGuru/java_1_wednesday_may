@@ -1,0 +1,14 @@
+package main.java.lv.javaguru.student_vladislava_lutkevichus.lesson_3.level_4;
+
+public class BankAccountDemo {
+
+    public static void main(String[] args) {
+        BankAccount bankAccount = new BankAccount("Vladislava", "Lutkevichus", 100);
+        String ownerFirstName = bankAccount.getOwnerFirstName();
+        String ownerLastName = bankAccount.getOwnerLastName();
+        int moneyAmount = bankAccount.getMoneyAmount();
+        System.out.println("Owner first name = " + ownerFirstName);
+        System.out.println("Owner last name = " + ownerLastName);
+        System.out.println("Money amount = " + moneyAmount);
+    }
+}
