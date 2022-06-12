@@ -4,9 +4,10 @@ public class Circle {
     double radius;
 
     Circle(double radius){
-        this.radius=radius;
+        this.radius = radius;
     }
     void calculateArea(){
-         System.out.println(2 * 3.14159 * 7.5);
+
+        System.out.println(2 * 3.14159 * 7.5);
      }
 }

@@ -6,17 +6,17 @@ public class Product {
     double discount;
 
     Product(String name, double regularPrice, double discount){
-        this.name=name;
-        this.regularPrice=regularPrice;
-        this.discount=discount;
+        this.name = name;
+        this.regularPrice = regularPrice;
+        this.discount = discount;
     }
 
     void doubleActualPrice(){
         System.out.println(regularPrice - discount);
     }
     void printInformation(){
-        System.out.println("We have a "+name);
-        System.out.println("Regular price of beer is "+regularPrice);
-        System.out.println("The discount is about "+discount);
+        System.out.println("We have a " + name);
+        System.out.println("Regular price of beer is " + regularPrice);
+        System.out.println("The discount is about " + discount);
     }
 }

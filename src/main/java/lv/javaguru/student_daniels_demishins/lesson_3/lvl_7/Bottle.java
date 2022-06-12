@@ -14,6 +14,7 @@ public class Bottle {
             System.out.println("Opened....");
     }
     String getLabel(){
+
         return this.label;
     }
     String getMaterial(){

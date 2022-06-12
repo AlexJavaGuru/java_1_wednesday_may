@@ -5,8 +5,8 @@ public class BankAccount {
     int money;
 
     BankAccount(String owner, int money) {
-        this.owner=owner;
-        this.money=money;
+        this.owner = owner;
+        this.money = money;
     }
 
     String getOwner() {
