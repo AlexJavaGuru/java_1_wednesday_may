@@ -5,3 +5,4 @@
 
     Scanner scanner = new Scanner(System.in);
     double firstDoubleNumber = scanner.nextDouble();
+
