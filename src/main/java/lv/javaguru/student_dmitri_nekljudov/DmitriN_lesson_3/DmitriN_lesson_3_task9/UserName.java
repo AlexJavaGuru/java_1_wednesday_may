@@ -2,7 +2,7 @@ package main.java.lv.javaguru.student_dmitri_nekljudov.DmitriN_lesson_3.DmitriN_
 
     import java.util.Scanner;
 
-    public class UserName {
+class UserName {
 
         public static void main(String[] args) {
 
