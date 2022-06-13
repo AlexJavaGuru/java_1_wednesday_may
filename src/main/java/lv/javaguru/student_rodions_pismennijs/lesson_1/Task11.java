@@ -1,6 +1,6 @@
-package main.java.lv.javaguru.student_rodions_pismennijs;
+package main.java.lv.javaguru.student_rodions_pismennijs.lesson_1;
 
-public class Lesson1_Task11 {
+public class Task11 {
 
     public static void main(String[] args) {
 
