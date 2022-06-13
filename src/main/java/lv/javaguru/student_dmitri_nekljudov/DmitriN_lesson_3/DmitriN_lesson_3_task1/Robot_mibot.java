@@ -2,7 +2,7 @@ package main.java.lv.javaguru.student_dmitri_nekljudov.DmitriN_lesson_3.DmitriN_
 
 import main.java.lv.javaguru.student_dmitri_nekljudov.DmitriN_lesson_3.DmitriN_lesson_3_task1.Robot;
 
-public class Robot_mibot {
+class Robot_mibot {
 
         public static void main(String args[]){
 
