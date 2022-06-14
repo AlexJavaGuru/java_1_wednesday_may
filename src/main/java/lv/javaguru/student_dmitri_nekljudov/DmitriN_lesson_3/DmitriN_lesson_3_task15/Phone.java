@@ -3,14 +3,14 @@ package main.java.lv.javaguru.student_dmitri_nekljudov.DmitriN_lesson_3.DmitriN_
 class Phone {
     String model;
 
-        Phone(String newPhone){
+    Phone(String newPhone) {
 
-            this.model = newPhone;
-        }
-
-        String getModel() {
-
-            return this.model;
-        }
-
+        this.model = newPhone;
     }
+
+    String getModel() {
+
+        return this.model;
+    }
+
+}

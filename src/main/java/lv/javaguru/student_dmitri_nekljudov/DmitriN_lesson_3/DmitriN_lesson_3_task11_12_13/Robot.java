@@ -1,15 +1,15 @@
 package main.java.lv.javaguru.student_dmitri_nekljudov.DmitriN_lesson_3.DmitriN_lesson_3_task11_12_13;
 
-class Roborename {
+class Robot {
 
     String name;
 
-    Roborename(String robotName) {
+    Robot(String robotName) {
         this.name = robotName;
     }
 
 
-    public Roborename() {
+    public Robot() {
 
     }
 
