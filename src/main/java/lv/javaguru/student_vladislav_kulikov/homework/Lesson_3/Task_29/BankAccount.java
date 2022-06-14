@@ -2,8 +2,8 @@ package main.java.lv.javaguru.student_vladislav_kulikov.homework.Lesson_3.Task_2
 
 public class BankAccount {
 
-   private String bankName;
-   private   String name;
+    String bankName;
+    String name;
     int money;
     String date;
 
@@ -14,18 +14,22 @@ public class BankAccount {
         this.date = date;
     }
 
-    void inComMoney(){
-        this.money = money + 10000;
-        System.out.println("Received to your account : 10000");
+    void inMoney(int inMoney){
+        int sum = this.money + inMoney;
+        System.out.println("Received to your account : "+ inMoney);
+        System.out.println("Remainder: " + sum);
+        this.money = sum;
     }
 
-    void outGoMoney(){
-        this.money = money - 5000;
-        System.out.println("Transferred from your account : -5000");
+    void outMoney(int outMoney){
+       int sum = this.money - outMoney;
+        System.out.println("Transferred from your account : -" + outMoney);
+        System.out.println("Remainder: " +sum);
+        this.money = sum;
     }
 
-    void updateDate(){
-        date = "17/2/23";
+    void updateDate(String date){
+        this.date = date;
         System.out.println("Your date has been updated: " + date);
     }
 

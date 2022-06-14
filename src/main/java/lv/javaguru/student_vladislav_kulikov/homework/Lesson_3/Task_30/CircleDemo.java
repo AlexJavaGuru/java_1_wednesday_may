@@ -4,7 +4,8 @@ public class CircleDemo {
 
     public static void main(String[] args) {
 
-        Circle circle = new Circle(5.5);
-        circle.calculateArea();
+        Circle circle = new Circle(10.5);
+        System.out.println(circle.calculateArea());
+
     }
 }

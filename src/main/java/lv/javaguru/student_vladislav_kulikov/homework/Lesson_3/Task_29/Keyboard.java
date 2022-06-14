@@ -1,8 +1,7 @@
 package main.java.lv.javaguru.student_vladislav_kulikov.homework.Lesson_3.Task_29;
-
+import java.util.Scanner;
 public class Keyboard {
-
-    private String name;
+    String name;
     String mode;
     String color;
     double drivers;
@@ -14,16 +13,20 @@ public class Keyboard {
         this.drivers = drivers;
     }
 
-    void newColour(){
-        color = "Color cycle";
+    void setColor(String color){
+        this.color = color;
+        System.out.println("New color has been set: " + color);
     }
 
-    void newMode(){
-        mode = "Game mode";
+    void setMode(String mode){
+        this.mode = mode;
+        System.out.println("Work mode has been changed: " + mode);
     }
 
-    void updateDrivers(){
-        this.drivers = drivers +0.1;
+    void increaseDrivers(double drivers){
+       double sum = this.drivers + drivers;
+       System.out.println("New drivers has been installed: " + sum);
+       this.drivers = sum;
     }
 
     String getName() {

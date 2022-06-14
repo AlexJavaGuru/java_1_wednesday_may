@@ -2,7 +2,7 @@ package main.java.lv.javaguru.student_vladislav_kulikov.homework.Lesson_3;
 
 class Dog {
 
-    private String name;
+     String name;
      int age;
      String color;
 
@@ -13,8 +13,8 @@ class Dog {
     }
 
     void voice(){
-        int i=0;
-        while (i<3){
+        int i = 0;
+        while (i < 3){
             System.out.println("Wuf");
             i++;
         }
@@ -25,11 +25,11 @@ class Dog {
     }
 
      void happyBirthday(){
-        this.age = age + 1 ;
+         this.age = age + 1;
      }
 
-    void changeColor(){
-         color = "White";
+    void changeColor(String newColor){
+         this.color = newColor;
     }
 
      String getName(){

@@ -8,7 +8,7 @@ package main.java.lv.javaguru.student_vladislav_kulikov.homework.Lesson_3.Task_3
         this.radius = radius;
     }
 
-    void calculateArea() {
-        System.out.println("Radius = " + radius * radius * 3.14);
+    double calculateArea() {
+        return radius * radius * 3.14;
     }
 }
