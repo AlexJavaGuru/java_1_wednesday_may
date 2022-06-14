@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislava_lutkevichus;
+package main.java.lv.javaguru.student_vladislava_lutkevichus.lesson_1_2;
 import java.util.Scanner;
 
 public class CalculationTask_1 {

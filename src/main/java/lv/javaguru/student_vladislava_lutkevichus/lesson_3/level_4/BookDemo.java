@@ -1,6 +1,6 @@
 package main.java.lv.javaguru.student_vladislava_lutkevichus.lesson_3.level_4;
 
-public class BookDemo {
+class BookDemo {
 
     public static void main(String[] args) {
         Book myBook = new Book("Principles");
