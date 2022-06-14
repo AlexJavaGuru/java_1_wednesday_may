@@ -5,7 +5,6 @@ class DogDemo {
     public static void main(String args[]) {
 
 
-
         Dog sharik = new Dog();
 
         sharik.bark();
@@ -17,7 +16,7 @@ class DogDemo {
         sharik.age = 2;
 
 
-        System.out.println(" Age: " + sharik.age );
+        System.out.println(" Age: " + sharik.age);
 
         sharik.happyBirthday();
         sharik.setColor();
