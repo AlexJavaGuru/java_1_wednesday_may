@@ -8,8 +8,12 @@ class Robot {
         this.name = robotName;
     }
 
-    void sayHello() { System.out.println("Hello"); }
-    void sayYourName() { System.out.println("My name is " + this.name); }
+    void sayHello() {
+        System.out.println("Hello");
+    }
 
+    void sayYourName() {
+        System.out.println("My name is " + this.name);
+    }
 
 }

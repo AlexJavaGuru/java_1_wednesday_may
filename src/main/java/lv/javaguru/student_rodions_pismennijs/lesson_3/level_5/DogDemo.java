@@ -7,12 +7,13 @@ class DogDemo {
         Dog zhora = new Dog("Zhora", 4, "Brown");
 
         zhora.voice();
-        zhora.age = (zhora.age + 1);
         zhora.happyBirthday();
         zhora.voice();
         zhora.changeColor("White");
         zhora.voice();
-
+        zhora.happyBirthday();
+        zhora.changeColor("Pink");
+        zhora.voice();
     }
 
 }
