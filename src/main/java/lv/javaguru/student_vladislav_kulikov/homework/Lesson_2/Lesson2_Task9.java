@@ -1,6 +1,5 @@
-//Напишите программу, которая запрашивает у пользователя целое число
-//и печатает на консоль таблицу умножения для этого числа до 10.
-package main.java.lv.javaguru.student_vladislav_kulikov.homework;
+
+package main.java.lv.javaguru.student_vladislav_kulikov.homework.Lesson_2;
 
 import java.util.Scanner;
 
