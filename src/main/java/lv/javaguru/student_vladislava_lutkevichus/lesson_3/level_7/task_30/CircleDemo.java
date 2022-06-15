@@ -5,7 +5,7 @@ public class CircleDemo {
 
         Circle myCircle = new Circle(4.22);
 
-
+        myCircle.circleArea();
 
     }
 }

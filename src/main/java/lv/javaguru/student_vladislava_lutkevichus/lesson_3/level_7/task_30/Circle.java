@@ -9,11 +9,13 @@ public class Circle {
     }
 
     public double calculateArea() {
-
-        double circleArea = 3.14 * radius * radius;
-        return circleArea;
+        double piNumber = 3.1415926;
+        return piNumber * radius * radius;
     }
 
-     // need to be improved ( как вывести результат на консоль?)
+    void circleArea() {
+        double area = calculateArea();
+        System.out.println(area);
+    }
 
 }
