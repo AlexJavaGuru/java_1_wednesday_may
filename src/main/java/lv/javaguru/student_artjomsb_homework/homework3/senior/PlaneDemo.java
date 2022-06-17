@@ -8,5 +8,8 @@ class PlaneDemo {
         boeing.planeInfo();
         boeing.getLocation();
         boeing.finishTravel();
+        boeing.travel("London");
+        boeing.getLocation();
+        boeing.finishTravel();
     }
 }
