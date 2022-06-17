@@ -3,7 +3,7 @@ package main.java.lv.javaguru.student_artjomsb_homework.homework3.homework3_robo
 class RobotDemoCreative {
     public static void main(String[] args) {
         //робот 3
-        RobotInitialization init = new RobotInitialization();
+        Robot init = new Robot();
         String robotName1 = init.setRobotName();
         RobotTest robotThree = new RobotTest(robotName1,false,3);
         robotThree.robotStatus();

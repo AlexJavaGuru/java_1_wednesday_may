@@ -1,7 +1,7 @@
 package main.java.lv.javaguru.student_artjomsb_homework.homework3.homework3_robot.testing;
 import java.util.Scanner;
 
-class RobotInitialization {
+class Robot {
     Scanner input = new Scanner(System.in);
     boolean isRobotOn;
     int batteryLevel;

@@ -5,7 +5,7 @@ class RobotDemo {
 
         Robot robotOne = new Robot("Savior", false, 3);
 
-        Robot robotTwo = new Robot("Destroyer",true,63);
+        Robot robotTwo = new Robot("Destroyer", true, 63);
 
         robotOne.sayHello();
         robotOne.sayMyName();
