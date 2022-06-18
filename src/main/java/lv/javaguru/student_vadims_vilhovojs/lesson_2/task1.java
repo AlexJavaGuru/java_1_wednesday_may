@@ -13,7 +13,7 @@ public class task1 {
         System.out.println(variableA + variableB);
         System.out.println(variableA - variableB);
         System.out.println(variableA * variableB);
-        System.out.println(variableA / variableB);
+        System.out.println(variableA / (double) variableB);
 
 
 
