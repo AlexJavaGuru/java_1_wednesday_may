@@ -13,10 +13,12 @@ public class BankCard {
     }
 
     public String getBankName() {
+
         return bankName;
     }
 
     public void setBankName(String bankName) {
+
         this.bankName = bankName;
     }
 }
