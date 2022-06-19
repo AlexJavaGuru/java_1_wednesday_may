@@ -1,10 +1,10 @@
 package main.java.lv.javaguru.student_maksims_sokolovs.homework_lesson3.task3_4;
 
-class Robot3Demo {
+class RobotDemo {
 
     public static void main(String[] args) {
 
-        Robot3 xiaomi = new Robot3();
+        Robot xiaomi = new Robot();
 
         xiaomi.sayHello();
 

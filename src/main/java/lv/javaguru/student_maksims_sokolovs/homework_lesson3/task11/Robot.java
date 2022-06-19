@@ -1,10 +1,10 @@
 package main.java.lv.javaguru.student_maksims_sokolovs.homework_lesson3.task11;
 
-class Robot6 {
+class Robot {
 
     String name;
 
-    public Robot6(String name) {
+    public Robot(String name) {
         this.name = name;
 
     }

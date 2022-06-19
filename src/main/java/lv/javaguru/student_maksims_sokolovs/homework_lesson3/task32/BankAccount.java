@@ -1,11 +1,11 @@
 package main.java.lv.javaguru.student_maksims_sokolovs.homework_lesson3.task32;
 
-class BankAccount2 {
+class BankAccount {
 
     String owner;
     double money;
 
-    BankAccount2(String owner,double money) {
+    BankAccount(String owner, double money) {
         this.owner = owner;
         this.money = money;
 

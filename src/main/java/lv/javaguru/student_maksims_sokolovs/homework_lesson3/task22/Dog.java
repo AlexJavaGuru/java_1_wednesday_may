@@ -1,10 +1,10 @@
 package main.java.lv.javaguru.student_maksims_sokolovs.homework_lesson3.task22;
 
-class Dog4 {
+class Dog {
 
     String newColor;
 
-    Dog4(String color) {
+    Dog(String color) {
         this.newColor = color;
 
     }

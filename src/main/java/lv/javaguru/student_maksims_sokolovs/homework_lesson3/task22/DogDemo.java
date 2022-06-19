@@ -1,10 +1,10 @@
 package main.java.lv.javaguru.student_maksims_sokolovs.homework_lesson3.task22;
 
-class Dog4Demo {
+class DogDemo {
 
     public static void main(String[] args) {
 
-        Dog4 reks = new Dog4("Red");
+        Dog reks = new Dog("Red");
 
         reks.voice();
         reks.changeColor("Black");

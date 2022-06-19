@@ -1,10 +1,10 @@
 package main.java.lv.javaguru.student_maksims_sokolovs.homework_lesson3.task5;
 
-class Robot4Demo {
+class RobotDemo {
 
     public static void main(String[] args) {
 
-        Robot4 alexa = new Robot4();
+        Robot alexa = new Robot();
 
         alexa.sayYourName();
 

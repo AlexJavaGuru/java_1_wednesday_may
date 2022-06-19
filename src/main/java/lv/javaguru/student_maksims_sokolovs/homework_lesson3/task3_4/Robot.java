@@ -1,8 +1,8 @@
 package main.java.lv.javaguru.student_maksims_sokolovs.homework_lesson3.task3_4;
 
-class Robot3 {
+class Robot {
 
-    public Robot3() {
+    public Robot() {
 
     }
 

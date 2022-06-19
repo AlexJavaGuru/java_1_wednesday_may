@@ -1,15 +1,15 @@
 package main.java.lv.javaguru.student_maksims_sokolovs.homework_lesson3.task6;
 
-class Robot5Demo {
+class RobotDemo {
 
     public static void main(String[] args) {
 
-        Robot5 asimo = new Robot5();
+        Robot asimo = new Robot();
 
         asimo.sayHello();
         asimo.sayYourName();
 
-        Robot5 kuratas = new Robot5();
+        Robot kuratas = new Robot();
 
         kuratas.sayHello();
         kuratas.sayYourName();
