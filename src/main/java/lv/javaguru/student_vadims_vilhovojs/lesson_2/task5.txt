@@ -1,0 +1,8 @@
+package main.java.lv.javaguru.student_vadims_vilhovojs.lesson_2;
+
+public class BankAccount {
+
+    public static void main(String[] args) {
+
+    }
+}

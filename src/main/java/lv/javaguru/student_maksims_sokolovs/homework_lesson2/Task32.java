@@ -4,6 +4,13 @@ public class Task32 {
 
     public static void main(String[] args) {
 
+        // Однострочный комментарий
+
+        /*
+        Многострочный
+        комментарий
+         */
+
     }
 
 }
