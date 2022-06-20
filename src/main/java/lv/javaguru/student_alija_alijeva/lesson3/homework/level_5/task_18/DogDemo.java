@@ -1,7 +1,4 @@
 package main.java.lv.javaguru.student_alija_alijeva.lesson3.homework.level_5.task_18;
-
-import java.util.Scanner;
-
     class DogDemo {
     public static void main (String[] args){
         Dog Bobik = new Dog("Bobik");

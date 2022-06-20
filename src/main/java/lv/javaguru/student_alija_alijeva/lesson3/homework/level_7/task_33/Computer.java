@@ -5,12 +5,17 @@ class Computer {
     String manufacturer;
     String model;
 
-    public Computer (String manufacturer, String model) {
+    public Computer(String manufacturer, String model) {
         this.manufacturer = manufacturer;
         this.model = model;
     }
-    public String getManufacturer(){return manufacturer;}
 
-    public String getModel() {return model;}
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
+    public String getModel() {
+        return model;
+    }
 }
 

@@ -5,14 +5,18 @@ class Alarm {
     String wakeUp;
     String turnOff;
 
-    public Alarm (String alamModel, String wakeUp, String turnOff){
+    public Alarm(String alamModel, String wakeUp, String turnOff) {
         this.alamModel = alamModel;
         this.turnOff = turnOff;
         this.wakeUp = wakeUp;
     }
-    void wakeUp (){
+
+    void wakeUp() {
         System.out.println("Trrrrrr....");
     }
-    void turnOff () {System.out.println("Good morning! Have a nice day! Till tomorrow!");}
+
+    void turnOff() {
+        System.out.println("Good morning! Have a nice day! Till tomorrow!");
+    }
 
 }

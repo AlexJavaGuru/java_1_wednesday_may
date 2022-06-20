@@ -4,12 +4,12 @@ public class BankAccount {
     String owner;
     int money;
 
-   public BankAccount(String owner, int moneyAmount) {
+    public BankAccount(String owner, int moneyAmount) {
         this.owner = owner;
         this.money = moneyAmount;
     }
 
-     String getOwner() {
+    String getOwner() {
         return this.owner;
     }
 

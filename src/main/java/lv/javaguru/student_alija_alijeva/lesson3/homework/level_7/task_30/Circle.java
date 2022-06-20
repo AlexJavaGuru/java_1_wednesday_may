@@ -3,10 +3,11 @@ package main.java.lv.javaguru.student_alija_alijeva.lesson3.homework.level_7.tas
 class Circle {
     double radius;
 
-    public Circle(double radius){
+    public Circle(double radius) {
         this.radius = radius;
     }
-    void calculateArea (){
-        System.out.println("Circle area is: " + Math.PI* radius * radius);
+
+    void calculateArea() {
+        System.out.println("Circle area is: " + Math.PI * radius * radius);
     }
 }
