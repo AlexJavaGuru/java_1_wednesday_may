@@ -1,6 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.homework;
-//Написать консольную программу, которая запрашивает у пользователя два целых числа и
-//выводит на консоль результаты: сложения, вычитания, умножения и деления.
+package main.java.lv.javaguru.student_vladislav_kulikov.homework.Lesson_2;
 
 import java.util.Scanner;
 

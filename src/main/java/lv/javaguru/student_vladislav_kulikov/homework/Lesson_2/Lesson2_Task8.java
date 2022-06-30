@@ -1,8 +1,5 @@
-//Написать консольную программу, которая запрашивает
-//имя пользователя и выводит на консоль текст:
-//Hello имя пользователя!
 
-package main.java.lv.javaguru.student_vladislav_kulikov.homework;
+package main.java.lv.javaguru.student_vladislav_kulikov.homework.Lesson_2;
 
 import java.util.Scanner;
 

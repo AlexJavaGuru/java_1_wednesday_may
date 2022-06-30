@@ -1,8 +1,6 @@
-//Напишите программу, которая запрашивает у пользователя
-//радиус круга (вещественное число) и печатает на консоль
-//периметр и площадь круга.
 
-package main.java.lv.javaguru.student_vladislav_kulikov.homework;
+
+package main.java.lv.javaguru.student_vladislav_kulikov.homework.Lesson_2;
 import java.util.Scanner;
 
 public class Lesson2_Task10 {
