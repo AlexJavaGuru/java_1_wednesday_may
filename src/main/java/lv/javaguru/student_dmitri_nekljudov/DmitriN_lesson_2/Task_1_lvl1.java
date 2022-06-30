@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_dmitri_nekljudov.DmitriN_lesson_2.DmitriN_lesson_2_task_1;
+package main.java.lv.javaguru.student_dmitri_nekljudov.DmitriN_lesson_2;
 
 import java.util.Scanner;
 
