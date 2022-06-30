@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_rodions_pismennijs.homework.lesson_2.level_7;
+package main.java.lv.javaguru.student_rodions_pismennijs.lesson_2.level_7;
 
 public class CorrectDataTypes {
 

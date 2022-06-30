@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_rodions_pismennijs.homework.lesson_2.level_3;
+package main.java.lv.javaguru.student_rodions_pismennijs.lesson_2.level_3;
 
 import java.util.Scanner;
 
