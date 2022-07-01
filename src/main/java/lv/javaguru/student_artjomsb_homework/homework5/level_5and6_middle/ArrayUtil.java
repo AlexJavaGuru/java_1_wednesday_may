@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.Random;
 
 class ArrayUtil {
-    Random random = new Random();
 
     int[] createArray(int arrayLength) {
         return new int[arrayLength];
     }
 
     void fillArrayWithRandomNumbers(int[] array) {
+        Random random = new Random();
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(100);
         }

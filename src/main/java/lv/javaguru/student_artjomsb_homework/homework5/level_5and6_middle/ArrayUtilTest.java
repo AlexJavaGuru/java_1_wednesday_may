@@ -3,7 +3,6 @@ package main.java.lv.javaguru.student_artjomsb_homework.homework5.level_5and6_mi
 import java.util.Arrays;
 
 class ArrayUtilTest {
-    ArrayUtil victim = new ArrayUtil();
 
     public static void main(String[] args) {
         ArrayUtilTest test = new ArrayUtilTest();
@@ -16,13 +15,13 @@ class ArrayUtilTest {
     }
 
     void shouldCreateArray() {
-        //ArrayUtil victim = new ArrayUtil();
+        ArrayUtil victim = new ArrayUtil();
         int[] testArray = victim.createArray(5);
         check(testArray.length == 5, "Test array length");
     }
 
     void shouldFillWithRandomNumbers() {
-        //ArrayUtil victim = new ArrayUtil();
+        ArrayUtil victim = new ArrayUtil();
         boolean isPassed = true;
         int[] testArrayOne = new int[5];
         victim.fillArrayWithRandomNumbers(testArrayOne);
@@ -41,24 +40,28 @@ class ArrayUtilTest {
     }
 
     void shouldFindMaxNumber() {
+        ArrayUtil victim = new ArrayUtil();
         int[] testArray = {1, 10, 30, -10, 5};
         int expectedResult = 30;
         check(expectedResult == victim.findMaxNumber(testArray), "Test find largest number");
     }
 
     void shouldFindMinNumber() {
+        ArrayUtil victim = new ArrayUtil();
         int[] testArray = {1, 10, 30, -10, 5};
         int expectedResult = -10;
         check(expectedResult == victim.findMinNumber(testArray), "Test find smallest number");
     }
 
     void shouldFindEvenNumber() {
+        ArrayUtil victim = new ArrayUtil();
         int[] testArray = {1, 10, 30, -10, 5};
         int[] expectedResult = {10, 30, -10};
         check(Arrays.toString(expectedResult).equals(Arrays.toString(victim.findEvenNumbers(testArray))), "Test find even numbers");
     }
 
     void shouldFindOddNumber() {
+        ArrayUtil victim = new ArrayUtil();
         int[] testArray = {1, 10, 30, -10, 5};
         int[] expectedResult = {1, 5};
         check(Arrays.toString(expectedResult).equals(Arrays.toString(victim.findOddNumbers(testArray))), "Test find odd numbers");
