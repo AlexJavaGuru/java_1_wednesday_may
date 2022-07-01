@@ -1,7 +1,6 @@
 package main.java.lv.javaguru.student_artjomsb_homework.homework4.level_5_middle;
 
 class LightColorDetectorTest {
-    LightColorDetector victim = new LightColorDetector();
 
     public static void main(String[] args) {
         LightColorDetectorTest tester = new LightColorDetectorTest();
@@ -22,30 +21,37 @@ class LightColorDetectorTest {
     }
 
     void redColorTest(int waveLength) {
+        LightColorDetector victim = new LightColorDetector();
         check(victim.detect(waveLength).equals("Red"), "Check Red color");
     }
 
     void invisibleColorTest(int waveLength) {
+        LightColorDetector victim = new LightColorDetector();
         check(victim.detect(waveLength).equals("Invisible Light"), "Check Invisible Light");
     }
 
     void orangeColorTest(int waveLength) {
+        LightColorDetector victim = new LightColorDetector();
         check(victim.detect(waveLength).equals("Orange"), "Check Orange color");
     }
 
     void yellowColorTest(int waveLength) {
+        LightColorDetector victim = new LightColorDetector();
         check(victim.detect(waveLength).equals("Yellow"), "Check Yellow color");
     }
 
     void greenColorTest(int waveLength) {
+        LightColorDetector victim = new LightColorDetector();
         check(victim.detect(waveLength).equals("Green"), "Check Green color");
     }
 
     void blueColorTest(int waveLength) {
+        LightColorDetector victim = new LightColorDetector();
         check(victim.detect(waveLength).equals("Blue"), "Check Blue color");
     }
 
     void violetColorTest(int waveLength) {
+        LightColorDetector victim = new LightColorDetector();
         check(victim.detect(waveLength).equals("Violet"), "Check Violet color");
     }
 
