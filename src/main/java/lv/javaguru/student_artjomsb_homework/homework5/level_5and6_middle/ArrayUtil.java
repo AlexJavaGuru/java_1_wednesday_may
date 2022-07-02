@@ -2,6 +2,7 @@ package main.java.lv.javaguru.student_artjomsb_homework.homework5.level_5and6_mi
 
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 class ArrayUtil {
 
@@ -9,6 +10,15 @@ class ArrayUtil {
         return new int[arrayLength];
     }
 
+    int[] createArrayManual(int arrayLength){
+        Scanner input = new Scanner(System.in);
+        int[] array = new int[arrayLength];
+        for (int i = 0; i < array.length; i++) {
+            System.out.print("Please enter Number " + (i + 1) + ": ");
+            array[i] = input.nextInt();
+        }
+        return array;
+    }
     void fillArrayWithRandomNumbers(int[] array) {
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
