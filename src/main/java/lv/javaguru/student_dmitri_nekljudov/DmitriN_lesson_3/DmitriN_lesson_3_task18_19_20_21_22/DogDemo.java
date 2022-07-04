@@ -2,27 +2,18 @@ package main.java.lv.javaguru.student_dmitri_nekljudov.DmitriN_lesson_3.DmitriN_
 
 class DogDemo {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
+        Dog sharik = new Dog("Sharik", 1, "Black");
 
-        Dog sharik = new Dog();
 
         sharik.bark();
-        sharik.sayYourName();
-        sharik.sayYourName();
-        sharik.sayYourName();
+        sharik.Birthday();
+        sharik.bark();
+        sharik.Birthday();
+        sharik.changeColors("Pink");
+        sharik.Birthday();
 
-        sharik.name = "Sharik";
-        sharik.age = 2;
-
-
-        System.out.println(" Age: " + sharik.age);
-
-        sharik.happyBirthday();
-        sharik.setColor();
-        sharik.changeeColor(Dog.BLACK);
-        sharik.voice();
-        sharik.changeColor(Dog.YELLOW);
 
     }
 }

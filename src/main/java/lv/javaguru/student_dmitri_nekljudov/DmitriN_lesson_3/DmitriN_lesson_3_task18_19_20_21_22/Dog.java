@@ -2,61 +2,43 @@ package main.java.lv.javaguru.student_dmitri_nekljudov.DmitriN_lesson_3.DmitriN_
 
 
 class Dog {
-    static final String RED = "\u001B[31m";
-    static final String YELLOW = "\u001B[33m";
-    static final String BLACK = "\u001B[30m";
 
+    private String dogName;
+    private int age;
+    public String dogColor;
 
-    String name;
-    int age;
-
-
-    public Dog() {
+    public Dog(String dogName, int age, String dogColor) {
+        this.dogName = dogName;
+        this.age = age;
+        this.dogColor = dogColor;
 
 
     }
 
+    public String getDogName() {
+        return dogName;
+    }
 
-    public static void print(String color) {
-        System.out.print(color + "\u0580");
+    public int getAge() {
+        return age;
     }
 
     void bark() {
-        System.out.println(" Wuf ");
-
-
-    }
-
-    void changeeColor(String newColor) {
-        print(BLACK);
-        System.out.println(" Sharik ");
-    }
-
-    void sayYourName() {
-        System.out.println(" Sharik ");
-    }
-
-    void happyBirthday() {
-        System.out.println(" Sharik say : Today my Birthday Wyf Wyf Wyf " + " Age : " + (age + 1));
-    }
-
-
-    void setColor() {
-        System.out.println(" Color Sharik : Red ");
+        System.out.println(dogName);
+        System.out.println(age + "years");
+        System.out.println(dogColor);
 
     }
 
+    void Birthday() {
 
-    void voice() {
-        print(RED);
-        System.out.println(" Wuf ");
-
-
+        System.out.println("Today my Birthday Wuf Wuf Wuf");
+        age = age + 1;
     }
 
-    void changeColor(String newColor) {
-        print(YELLOW);
-        System.out.println(" Sharik ");
+    public void changeColors(String newColor) {
+        this.dogColor = newColor;
+        System.out.println("New color " + dogColor);
     }
 }
 
