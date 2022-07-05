@@ -6,16 +6,20 @@ class Product {
     double regularPrice;
     double discount;
 
-    public double actualPrice(String milk, double regularPrice, double discount) {
+    Product(String milk, double regularPrice, double discount) {
         this.productName = milk;
         this.regularPrice = regularPrice;
         this.discount = discount;
+    }
 
-        double actualPrice = regularPrice - ((regularPrice / 100) * discount);
-        return actualPrice;
+    double actualPrice() {
+        double price = regularPrice - ((regularPrice / 100) * discount);
+        return price;
+
 
     }
-    void printInformation(double actualPrice){
-        System.out.println(actualPrice);
+
+    void printInformation() {
+        System.out.println(actualPrice());
     }
 }
