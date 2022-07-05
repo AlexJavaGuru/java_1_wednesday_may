@@ -23,11 +23,16 @@ public class RobotDemo {
         Robot robo4 = new Robot("Kiborg");
         Robot robo5 = new Robot("Terminator");
 
-        robo1.sayHello();robo1.sayYourName();
-        robo2.sayHello();robo2.sayYourName();
-        robo3.sayHello();robo3.sayYourName();
-        robo4.sayHello();robo4.sayYourName();
-        robo5.sayHello();robo5.sayYourName();
+        robo1.sayHello();
+        robo1.sayYourName();
+        robo2.sayHello();
+        robo2.sayYourName();
+        robo3.sayHello();
+        robo3.sayYourName();
+        robo4.sayHello();
+        robo4.sayYourName();
+        robo5.sayHello();
+        robo5.sayYourName();
 
     }
 }

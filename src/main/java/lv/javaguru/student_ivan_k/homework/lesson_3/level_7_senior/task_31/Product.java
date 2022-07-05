@@ -4,8 +4,7 @@ public class Product {
 
     String name;
     double regularPrice;
-    double discount;
-    double result;
+    int discount;
 
 
     public Product(String name) {
@@ -13,7 +12,7 @@ public class Product {
     }
 
     public double actualPrice(){
-        double result = regularPrice - discount;
+        double result = (regularPrice * discount) / 100;
         return result;
 
     }
@@ -28,19 +27,20 @@ public class Product {
         this.regularPrice = regularPrice;
     }
 
-    public void setDiscount (double discount){
+    public void setDiscount (int discount){
         this.discount = discount;
     }
 
-    public double getDiscount(){
+    public int getDiscount(){
         return discount;
 
     }
 
     void printInformation(){
+        System.out.println("Name of product is: " + name);
         System.out.println("Regular price is: " + regularPrice);
         System.out.println("Discount is: " + discount);
-        System.out.println("Today actual price on Coca Cola: " + result );
+        System.out.println("Today actual price is: " + actualPrice());
 
 
     }
