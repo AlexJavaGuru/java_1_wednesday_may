@@ -14,14 +14,3 @@ class DogTwo {
         System.out.println(name + age);
     }
 }
-
-class DogTwoDemo {
-
-    public static void main(String[] args) {
-        DogTwo barsik = new DogTwo("Barsik ", 4);
-        DogTwo fedor = new DogTwo("Fedor ", 17);
-
-        barsik.voice();
-        fedor.voice();
-    }
-}
