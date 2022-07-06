@@ -1,16 +1,16 @@
 package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_4.level_1_2_3;
 
-public class NumberCheckerTest {
+class NumberCheckerTest {
 
     public static void main(String[] args) {
 
-        NumberCheckerTest runner = new NumberCheckerTest();
-        runner.testPositiveOrNegative();
-        runner.testWhatIsDayOfTheWeek();
-        runner.testOddOrEven();
-        runner.testGetMaxNumber();
-        runner.testGetMinNumber();
-        runner.testAreEqualNumbers();
+        NumberCheckerTest numberCheckerTest = new NumberCheckerTest();
+        numberCheckerTest.testPositiveOrNegative();
+        numberCheckerTest.testWhatIsDayOfTheWeek();
+        numberCheckerTest.testOddOrEven();
+        numberCheckerTest.testGetMaxNumber();
+        numberCheckerTest.testGetMinNumber();
+        numberCheckerTest.testAreEqualNumbers();
     }
 
     public void testPositiveOrNegative() {

@@ -2,7 +2,7 @@ package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_4.level_1_2
 
 import java.util.Scanner;
 
-public class NumberChecker {
+class NumberChecker {
 
     public static void main(String[] args) {
 
