@@ -3,35 +3,60 @@ package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_4.level_5;
 
 
 class LightColorDetectorTest {
+    LightColorDetector lightColorDetector;
+
+
+    public LightColorDetectorTest() {
+        lightColorDetector = new LightColorDetector();
+    }
 
     public static void main(String[] args) {
         LightColorDetectorTest lightColorDetectorTest = new LightColorDetectorTest();
-        lightColorDetectorTest.detectTest();
+        lightColorDetectorTest.detectVioletTest(381);
+        lightColorDetectorTest.detectBlueTest(451);
+        lightColorDetectorTest.detectGreenTest(568);
+        lightColorDetectorTest.detectYellowTest(589);
+        lightColorDetectorTest.detectOrangeTest(591);
+        lightColorDetectorTest.detectRedTest(620);
     }
 
-    public void detectTest() {
-
-        LightColorDetector lightColorDetector = new LightColorDetector();
-
+    public void detectVioletTest(int wavelength) {
         String expectedResult = "Violet";
-        String actualResult = lightColorDetector.detect(381);
+        String actualResult = this.lightColorDetector.detect(wavelength);
         this.check(expectedResult, actualResult,"test Violet detect method ");
-        expectedResult = "Blue";
-        actualResult = lightColorDetector.detect(451);
+    }
+
+    void detectBlueTest(int wavelength) {
+        String expectedResult = "Blue";
+        String actualResult = this.lightColorDetector.detect(wavelength);
         this.check(expectedResult, actualResult,"test Blue detect method");
-        expectedResult = "Green";
-        actualResult = lightColorDetector.detect(568);
+    }
+
+    void detectGreenTest(int wavelength) {
+        String expectedResult = "Green";
+        String actualResult = this.lightColorDetector.detect(wavelength);
         this.check(expectedResult, actualResult,"test Green detect method");
-        expectedResult = "Yellow";
-        actualResult = lightColorDetector.detect(589);
+    }
+
+    void detectYellowTest(int wavelength) {
+        String expectedResult = "Yellow";
+        String actualResult = this.lightColorDetector.detect(wavelength);
         this.check(expectedResult, actualResult,"test Yellow detect method");
-        expectedResult = "Orange";
-        actualResult = lightColorDetector.detect(591);
+    }
+
+    void detectOrangeTest(int wavelength) {
+        String expectedResult = "Orange";
+        String actualResult = this.lightColorDetector.detect(wavelength);
         this.check(expectedResult, actualResult,"test Orange detect method");
-        expectedResult = "Red";
-        actualResult = lightColorDetector.detect(620);
+    }
+
+    void detectRedTest(int wavelength) {
+        String expectedResult = "Red";
+        String actualResult = this.lightColorDetector.detect(wavelength);
         this.check(expectedResult, actualResult,"test Red detect method");
     }
+
+
 
     public void check(String expectedResult, String actualResult, String testName) {
         if (expectedResult.equals(actualResult)) {
