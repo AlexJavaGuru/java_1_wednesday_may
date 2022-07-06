@@ -6,7 +6,8 @@ class LightColorDetectorTest {
     LightColorDetector lightColorDetector;
 
 
-    public LightColorDetectorTest() {
+    //with task 25 refactoring
+    LightColorDetectorTest() {
         lightColorDetector = new LightColorDetector();
     }
 
@@ -20,7 +21,7 @@ class LightColorDetectorTest {
         lightColorDetectorTest.detectRedTest(620);
     }
 
-    public void detectVioletTest(int wavelength) {
+    void detectVioletTest(int wavelength) {
         String expectedResult = "Violet";
         String actualResult = this.lightColorDetector.detect(wavelength);
         this.check(expectedResult, actualResult,"test Violet detect method ");
@@ -55,8 +56,6 @@ class LightColorDetectorTest {
         String actualResult = this.lightColorDetector.detect(wavelength);
         this.check(expectedResult, actualResult,"test Red detect method");
     }
-
-
 
     public void check(String expectedResult, String actualResult, String testName) {
         if (expectedResult.equals(actualResult)) {

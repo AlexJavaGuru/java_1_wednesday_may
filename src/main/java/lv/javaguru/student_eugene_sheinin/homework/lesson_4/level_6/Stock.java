@@ -21,7 +21,7 @@ class Stock {
     double maxPrice;
     double currentPrice;
 
-    public Stock(String stockName, double stockPrice) {
+    Stock(String stockName, double stockPrice) {
         this.stockName = stockName;
         this.minPrice = stockPrice;
         this.maxPrice = stockPrice;
@@ -40,11 +40,11 @@ class Stock {
         this.currentPrice = newPrice;
     }
 
-    public double getMinPrice() {
+    double getMinPrice() {
         return minPrice;
     }
 
-    public double getMaxPrice() {
+    double getMaxPrice() {
         return maxPrice;
     }
 

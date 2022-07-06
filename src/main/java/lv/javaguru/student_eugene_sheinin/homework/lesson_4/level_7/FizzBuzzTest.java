@@ -1,13 +1,13 @@
 package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_4.level_7;
 
 
-public class FizzBuzzTest {
+class FizzBuzzTest {
     public static void main(String[] args) {
         FizzBuzzTest fizzBuzzTest = new FizzBuzzTest();
         fizzBuzzTest.detectTest();
     }
 
-    public void detectTest() {
+     void detectTest() {
 
         FizzBuzz fizzBuzz = new FizzBuzz();
         String expectedResult = "Fizz";
@@ -21,7 +21,7 @@ public class FizzBuzzTest {
         this.check(expectedResult, actualResult,"test detect ");
     }
 
-    public void check(String expectedResult, String actualResult, String testName) {
+     void check(String expectedResult, String actualResult, String testName) {
         if (expectedResult.equals(actualResult)) {
             System.out.println(testName + " has passed.");
         } else {

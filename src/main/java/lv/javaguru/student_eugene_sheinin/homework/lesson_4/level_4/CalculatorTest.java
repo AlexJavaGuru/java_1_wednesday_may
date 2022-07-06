@@ -140,6 +140,7 @@ class CalculatorTest {
         }
     }
 
+    //task 24 refactoring
     public void check(double expectedResult, double actualResult, String testName) {
         if (expectedResult == actualResult) {
             System.out.println(testName + " has passed.");

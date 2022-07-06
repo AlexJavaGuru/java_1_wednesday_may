@@ -1,13 +1,13 @@
 package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_4.level_7;
 
-public class LeapYearTest {
+class LeapYearTest {
 
     public static void main(String[] args) {
         LeapYearTest leapYearTest = new LeapYearTest();
         leapYearTest.isLeapYearTest();
     }
 
-    void isLeapYearTest() {
+    private void isLeapYearTest() {
         LeapYear leapYear = new LeapYear();
         boolean actualResult = leapYear.isLeapYear(1952);
         this.check(true, actualResult,"is Leap Year Test");
@@ -19,7 +19,7 @@ public class LeapYearTest {
         this.check(true, actualResult,"is Leap Year Test");
     }
 
-    public void check(boolean expectedResult, boolean actualResult, String testName) {
+    private void check(boolean expectedResult, boolean actualResult, String testName) {
         if (expectedResult == actualResult) {
             System.out.println(testName + " has passed.");
         } else {

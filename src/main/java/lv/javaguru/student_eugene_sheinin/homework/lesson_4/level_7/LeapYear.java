@@ -1,8 +1,8 @@
 package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_4.level_7;
 
-public class LeapYear {
+class LeapYear {
 
-    public boolean isLeapYear(int year) {
+    boolean isLeapYear(int year) {
 
         if (year % 4 != 0) {
 

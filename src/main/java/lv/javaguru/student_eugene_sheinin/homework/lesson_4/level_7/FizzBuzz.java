@@ -1,7 +1,7 @@
 package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_4.level_7;
 
 class FizzBuzz {
-    public String detect(int number) {
+    String detect(int number) {
         // Реализуйте следующие требования:
         // - если переданное число делится на три возвращайте "Fizz"
         // - если переданное число делится на пять возвращайте "Buzz"
