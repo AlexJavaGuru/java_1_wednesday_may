@@ -68,7 +68,7 @@ class NumberCheckerTest {
 
 
     public void check(String expectedResult, String actualResult, String testName) {
-        if (expectedResult == actualResult) {
+        if (actualResult.equals(expectedResult)) {
             System.out.println(testName + " has passed.");
         } else {
             System.out.println(testName + " has failed!");
