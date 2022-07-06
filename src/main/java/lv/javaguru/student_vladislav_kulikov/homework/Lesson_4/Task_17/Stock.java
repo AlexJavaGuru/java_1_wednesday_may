@@ -26,7 +26,14 @@ class Stock {
         return cost = newPrice;
     }
 
-    void getPriceInformation() {
-        System.out.println("Company = " + name + "," + " Current price = " + cost + "," + " Min price = " + minCost + "," + " Max price = " + maxCost);
+    int getPriceInformation() {
+        System.out.println("Company: " + name + " " + "Max cost in period: " + maxCost);
+
+        int periodCost = maxCost;
+        cost = 0;
+        minCost = 0;
+        maxCost = 0;
+
+        return periodCost;
     }
 }

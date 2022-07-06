@@ -1,6 +1,6 @@
 package main.java.lv.javaguru.student_vladislav_kulikov.homework.Lesson_4.Task_11_12_14_15;
 
-public class Calculator {
+class Calculator {
 
     public int sumAddition(int firstNumber, int secondNumber) {
         return firstNumber + secondNumber;
@@ -10,7 +10,7 @@ public class Calculator {
         return firstNumber - secondNumber;
     }
 
-    public int sumDivision(int firstNumber, int secondNumber) {
+    public double sumDivision(double firstNumber, double secondNumber) {
         return firstNumber / secondNumber;
     }
 
