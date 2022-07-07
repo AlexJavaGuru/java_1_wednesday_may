@@ -5,21 +5,15 @@ public class Circle {
     double pi;
     double dva;
 
-    Circle(double radius, double pi, double dva){
+    Circle(double radius, double pi, double dva) {
         this.radius = radius;
         this.pi = pi;
         this.dva = dva;
     }
 
-    double getRadius(){
-        return radius;
+    public double calculateArea() {
+        double result = radius * pi * dva;
+        return result;
     }
-    double getPi(){
-        return pi;
-    }
-    double getDva(){
-        return dva;
-    }
-
-    }
+}
 
