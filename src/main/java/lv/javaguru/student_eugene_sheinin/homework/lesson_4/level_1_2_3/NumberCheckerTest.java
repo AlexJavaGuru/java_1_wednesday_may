@@ -11,6 +11,7 @@ class NumberCheckerTest {
         numberCheckerTest.testGetMaxNumber();
         numberCheckerTest.testGetMinNumber();
         numberCheckerTest.testAreEqualNumbers();
+        numberCheckerTest.testAreNotEqualNumbers();
     }
 
     public void testPositiveOrNegative() {
@@ -44,7 +45,7 @@ class NumberCheckerTest {
         int number2  = 9;
         int expectedResult = 9;
         int actualResult = numberChecker.getMaxNumber(number1, number2);
-        this.check(expectedResult, actualResult,"test Get Max Number");
+        this.check(expectedResult, actualResult,"Test Get Max Number");
     }
 
     public void testGetMinNumber() {
@@ -53,7 +54,7 @@ class NumberCheckerTest {
         int number2  = 9;
         int expectedResult = 2;
         int actualResult = numberChecker.getMinNumber(number1, number2);
-        this.check(expectedResult, actualResult,"test Get Max Number");
+        this.check(expectedResult, actualResult,"Test Get Max Number");
     }
 
     public void testAreEqualNumbers() {
@@ -62,7 +63,16 @@ class NumberCheckerTest {
         int number2  = 9;
         boolean expectedResult = true;
         boolean actualResult = numberChecker.areEqualNumbers(number1, number2);
-        this.check(expectedResult, actualResult,"test Are Equal Numbers");
+        this.check(actualResult,"test Are Equal Numbers");
+    }
+
+    public void testAreNotEqualNumbers() {
+        NumberChecker numberChecker = new NumberChecker();
+        int number1  = 9;
+        int number2  = 3;
+        boolean expectedResult = true;
+        boolean actualResult = numberChecker.areEqualNumbers(number1, number2);
+        this.check(!actualResult,"test Are Not Equal Numbers");
     }
 
 
@@ -84,12 +94,12 @@ class NumberCheckerTest {
         }
     }
 
-    public void check(boolean expectedResult, boolean actualResult, String testName) {
-        if (expectedResult == actualResult) {
+    public void check(boolean expectedResult, String testName) {
+        if (expectedResult) {
             System.out.println(testName + " has passed.");
         } else {
             System.out.println(testName + " has failed!");
-            System.out.println("Expected: " + expectedResult + " but actual is: " + actualResult);
+            System.out.println("Expected: true" + expectedResult + " but actual is: " + !expectedResult);
         }
     }
 }
