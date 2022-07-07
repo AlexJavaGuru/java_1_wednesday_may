@@ -10,6 +10,12 @@ public class ArrayUtilTest {
     public void shouldCreateArray() {
 
     }
-
-
+    private void check(int expectedResult, int actualResult, String testName) {
+        if (expectedResult == actualResult) {
+            System.out.println(testName + " has passed.");
+        } else {
+            System.out.println(testName + " has failed!");
+            System.out.println("Expected: " + expectedResult + " but actual is: " + actualResult);
+        }
+    }
 }
