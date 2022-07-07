@@ -8,9 +8,11 @@ public class Task4 {
         System.out.println("Введите целое число");
         int a = scanner.nextInt();
 
-        if (a (/2)){
-            System.out.println("");
-        }
-
+        if (a % 2 == 0) {
+            System.out.println("Число чётное");
+        } else
+            System.out.println("Число не чётное");
     }
 }
+
+
