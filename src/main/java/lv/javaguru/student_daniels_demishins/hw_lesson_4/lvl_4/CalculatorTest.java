@@ -195,8 +195,6 @@ public class CalculatorTest {
     }
 
 
-
-
     public void check(int expectedResult, int actualResult, String testName) {
         if (expectedResult == actualResult) {
             System.out.println(testName + "has passed");
