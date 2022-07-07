@@ -6,4 +6,10 @@ public class ArrayUtil {
 
         return new int[arrayLength];
     }
+
+    public void fillArrayWithRandomNumbers(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+
+        }
+    }
 }

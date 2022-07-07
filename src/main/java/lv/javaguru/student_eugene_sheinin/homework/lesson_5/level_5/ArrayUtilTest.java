@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_5_arrays_for_loop.homework.level_5_middle;
+package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_5.level_5;
 
 public class ArrayUtilTest {
 
@@ -8,7 +8,10 @@ public class ArrayUtilTest {
     }
 
     public void shouldCreateArray() {
-
+        ArrayUtil arrayUtil = new ArrayUtil();
+        int expectedResult = 5;
+        int actualResult = (arrayUtil.createArray(5)).length;
+        check(expectedResult, actualResult, "shouldCreateArray test");
     }
     private void check(int expectedResult, int actualResult, String testName) {
         if (expectedResult == actualResult) {
