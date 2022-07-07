@@ -6,9 +6,6 @@ public class SmallestNumber {
         if (numberOne > numberTwo) {
             smallestNum = numberTwo;
         }
-        if (numberOne == numberTwo) {
-            System.out.println("Number are equal");
-        }
         return smallestNum;
     }
 }

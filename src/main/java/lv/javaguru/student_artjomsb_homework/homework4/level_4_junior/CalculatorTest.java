@@ -4,7 +4,7 @@ class CalculatorTest {
     public static void main(String[] args) {
         CalculatorTest calculatorTest = new CalculatorTest();
         calculatorTest.sumTest(10, 5);
-        calculatorTest.divideTest(10, 5);
+        calculatorTest.divideTest(37, 9);
         calculatorTest.multiplyTest(10, 5);
         calculatorTest.subtractTest(10, 5);
         calculatorTest.isEven(6);
@@ -37,7 +37,7 @@ class CalculatorTest {
     }
 
     void divideTest(int numOne, int numTwo) {
-        int expectedResult = numOne / numTwo;
+        double expectedResult = numOne / numTwo;
         Calculator victim = new Calculator();
         check(victim.divide(numOne, numTwo) == expectedResult, "Test divide of two numbers");
     }

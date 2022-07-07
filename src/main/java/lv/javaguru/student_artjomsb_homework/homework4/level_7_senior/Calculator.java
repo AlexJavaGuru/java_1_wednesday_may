@@ -13,7 +13,7 @@ class Calculator {
         return firstNumber * secondNumber;
     }
 
-    public int div(int firstNumber, int secondNumber) {
+    public double div(int firstNumber, int secondNumber) {
         return firstNumber / secondNumber;
     }
 

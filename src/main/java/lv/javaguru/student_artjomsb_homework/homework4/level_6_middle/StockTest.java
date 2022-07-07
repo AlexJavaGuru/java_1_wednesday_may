@@ -13,11 +13,11 @@ class StockTest {
     void testCurrentPrice() {
         Stock testCurrentStock = new Stock("Test", 5);
         int expectedResult = 5;
-        int result = testCurrentStock.currentPrice;
+        int result = testCurrentStock.getCurrentPrice();
         check(result == expectedResult, "Test current Price");
         testCurrentStock.setCurrentPrice(532);
         expectedResult = 532;
-        result = testCurrentStock.currentPrice;
+        result = testCurrentStock.getCurrentPrice();
         check(result == expectedResult, "Test current Price, number Two");
     }
 
@@ -25,19 +25,19 @@ class StockTest {
         Stock testMaxStock = new Stock("Test", 10);
         int expectedResult = 999;
         testMaxStock.setCurrentPrice(999);
-        int result = Integer.parseInt(testMaxStock.getPriceInformation().replaceAll(".*\s(?=.*$)", ""));
+        int result = testMaxStock.getMaxPrice();
         check(result == expectedResult, "Test max Price");
         testMaxStock.setCurrentPrice(1);
-        result = Integer.parseInt(testMaxStock.getPriceInformation().replaceAll(".*\s(?=.*$)", ""));
+        result = testMaxStock.getMaxPrice();
         check(result == expectedResult, "Test max Price,number Two");
         testMaxStock.setCurrentPrice(1000);
         expectedResult = 1000;
-        result = Integer.parseInt(testMaxStock.getPriceInformation().replaceAll(".*\s(?=.*$)", ""));
+        result = testMaxStock.getMaxPrice();
         check(result == expectedResult, "Test max Price,number Three");
         testMaxStock.setCurrentPrice(2);
         testMaxStock.setCurrentPrice(999);
         testMaxStock.setCurrentPrice(943);
-        result = Integer.parseInt(testMaxStock.getPriceInformation().replaceAll(".*\s(?=.*$)", ""));
+        result = testMaxStock.getMaxPrice();
         check(result == expectedResult, "Test max Price,number Four");
     }
 
@@ -45,14 +45,12 @@ class StockTest {
         Stock testMinStock = new Stock("Test", 10);
         int expectedResult = 10;
         testMinStock.setCurrentPrice(20);
-        String[] priceInformation = testMinStock.getPriceInformation().split(" ", 14);
-        int result = Integer.parseInt(priceInformation[10]);
+        int result = testMinStock.getMinPrice();
         check(result == expectedResult, "Test min Price");
         testMinStock.setCurrentPrice(2);
         testMinStock.setCurrentPrice(333);
         expectedResult = 2;
-        priceInformation = testMinStock.getPriceInformation().split(" ", 14);
-        result = Integer.parseInt(priceInformation[10]);
+        result = testMinStock.getMinPrice();
         check(result == expectedResult, "Test min Price,number Two");
         testMinStock.setCurrentPrice(5032);
         testMinStock.setCurrentPrice(23);
@@ -60,8 +58,7 @@ class StockTest {
         testMinStock.setCurrentPrice(243);
         testMinStock.setCurrentPrice(4743);
         expectedResult = 1;
-        priceInformation = testMinStock.getPriceInformation().split(" ", 14);
-        result = Integer.parseInt(priceInformation[10]);
+        result = testMinStock.getMinPrice();
         check(result == expectedResult, "Test min Price,number Three");
     }
 

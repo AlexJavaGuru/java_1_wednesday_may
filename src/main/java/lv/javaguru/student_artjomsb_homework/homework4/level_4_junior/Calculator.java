@@ -14,16 +14,22 @@ class Calculator {
         return firstNumber * secondNumber;
     }
 
-    int divide(int firstNumber, int secondNumber) {
+    double divide(int firstNumber, int secondNumber) {
         return firstNumber / secondNumber;
     }
 
     boolean isEven(int number) {
         return number % 2 == 0;
     }
+
     int maxOfTwoNumbers(int firstNumber, int secondNumber) {
-        return Math.max(firstNumber,secondNumber);
+        if (firstNumber >= secondNumber) {
+            return firstNumber;
+        } else {
+            return secondNumber;
+        }
     }
+
     int maxOfThreeNumbers(int numOne, int numTwo, int numThree) {
         int[] numbers = {numOne, numTwo, numThree};
         int largestNumber = numOne;

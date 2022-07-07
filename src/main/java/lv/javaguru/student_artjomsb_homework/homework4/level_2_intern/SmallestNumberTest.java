@@ -3,21 +3,18 @@ package main.java.lv.javaguru.student_artjomsb_homework.homework4.level_2_intern
 public class SmallestNumberTest {
     public static void main(String[] args) {
         SmallestNumberTest runner = new SmallestNumberTest();
-        int number = (int) Math.floor(Math.random() * 100);
-        runner.numberOneSmallest((int) Math.floor(Math.random() * 100) - 101, (int) Math.floor(Math.random() * 100));
-        runner.numberTwoIsSmallest((int) Math.floor(Math.random() * 100), (int) Math.floor(Math.random() * 100) - 101);
-        runner.numberEqual(number, number);
+        runner.numberOneSmallest(43,581);
+        runner.numberTwoIsSmallest(504,-432);
+        runner.numberEqual(4237,4237);
     }
 
     void numberOneSmallest(int numOne, int numTwo) {
         SmallestNumber smallest = new SmallestNumber();
-        System.out.println(numOne + " " + numTwo);
         check(smallest.smallestNumber(numOne, numTwo) == numOne, "Number one is largest");
     }
 
     void numberTwoIsSmallest(int numOne, int numTwo) {
         SmallestNumber smallest = new SmallestNumber();
-        System.out.println(numOne + " " + numTwo);
         check(smallest.smallestNumber(numOne, numTwo) == numTwo, "Number two is largest");
     }
 

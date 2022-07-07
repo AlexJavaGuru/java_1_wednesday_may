@@ -14,6 +14,7 @@ public class IsEvenTest {
         String expectedResultString = "Even";
         check(String.valueOf(expectedResult), String.valueOf(victim.evenOrNot(number)), "Test check that number was even");
         check(expectedResultString, victim.evenOrNotMethodTwo(number), "Test check that number was even");
+        check(String.valueOf(expectedResult), String.valueOf(victim.isEven(number)), "Test check that number was even");
     }
 
     void odd(int number) {
@@ -22,6 +23,7 @@ public class IsEvenTest {
         String expectedResultString = "Odd";
         check(String.valueOf(expectedResult), String.valueOf(victim.evenOrNot(number)), "Test check that number was odd");
         check(expectedResultString, victim.evenOrNotMethodTwo(number), "Test check that number was odd");
+        check(String.valueOf(expectedResult), String.valueOf(victim.isEven(number)), "Test check that number was odd");
     }
 
     void check(String expectedResult, String actualResult, String testName) {

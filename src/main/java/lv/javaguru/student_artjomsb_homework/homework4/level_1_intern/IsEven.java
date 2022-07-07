@@ -22,5 +22,9 @@ class IsEven {
         if (number % 2 == 0) result = "Even";
         return result;
     }
+
+    boolean isEven(int number) {
+        return number % 2 == 0;
+    }
 }
 

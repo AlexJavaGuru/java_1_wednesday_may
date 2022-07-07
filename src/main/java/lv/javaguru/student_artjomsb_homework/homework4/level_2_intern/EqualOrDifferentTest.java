@@ -11,16 +11,19 @@ public class EqualOrDifferentTest {
 
     void differentNumbers(int numberOne, int numberTwo) {
         EqualOrDifferent victim = new EqualOrDifferent();
-        check(!victim.equalOrDifferent(numberOne, numberTwo), "Test the number are different");
+        check(!victim.isEqual(numberOne, numberTwo), "Test the number are different");
     }
 
     void equalNumbers(int numberOne, int numberTwo) {
         EqualOrDifferent victim = new EqualOrDifferent();
-        check(victim.equalOrDifferent(numberOne, numberTwo), "Test the number are equal");
+        check(victim.isEqual(numberOne, numberTwo), "Test the number are equal");
     }
 
     void check(boolean statement, String testName) {
-        if (statement) System.out.println("Test - " + testName + " , Passed!");
-        else System.out.println("Test - " + testName + " , FAILED");
+        if (statement) {
+            System.out.println("Test - " + testName + " , Passed!");
+        } else {
+            System.out.println("Test - " + testName + " , FAILED");
+        }
     }
 }

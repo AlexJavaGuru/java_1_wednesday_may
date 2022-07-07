@@ -6,9 +6,9 @@ class CalculatorTest {
         calculatorTest.sumTest(35, 40);
         calculatorTest.subTest(35, 15);
         calculatorTest.mulTest(5, 5);
-        calculatorTest.divTest(40, 8);
-        calculatorTest.isEvenTest1(40);
-        calculatorTest.isEvenTest2(41);
+        calculatorTest.divTest(40, 7);
+        calculatorTest.isEvenTest(40);
+        calculatorTest.isNotEvenTest(41);
     }
 
     void sumTest(int firstNumber, int secondNumber) {
@@ -29,16 +29,16 @@ class CalculatorTest {
 
     void divTest(int firstNumber, int secondNumber) {
         Calculator calculator = new Calculator();
-        check(calculator.div(firstNumber, secondNumber) == 5, "Div test");
+        check(calculator.div(firstNumber, secondNumber) == (firstNumber / secondNumber), "Div test");
 
     }
 
-    void isEvenTest1(int firstNumber) {
+    void isEvenTest(int firstNumber) {
         Calculator calculator = new Calculator();
         check(calculator.isEven(firstNumber), "isEven test");
     }
 
-    void isEvenTest2(int firstNumber) {
+    void isNotEvenTest(int firstNumber) {
         Calculator calculator = new Calculator();
         check(!calculator.isEven(firstNumber), "isEven test");
     }

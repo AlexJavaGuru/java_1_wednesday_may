@@ -2,7 +2,9 @@ package main.java.lv.javaguru.student_artjomsb_homework.homework4.level_6_middle
 
 class Stock {
     final private String companyName;
-    int currentPrice;
+
+    private int currentPrice;
+
     private int minPrice;
     private int maxPrice;
 
@@ -18,12 +20,25 @@ class Stock {
         if (currentPrice > maxPrice) {
             this.maxPrice = currentPrice;
         }
-        if (currentPrice < minPrice) {
+        else if (currentPrice < minPrice) {
             this.minPrice = currentPrice;
         }
     }
 
+
     String getPriceInformation() {
         return "Company = \"" + companyName + "\" ,Current Price = " + currentPrice + " ,Min Price = " + minPrice + " ,Max Price = " + maxPrice;
+    }
+
+    int getCurrentPrice() {
+        return currentPrice;
+    }
+
+    int getMinPrice() {
+        return minPrice;
+    }
+
+    int getMaxPrice() {
+        return maxPrice;
     }
 }
