@@ -6,29 +6,39 @@ class Stock {
     int currentPrice;
     int minimalPrice;
     int maximalPrice;
-    int newPrice;
 
-    Stock (String nameOfCompany,int currentPrice){
+    Stock(String nameOfCompany, int newPrice) {
         this.nameOfCompany = nameOfCompany;
-        this.currentPrice = currentPrice;
-    }
-
-    int getPriceInformation(){
-        return currentPrice;
-    }
-
-    int updatePrice (int newPrice ){
         this.currentPrice = newPrice;
-        return currentPrice;
     }
 
-
-    void info (){
-        System.out.println("Market price stock of company " + nameOfCompany + " " + getPriceInformation());
+    String getNameOfCompany() {
+        return nameOfCompany;
     }
 
+    void getPriceInformation() {
 
+       if ( maximalPrice == 0 || minimalPrice == 0){
+           this.maximalPrice = currentPrice;
+           this.minimalPrice = currentPrice;
+       }
+        System.out.println("Company = " + " '" + nameOfCompany + "' ," + " Current Price = " + currentPrice +
+        ", Min Price = " + minimalPrice + ", Max Price = " + maximalPrice);
 
+    }
 
+    void updatePrice(int newPrice) {
+        this.currentPrice = newPrice;
+        if (newPrice >= maximalPrice) {
+            this.maximalPrice = newPrice;
+        }else if(newPrice<= minimalPrice){
+            this.minimalPrice = newPrice;
 
+        }
+
+    }
+
+    public int getMaximalPrice() {
+        return maximalPrice;
+    }
 }

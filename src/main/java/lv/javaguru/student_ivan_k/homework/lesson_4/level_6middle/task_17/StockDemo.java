@@ -4,12 +4,21 @@ class StockDemo {
 
     public static void main(String[] args) {
         Stock google = new Stock("GOOGLE",10);
-        int priceInformation = google.getPriceInformation();
-        String nameOfCompany = google.nameOfCompany;
-        System.out.println("Market price stock of company "+ nameOfCompany + " " + priceInformation);
-        google.info();
-        google.updatePrice(11);
-        google.info();
+        String nameOfCom = google.getNameOfCompany();
+        System.out.println("Company is: " + nameOfCom);
+        google.getPriceInformation();
+        google.updatePrice(15);
+        google.updatePrice(7);
+        google.updatePrice(14);
+        google.getPriceInformation();
+        google.updatePrice(10);
+        google.updatePrice(12);
+        google.updatePrice(5);
+        google.updatePrice(7);
+        google.updatePrice(99);
+        google.updatePrice(77);
+        google.getPriceInformation();
+
 
     }
 }
