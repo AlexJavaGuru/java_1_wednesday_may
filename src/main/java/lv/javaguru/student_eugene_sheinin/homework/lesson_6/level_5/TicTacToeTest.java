@@ -1,6 +1,8 @@
 package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_6.level_5;
 
 
+import java.util.Arrays;
+
 public class TicTacToeTest {
 
     public static void main(String[] args) {
@@ -18,6 +20,7 @@ public class TicTacToeTest {
         testIsNotWinPosition();
         testDrawPosition();
         testNotDrawPosition();
+        testCreateField();
     }
 
 
@@ -146,6 +149,14 @@ public class TicTacToeTest {
         TicTacToe subject = new TicTacToe();
         boolean result = subject.isDrawPosition(field);
         check(!result, "Is Not Draw Win Position");
+    }
+
+    public static void testCreateField() {
+        int[][] field = {{ -1, -1,  -1},
+                { -1, -1,  -1},
+                {-1, -1, -1}};
+        TicTacToe subject = new TicTacToe();
+        check(Arrays.deepEquals(field, subject.createField()), "Create Field Test");
     }
 
     private static void check(boolean actualResult, String testName) {
