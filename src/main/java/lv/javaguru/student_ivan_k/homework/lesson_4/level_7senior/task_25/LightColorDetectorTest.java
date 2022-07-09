@@ -1,6 +1,9 @@
 package main.java.lv.javaguru.student_ivan_k.homework.lesson_4.level_7senior.task_25;
 
 class LightColorDetectorTest {
+
+
+
     public static void main(String[] args) {
         LightColorDetectorTest lightColorDetector = new LightColorDetectorTest();
 
