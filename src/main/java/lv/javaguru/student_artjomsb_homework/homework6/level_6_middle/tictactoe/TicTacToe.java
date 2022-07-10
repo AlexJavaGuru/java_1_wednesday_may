@@ -4,50 +4,78 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 class TicTacToe {
+    /*  public void play() {
+          Player playerOne = new Player(0, 0, "-");
+          Player playerTwo = new Player(0, 0, "-");
+          playerOne.chooseRole();
+          if (playerOne.getTicTacToeRole().equals("X")) {
+              playerTwo.setTicTacToeRole("0");
+          } else {
+              playerTwo.setTicTacToeRole("X");
+          }
+          String[][] field = createField();
+          printFieldToConsole(field);
+          while (true) {
+              playerOne.getNextMove();
+              while (field[playerOne.getX()][playerOne.getY()].equals("X") || field[playerOne.getX()][playerOne.getY()].equals("0")) {
+                  System.out.println("Wrong Move!");
+                  playerOne.getNextMove();
+              }
+              field[playerOne.getX()][playerOne.getY()] = playerOne.getTicTacToeRole();
+              if (isWin(field, playerOne.getTicTacToeRole())) {
+                  printFieldToConsole(field);
+                  System.out.println("Player " + playerOne.getTicTacToeRole() + " WIN!");
+                  break;
+              }
+              if (isDraw(field)) {
+                  System.out.println("DRAW!");
+                  break;
+              }
+
+              printFieldToConsole(field);
+              playerTwo.getNextMove();
+              while (field[playerTwo.getX()][playerTwo.getY()].equals("X") || field[playerTwo.getX()][playerTwo.getY()].equals("0")) {
+                  System.out.println("Wrong Move!");
+                  playerTwo.getNextMove();
+              }
+              field[playerTwo.getX()][playerTwo.getY()] = playerTwo.getTicTacToeRole();
+              printFieldToConsole(field);
+              if (isWin(field, playerTwo.getTicTacToeRole())) {
+                  printFieldToConsole(field);
+                  System.out.println("Player " + playerTwo.getTicTacToeRole() + " WIN!");
+                  break;
+              }
+              if (isDraw(field)) {
+                  System.out.println("DRAW!");
+                  break;
+              }
+          }
+      }*/
     public void play() {
-        Player playerOne = new Player(0, 0, "-");
-        Player playerTwo = new Player(0, 0, "-");
-        playerOne.chooseRole();
-        if (playerOne.getTicTacToeRole().equals("X")) {
-            playerTwo.setTicTacToeRole("0");
-        } else {
-            playerTwo.setTicTacToeRole("X");
-        }
+        Player player = new Player(0, 0, "X");
         String[][] field = createField();
         printFieldToConsole(field);
         while (true) {
-            playerOne.getNextMove();
-            while (field[playerOne.getX()][playerOne.getY()].equals("X") || field[playerOne.getX()][playerOne.getY()].equals("0")) {
+            player.getNextMove();
+            while (field[player.getX()][player.getY()].equals("X") || field[player.getX()][player.getY()].equals("0")) {
                 System.out.println("Wrong Move!");
-                playerOne.getNextMove();
+                player.getNextMove();
             }
-            field[playerOne.getX()][playerOne.getY()] = playerOne.getTicTacToeRole();
-            if (isWin(field, playerOne.getTicTacToeRole())) {
+            field[player.getX()][player.getY()] = player.getTicTacToeRole();
+            if (isWin(field, player.getTicTacToeRole())) {
                 printFieldToConsole(field);
-                System.out.println("Player " + playerOne.getTicTacToeRole() + " WIN!");
+                System.out.println("Player " + player.getTicTacToeRole() + " WIN!");
                 break;
             }
             if (isDraw(field)) {
                 System.out.println("DRAW!");
                 break;
             }
-
             printFieldToConsole(field);
-            playerTwo.getNextMove();
-            while (field[playerTwo.getX()][playerTwo.getY()].equals("X") || field[playerTwo.getX()][playerTwo.getY()].equals("0")) {
-                System.out.println("Wrong Move!");
-                playerTwo.getNextMove();
-            }
-            field[playerTwo.getX()][playerTwo.getY()] = playerTwo.getTicTacToeRole();
-            printFieldToConsole(field);
-            if (isWin(field, playerTwo.getTicTacToeRole())) {
-                printFieldToConsole(field);
-                System.out.println("Player " + playerTwo.getTicTacToeRole() + " WIN!");
-                break;
-            }
-            if (isDraw(field)) {
-                System.out.println("DRAW!");
-                break;
+            if (player.getTicTacToeRole().equals("X")) {
+                player.setTicTacToeRole("0");
+            } else {
+                player.setTicTacToeRole("X");
             }
         }
     }

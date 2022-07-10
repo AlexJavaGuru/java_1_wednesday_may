@@ -5,10 +5,6 @@ import java.util.Scanner;
 class Player {
     private int x;
     private int y;
-
-
-
-
     private String ticTacToeRole;
 
     Player(int x, int y, String ticTacToeRole) {
@@ -16,11 +12,13 @@ class Player {
         this.y = y;
         this.ticTacToeRole = ticTacToeRole;
     }
-void chooseRole(){
-    Scanner inputRole = new Scanner(System.in);
-    System.out.print("Please choose \"X\" or \"0\": ");
-    this.ticTacToeRole = inputRole.next();
-}
+
+    void chooseRole() {
+        Scanner inputRole = new Scanner(System.in);
+        System.out.print("Please choose \"X\" or \"0\": ");
+        this.ticTacToeRole = inputRole.next();
+    }
+
     void getNextMove() {
         Scanner inputMove = new Scanner(System.in);
         System.out.print("Please input coordinate X: ");
@@ -29,6 +27,7 @@ void chooseRole(){
         this.y = inputMove.nextInt();
 
     }
+
     public int getX() {
         return x;
     }
@@ -36,9 +35,11 @@ void chooseRole(){
     public int getY() {
         return y;
     }
+
     public String getTicTacToeRole() {
         return ticTacToeRole;
     }
+
     void setTicTacToeRole(String ticTacToeRole) {
         this.ticTacToeRole = ticTacToeRole;
     }
