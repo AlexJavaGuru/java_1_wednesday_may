@@ -1,0 +1,19 @@
+Задание: дайте правильные с точки зрения Java кода названия классам:
+
+book
+Bankaccount
+systemUnit
+Login_Service
+banktransaction
+task1
+
+Создайте эти классы с корректными с точки зрения Java кода назнаниями.
+
+
+
+public static Book
+public static BankAccount
+public static SystemUnit
+public static LoginService
+public static BankTransaction
+public static Task1
