@@ -1,7 +1,7 @@
 package main.java.lv.javaguru.student_anton_papin.lesson_3_homework.level_4;
 
- class BankAccountDemo {
-     public  static void main(String[] args) {
+class BankAccountDemo {
+    public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount("Viktor", "Savonin", 100000);
         String ownerFirstName = bankAccount.getOwnerFirstName();
         String ownerLastName = bankAccount.getOwnerLastName();

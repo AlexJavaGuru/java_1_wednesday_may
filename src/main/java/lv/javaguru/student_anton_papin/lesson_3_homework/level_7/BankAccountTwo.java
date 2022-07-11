@@ -1,6 +1,6 @@
 package main.java.lv.javaguru.student_anton_papin.lesson_3_homework.level_7;
 
- class BankAccountTwo {
+class BankAccountTwo {
     String owner;
     int money;
 
@@ -9,7 +9,7 @@ package main.java.lv.javaguru.student_anton_papin.lesson_3_homework.level_7;
         this.money = money;
     }
 
-     String getOwner() {
+    String getOwner() {
         return this.owner;
     }
 
