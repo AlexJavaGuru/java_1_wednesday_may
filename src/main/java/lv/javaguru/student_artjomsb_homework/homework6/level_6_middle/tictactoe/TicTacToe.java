@@ -72,52 +72,58 @@ class TicTacToe {
                 break;
             }
             printFieldToConsole(field);
-            if (player.getTicTacToeRole().equals("X")) {
-                player.setTicTacToeRole("0");
-            } else {
-                player.setTicTacToeRole("X");
-            }
+            turnToNextPlayer(player);
         }
     }
+
 
     public void playWithAI() {
         MariannaAI ticTacToeAI = new MariannaAI(0, 0, "0");
         Player ticTacToePlayer = new Player(0, 0, "X");
         String[][] field = createField();
+        ticTacToePlayer.chooseRole();
+        if (ticTacToeAI.getTicTacToeRole().equals(ticTacToePlayer.getTicTacToeRole())) {
+            ticTacToeAI.setTicTacToeRole("X");
+        }
         printFieldToConsole(field);
+        boolean isPlayerTurn = ticTacToePlayer.getTicTacToeRole().equals("X");
         while (true) {
-            ticTacToePlayer.getNextMove();
-            while (field[ticTacToePlayer.getX()][ticTacToePlayer.getY()].equals("X") || field[ticTacToePlayer.getX()][ticTacToePlayer.getY()].equals("0")) {
-                System.out.println("Wrong Move!");
+            if (isPlayerTurn) {
                 ticTacToePlayer.getNextMove();
-            }
-            field[ticTacToePlayer.getX()][ticTacToePlayer.getY()] = "X";
-            if (isWin(field, "X")) {
+                while (field[ticTacToePlayer.getX()][ticTacToePlayer.getY()].equals("X") || field[ticTacToePlayer.getX()][ticTacToePlayer.getY()].equals("0")) {
+                    System.out.println("Wrong Move!");
+                    ticTacToePlayer.getNextMove();
+                }
+                field[ticTacToePlayer.getX()][ticTacToePlayer.getY()] = "X";
+                if (isWin(field, "X")) {
+                    printFieldToConsole(field);
+                    System.out.println("Player X WIN!");
+                    break;
+                }
+                if (isDraw(field)) {
+                    System.out.println("DRAW!");
+                    break;
+                }
+                isPlayerTurn = false;
+            } else {
                 printFieldToConsole(field);
-                System.out.println("Player X WIN!");
-                break;
-            }
-            if (isDraw(field)) {
-                System.out.println("DRAW!");
-                break;
-            }
-
-            printFieldToConsole(field);
-            ticTacToeAI.getMove(field, "X");
-            while (field[ticTacToeAI.getX()][ticTacToeAI.getY()].equals("X") || field[ticTacToeAI.getX()][ticTacToeAI.getY()].equals("0")) {
                 ticTacToeAI.getMove(field, "X");
-            }
-            field[ticTacToeAI.getX()][ticTacToeAI.getY()] = "0";
-            printFieldToConsole(field);
-            if (isWin(field, "0")) {
+                while (field[ticTacToeAI.getX()][ticTacToeAI.getY()].equals("X") || field[ticTacToeAI.getX()][ticTacToeAI.getY()].equals("0")) {
+                    ticTacToeAI.getMove(field, "X");
+                }
+                field[ticTacToeAI.getX()][ticTacToeAI.getY()] = "0";
                 printFieldToConsole(field);
-                System.out.println("Player 0 WIN!");
-                break;
-            }
-            if (isDraw(field)) {
-                printFieldToConsole(field);
-                System.out.println("DRAW!");
-                break;
+                if (isWin(field, "0")) {
+                    printFieldToConsole(field);
+                    System.out.println("Player 0 WIN!");
+                    break;
+                }
+                if (isDraw(field)) {
+                    printFieldToConsole(field);
+                    System.out.println("DRAW!");
+                    break;
+                }
+                isPlayerTurn = true;
             }
         }
     }
@@ -128,15 +134,16 @@ class TicTacToe {
         String[][] field = createField();
         printFieldToConsole(field);
         int turnCounter = 1;
+        String playerToCheck = "0";
         while (true) {
-            System.out.println("X Turn " + turnCounter);
-            ticTacToeBot.getMove(field, "0");
+            System.out.println(ticTacToeBot.getTicTacToeRole() + " Turn " + turnCounter);
+            ticTacToeBot.getMove(field, playerToCheck);
             while (field[ticTacToeBot.getX()][ticTacToeBot.getY()].equals("X") || field[ticTacToeBot.getX()][ticTacToeBot.getY()].equals("0")) {
-                ticTacToeBot.getMove(field, "0");
+                ticTacToeBot.getMove(field, playerToCheck);
             }
-            field[ticTacToeBot.getX()][ticTacToeBot.getY()] = "X";
-            if (isWin(field, "X")) {
-                System.out.println("Player X WIN!");
+            field[ticTacToeBot.getX()][ticTacToeBot.getY()] = ticTacToeBot.getTicTacToeRole();
+            if (isWin(field, ticTacToeBot.getTicTacToeRole())) {
+                System.out.println("Player " + ticTacToeBot.getTicTacToeRole() + " WIN!");
                 printFieldToConsole(field);
                 break;
             }
@@ -145,8 +152,12 @@ class TicTacToe {
                 printFieldToConsole(field);
                 break;
             }
-
+            playerToCheck = ticTacToeBot.getTicTacToeRole();
+            turnToNextAI(ticTacToeBot);
             printFieldToConsole(field);
+            turnCounter++;-
+/*
+printFieldToConsole(field);
             System.out.println("0 Turn " + turnCounter);
             ticTacToeAI.getMove(field, "X");
             while (field[ticTacToeAI.getX()][ticTacToeAI.getY()].equals("X") || field[ticTacToeAI.getX()][ticTacToeAI.getY()].equals("0")) {
@@ -164,7 +175,7 @@ class TicTacToe {
                 printFieldToConsole(field);
                 break;
             }
-            turnCounter++;
+            turnCounter++;*/
         }
     }
 
@@ -183,6 +194,21 @@ class TicTacToe {
         return true;
     }
 
+    void turnToNextPlayer(Player player) {
+        if (player.getTicTacToeRole().equals("X")) {
+            player.setTicTacToeRole("0");
+        } else {
+            player.setTicTacToeRole("X");
+        }
+    }
+
+    void turnToNextAI(MariannaAI bot) {
+        if (bot.getTicTacToeRole().equals("X")) {
+            bot.setTicTacToeRole("0");
+        } else {
+            bot.setTicTacToeRole("X");
+        }
+    }
 
     public String[][] createField() {
         String[][] ticTacToeField = new String[3][3];
