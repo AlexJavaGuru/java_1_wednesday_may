@@ -17,23 +17,16 @@ class Stock {
         maxCost = cost;
     }
 
-    int updatePrice(int newPrice) {
+    void updatePrice(int newPrice) {
         if (newPrice > maxCost) {
             maxCost = newPrice;
         } else if (newPrice < maxCost && newPrice < minCost) {
             minCost = newPrice;
         }
-        return cost = newPrice;
     }
 
     int getPriceInformation() {
         System.out.println("Company: " + name + " " + "Max cost in period: " + maxCost);
-
-        int periodCost = maxCost;
-        cost = 0;
-        minCost = 0;
-        maxCost = 0;
-
-        return periodCost;
+        return maxCost;
     }
 }

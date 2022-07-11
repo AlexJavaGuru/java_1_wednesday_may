@@ -2,8 +2,6 @@ package main.java.lv.javaguru.student_vladislav_kulikov.homework.Lesson_4.Task_1
 
 class StockTest {
 
-    final Stock subject = new Stock("Sparq", 10);
-
     public static void main(String[] args) {
 
         StockTest stock = new StockTest();
@@ -15,6 +13,7 @@ class StockTest {
     }
 
     void stockTestOne() {
+        Stock subject = new Stock("Company 1", 0);
         subject.updatePrice(999);
         int info = subject.getPriceInformation();
         check(info == 999, "Biggest number in period Test One");
@@ -22,6 +21,7 @@ class StockTest {
 
 
     void stockTestTwo() {
+        Stock subject = new Stock("Company 2", 0);
         subject.updatePrice(999);
         subject.updatePrice(1);
         int info = subject.getPriceInformation();
@@ -29,6 +29,7 @@ class StockTest {
     }
 
     void stockTestThree() {
+        Stock subject = new Stock("Company 3", 0);
         subject.updatePrice(999);
         subject.updatePrice(2);
         subject.updatePrice(1000);
@@ -37,6 +38,7 @@ class StockTest {
     }
 
     void stockTestFour() {
+        Stock subject = new Stock("Company 4", 0);
         subject.updatePrice(999);
         subject.updatePrice(2);
         subject.updatePrice(1000);
@@ -46,6 +48,7 @@ class StockTest {
     }
 
     void stockTestFive() {
+        Stock subject = new Stock("Company 5", 0);
         subject.updatePrice(9);
         subject.updatePrice(27);
         int info = subject.getPriceInformation();
