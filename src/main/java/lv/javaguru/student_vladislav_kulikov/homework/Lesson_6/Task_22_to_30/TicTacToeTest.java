@@ -195,9 +195,10 @@ class TicTacToeTest {
     }
     static void noCreateFieldTest() {
         TicTacToe subject = new TicTacToe();
-        int[][] actualResult = {{-1, 1 ,0},
-                                {1, -1, 1},
-                                {0, 0, -1}};
+        int[][] actualResult = subject.createField();
+        actualResult = new int[][]{{1, 1, 1},
+                                   {1, 0, 1},
+                                   {0, 0, 1}};
         boolean result = checkCreateField(actualResult);
         check(!result, "No Create Field Test");
     }
