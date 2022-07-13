@@ -3,7 +3,10 @@ package main.java.lv.javaguru.student_artjomsb_homework.homework6.level_6_middle
 
 class TicTacToeDemo {
     public static void main(String[] args) {
-        TicTacToe game = new TicTacToe();
-        game.chooseTheGameOption();
+        boolean playGame = true;
+        while (playGame) {
+            TicTacToe game = new TicTacToe();
+            playGame = game.playGame();
+        }
     }
 }

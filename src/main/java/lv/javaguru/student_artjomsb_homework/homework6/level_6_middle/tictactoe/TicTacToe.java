@@ -31,7 +31,8 @@ class TicTacToe {
 
 
     public void playWithAI() {
-        MariannaAI ticTacToeAI = new MariannaAI(0, 0, "0");
+        MariannaAI ticTacToeAI = new MariannaAI(0, 0, "0", false);
+        ticTacToeAI.randomTactic();
         Player ticTacToePlayer = new Player(0, 0, "X");
         String[][] field = createField();
         ticTacToePlayer.chooseRole();
@@ -49,7 +50,7 @@ class TicTacToe {
                 }
                 field[ticTacToePlayer.getX()][ticTacToePlayer.getY()] = ticTacToePlayer.getTicTacToeRole();
                 if (isWin(field, ticTacToePlayer.getTicTacToeRole())) {
-                    System.out.println("Player " + ticTacToePlayer.getTicTacToeRole() +" WIN!");
+                    System.out.println("Player " + ticTacToePlayer.getTicTacToeRole() + " WIN!");
                     printFieldToConsole(field);
                     break;
                 }
@@ -67,7 +68,7 @@ class TicTacToe {
                 field[ticTacToeAI.getX()][ticTacToeAI.getY()] = ticTacToeAI.getTicTacToeRole();
                 printFieldToConsole(field);
                 if (isWin(field, ticTacToeAI.getTicTacToeRole())) {
-                    System.out.println("Player "+ ticTacToeAI.getTicTacToeRole() +" WIN!");
+                    System.out.println("Player " + ticTacToeAI.getTicTacToeRole() + " WIN!");
                     break;
                 }
                 if (isDraw(field)) {
@@ -81,19 +82,23 @@ class TicTacToe {
     }
 
     public void computerVersusComputer() {
-        MariannaAI ticTacToeBot = new MariannaAI(1, 1, "X");
+        MariannaAI ticTacToeBot = new MariannaAI(1, 1, "X", false);
+        ticTacToeBot.randomTactic();
         String[][] field = createField();
         printFieldToConsole(field);
         int turnCounter = 1;
         String playerToCheck = "0";
         while (true) {
             System.out.println(ticTacToeBot.getTicTacToeRole() + " Turn " + turnCounter);
-            ticTacToeBot.getMove(field, playerToCheck);
-//            if(turnCounter % 2 == 0){
-//                ticTacToeBot.noobMove();
-//            } else ticTacToeBot.getMove(field, playerToCheck);
+//            ticTacToeBot.getMove(field, playerToCheck);
+            if (turnCounter % 2 == 0) {
+                ticTacToeBot.noobMove();
+            } else ticTacToeBot.getMove(field, playerToCheck);
             while (field[ticTacToeBot.getX()][ticTacToeBot.getY()].equals("X") || field[ticTacToeBot.getX()][ticTacToeBot.getY()].equals("0")) {
-                ticTacToeBot.getMove(field, playerToCheck);
+                // ticTacToeBot.getMove(field, playerToCheck);
+                if (turnCounter % 2 == 0) {
+                    ticTacToeBot.noobMove();
+                } else ticTacToeBot.getMove(field, playerToCheck);
             }
             field[ticTacToeBot.getX()][ticTacToeBot.getY()] = ticTacToeBot.getTicTacToeRole();
             if (isWin(field, ticTacToeBot.getTicTacToeRole())) {
@@ -211,12 +216,13 @@ class TicTacToe {
         return isWinDiagonalFromBottomToTop(field, playerToCheck) || isWinDiagonalFromTopToBottom(field, playerToCheck);
     }
 
-    void chooseTheGameOption() {
+    boolean playGame() {
         Scanner chooseGameOption = new Scanner(System.in);
         System.out.println("Please choose the Option: ");
         System.out.println("Player VS Player - 1");
         System.out.println("Player VS AI - 2");
         System.out.println("Ai versus AI - 3");
+        System.out.println("Exit - 4");
         int gameOption = chooseGameOption.nextInt();
         switch (gameOption) {
             case 1:
@@ -228,8 +234,11 @@ class TicTacToe {
             case 3:
                 computerVersusComputer();
                 break;
+            case 4:
+                return false;
             default:
                 System.out.println("Wrong input");
         }
+        return true;
     }
 }

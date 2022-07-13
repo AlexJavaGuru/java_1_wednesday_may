@@ -6,57 +6,88 @@ class MariannaAI {
     private int x;
     private int y;
     private String ticTacToeRole;
+    private boolean tactic;
 
-    MariannaAI(int x, int y, String ticTacToeRole) {
+    MariannaAI(int x, int y, String ticTacToeRole, boolean cornerTactic) {
         this.x = x;
         this.y = y;
         this.ticTacToeRole = ticTacToeRole;
-    }
-
-    void noobMove() {
-        Random randomXY = new Random();
-        this.x = randomXY.nextInt(3);
-        this.y = randomXY.nextInt(3);
+        this.tactic = cornerTactic;
     }
 
     void getMove(String[][] field, String playerToCheck) {
-        Random randomXY = new Random();
         if (isPossibleToWin(field, playerToCheck)) {
+            System.out.println(1);
             tryToWin(field, playerToCheck);
         } else if (checkOnBlocking(field, playerToCheck)) {
+            System.out.println(2);
             blockOpponent(field, playerToCheck);
-        } else if (isMiddleOpen(field)) {
-            this.x = 1;
-            this.y = 1;
-        } else if ((isDiagonalBottomTopFull(field, playerToCheck) || isDiagonalTopBottomFull(field, playerToCheck)) && isCrossEmpty(field)) {
-            for (int i = 0; i < field.length; i++) {
-                for (int j = 0; j < field[i].length; j++) {
-                    if (((i % 2 == 0 && j % 2 != 0) || (i % 2 != 0 && j % 2 == 0)) && field[i][j].equals("-")) {
-                        this.x = i;
-                        this.y = j;
-                    }
-                }
-            }
-
-        } else if (howManyCornersOpen(field) > 1) {
-            boolean isFind = false;
-            for (int i = 0; i < field.length; i += 2) {
-                if (isFind) {
-                    break;
-                }
-                for (int j = 0; j < field[i].length; j += 2) {
-                    if (field[i][j].equals("-") && symmetricFieldValue(field, i, j).equals("-") && !isNearCornerOpponent(field, playerToCheck, i, j)) {
-                        this.x = i;
-                        this.y = j;
-                        isFind = true;
-                        break;
-                    }
-                }
-            }
-        } else {
-            this.x = randomXY.nextInt(3);
-            this.y = randomXY.nextInt(3);
+        } else if (isDoubleWinPositionPossible(field, getTicTacToeRole())) {
+            System.out.println(3);
+        } else if (isDoubleWinPositionPossible(field, playerToCheck) && !defenceFromWinTactic(field, playerToCheck)) {
+            System.out.println(4);
+        } else if (isWinTacticPossible(field) && tactic) {
+            System.out.println(5);
+            moveToOppositeCornerOrRandomCorner(field);
         }
+        else if (isMiddleOpen(field)) {
+            System.out.println(6);
+            goToMiddle();
+        }
+        else if (defenceFromWinTactic(field, playerToCheck)) {
+            System.out.println(7);
+            defenceMove(field);
+        } else if (howManyCornersOpen(field) > 1) {
+            System.out.println(8);
+            moveToBestCorner(field, playerToCheck);
+        } else {
+            noobMove();
+        }
+    }
+
+    boolean isDoubleWinPositionPossible(String[][] gamingField, String playerToCheck) {
+
+        if (howManyOpponentMadeTurns(gamingField, playerToCheck) == 2) {
+            for (int i = 0; i < gamingField.length; i++) {
+                for (int j = 0; j < gamingField.length; j++) {
+                    if (gamingField[i][j].equals("-")) {
+                        gamingField[i][j] = playerToCheck;
+                        if (opponentPossibleWins(gamingField, playerToCheck) >= 2) {
+                            gamingField[i][j] = "-";
+                            this.x = i;
+                            this.y = j;
+                            return true;
+                        }
+                        gamingField[i][j] = "-";
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    int opponentPossibleWins(String[][] field, String playerToCheck) {
+        boolean[] opponentPossibleWins = {opponentWinForHorizontals(field, playerToCheck) != -1, opponentWinPositionForVerticals(field, playerToCheck) != -1
+                , isOpponentWinFromLeftTopToRightBottom(field, playerToCheck), isOpponentWinFromTopRightToLeftBottom(field, playerToCheck)};
+        int countWins = 0;
+        for (boolean opponentPossibleWin : opponentPossibleWins) {
+            if (opponentPossibleWin) {
+                countWins++;
+            }
+        }
+        return countWins;
+    }
+
+    int howManyOpponentMadeTurns(String[][] gamingField, String playerToCheck) {
+        int opponentTurns = 0;
+        for (int i = 0; i < gamingField.length; i++) {
+            for (int j = 0; j < gamingField.length; j++) {
+                if (gamingField[i][j].equals(playerToCheck)) {
+                    opponentTurns++;
+                }
+            }
+        }
+        return opponentTurns;
     }
 
     void tryToWin(String[][] gamingField, String playerToCheck) {
@@ -138,8 +169,95 @@ class MariannaAI {
                 || isPossibleWinFromLeftTopToRightBottom(field, playerToCheck) || isPossibleWinFromTopRightToLeftBottom(field, playerToCheck);
     }
 
+    boolean defenceFromWinTactic(String[][] field, String playerToCheck) {
+        return (isDiagonalBottomTopFull(field, playerToCheck) || isDiagonalTopBottomFull(field, playerToCheck)) && isCrossEmpty(field);
+    }
+
+    void noobMove() {
+        Random randomXY = new Random();
+        this.x = randomXY.nextInt(3);
+        this.y = randomXY.nextInt(3);
+    }
+
+    void moveToBestCorner(String[][] field, String playerToCheck) {
+        boolean isFind = false;
+        for (int i = 0; i < field.length; i += 2) {
+            if (isFind) {
+                break;
+            }
+            for (int j = 0; j < field[i].length; j += 2) {
+                if (field[i][j].equals("-") && symmetricCornerFieldValue(field, i, j).equals("-") && !isNearCornerOpponent(field, playerToCheck, i, j)) {
+                    this.x = i;
+                    this.y = j;
+                    isFind = true;
+                    break;
+                }
+            }
+        }
+        moveToRandomCorner();
+    }
+
+    void goToMiddle() {
+        this.x = 1;
+        this.y = 1;
+    }
+
+    void defenceMove(String[][] field) {
+        if (field[1][1].equals(ticTacToeRole)) {
+            boolean isFind = false;
+            for (int i = 0; i < field.length; i++) {
+                if (isFind) {
+                    break;
+                }
+                for (int j = 0; j < field[i].length; j++) {
+                    if (((i % 2 == 0 && j % 2 != 0) || (i % 2 != 0 && j % 2 == 0)) && field[i][j].equals("-")) {
+                        this.x = i;
+                        this.y = j;
+                        isFind = true;
+                        break;
+                    }
+                }
+            }
+        } else {
+            moveToRandomCorner();
+        }
+    }
+
     boolean isMiddleOpen(String[][] gamingField) {
         return gamingField[1][1].equals("-");
+    }
+
+    boolean isWinTacticPossible(String[][] field) {
+        return (isFieldEmpty(field) || isCornersOpen(field)) && isCrossEmpty(field);
+    }
+
+    boolean isFieldEmpty(String[][] field) {
+        for (int i = 0; i < field.length; i++) {
+            for (int j = 0; j < field[i].length; j++) {
+                if (!field[i][j].equals("-")) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    boolean isCornersOpen(String[][] field) {
+        int emptyCorners = 0;
+        boolean myRoleInCorner = false;
+        for (int i = 0; i < field.length; i += 2) {
+            for (int j = 0; j < field[i].length; j += 2) {
+                if (field[i][j].equals("-")) {
+                    emptyCorners++;
+                } else if (field[i][j].equals(ticTacToeRole)) {
+                    myRoleInCorner = true;
+                }
+                if (myRoleInCorner && i == j && i == field.length - 1 && emptyCorners >= 1) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     int howManyCornersOpen(String[][] gameField) {
@@ -154,10 +272,64 @@ class MariannaAI {
         return corners;
     }
 
-    // 00 | 01 | 02
-    // 10 | 11 | 12
-    // 20 | 21 | 22
-    String symmetricFieldValue(String[][] field, int x, int y) {
+    void moveToOppositeCornerOrRandomCorner(String[][] field) {
+        boolean isFind = false;
+        for (int i = 0; i < field.length; i += 2) {
+            if (isFind) {
+                break;
+            }
+            for (int j = 0; j < field[i].length; j += 2) {
+                if (i == j && i == 0 && field[i][j].equals(ticTacToeRole) && symmetricCornerFieldValue(field, i, j).equals("-")) {
+                    this.x = 2;
+                    this.y = 2;
+                    isFind = true;
+                    break;
+                } else if (i == j && i == 2 && field[i][j].equals(ticTacToeRole) && symmetricCornerFieldValue(field, i, j).equals("-")) {
+                    this.x = 0;
+                    this.y = 0;
+                    isFind = true;
+                    break;
+                } else if (i == 2 && j == 0 && field[i][j].equals(ticTacToeRole) && symmetricCornerFieldValue(field, i, j).equals("-")) {
+                    this.x = 0;
+                    this.y = 2;
+                    isFind = true;
+                    break;
+                } else if (i == 0 && j == 2 && field[i][j].equals(ticTacToeRole) && symmetricCornerFieldValue(field, i, j).equals("-")) {
+                    this.x = 2;
+                    this.y = 0;
+                    isFind = true;
+                    break;
+                }
+            }
+        }
+        if (!isFind) {
+            moveToRandomCorner();
+        }
+    }
+
+    void moveToRandomCorner() {
+        Random randomCorner = new Random();
+        switch (randomCorner.nextInt(4)) {
+            case 0 -> {
+                this.x = 2;
+                this.y = 2;
+            }
+            case 1 -> {
+                this.x = 0;
+                this.y = 0;
+            }
+            case 2 -> {
+                this.x = 0;
+                this.y = 2;
+            }
+            case 3 -> {
+                this.x = 2;
+                this.y = 0;
+            }
+        }
+    }
+
+    String symmetricCornerFieldValue(String[][] field, int x, int y) {
         String fieldValue = "";
         if (x == y && x == 0) {
             fieldValue = field[2][2];
@@ -214,12 +386,12 @@ class MariannaAI {
     boolean isCrossEmpty(String[][] field) {
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field[i].length; j++) {
-                if (((i % 2 == 0 && j % 2 != 0) || (i % 2 != 0 && j % 2 == 0)) && field[i][j].equals("-") && i == field.length - 1) {
-                    return true;
+                if (((i % 2 == 0 && j % 2 != 0) || (i % 2 != 0 && j % 2 == 0)) && !field[i][j].equals("-")) {
+                    return false;
                 }
             }
         }
-        return false;
+        return true;
     }
 
     public int possibleWinForHorizontals(String[][] field, String playerToCheck) {
@@ -290,12 +462,18 @@ class MariannaAI {
     }
 
     public boolean isOpponentWinFromLeftTopToRightBottom(String[][] field, String playerToCheck) {
+        String ourRole;
         int counterOpponent = 0;
         int counterYourself = 0;
+        if (playerToCheck.equals("X")) {
+            ourRole = "0";
+        } else {
+            ourRole = "X";
+        }
         for (int i = 0; i < field.length; i++) {
             if (field[i][i].equals(playerToCheck)) {
                 counterOpponent++;
-            } else if (field[i][i].equals(ticTacToeRole)) {
+            } else if (field[i][i].equals(ourRole)) {
                 counterYourself++;
             }
         }
@@ -303,12 +481,18 @@ class MariannaAI {
     }
 
     public boolean isOpponentWinFromTopRightToLeftBottom(String[][] field, String playerToCheck) {
+        String ourRole;
+        if (playerToCheck.equals("X")) {
+            ourRole = "0";
+        } else {
+            ourRole = "X";
+        }
         int counterOpponent = 0;
         int counterYourself = 0;
         for (int i = 0; i < field.length; i++) {
             if (field[i][field[i].length - 1 - i].equals(playerToCheck)) {
                 counterOpponent++;
-            } else if (field[i][field[i].length - 1 - i].equals(ticTacToeRole)) {
+            } else if (field[i][field[i].length - 1 - i].equals(ourRole)) {
                 counterYourself++;
             }
         }
@@ -319,6 +503,12 @@ class MariannaAI {
     public int opponentWinForHorizontals(String[][] field, String playerToCheck) {
         int counterOpponent;
         int counterYourself;
+        String ourRole;
+        if (playerToCheck.equals("X")) {
+            ourRole = "0";
+        } else {
+            ourRole = "X";
+        }
         for (int i = 0; i < field.length; i++) {
             counterOpponent = 0;
             counterYourself = 0;
@@ -326,7 +516,7 @@ class MariannaAI {
                 if (field[i][j].equals(playerToCheck)) {
                     counterOpponent++;
 
-                } else if (field[i][j].equals(ticTacToeRole)) {
+                } else if (field[i][j].equals(ourRole)) {
                     counterYourself++;
                 }
                 if (j == field[i].length - 1 && counterOpponent == 2 && counterYourself == 0) {
@@ -338,15 +528,21 @@ class MariannaAI {
     }
 
     public int opponentWinPositionForVerticals(String[][] field, String playerToCheck) {
+        String ourRole;
         int counterX;
         int counter0;
+        if (playerToCheck.equals("X")) {
+            ourRole = "0";
+        } else {
+            ourRole = "X";
+        }
         for (int i = 0; i < field.length; i++) {
             counterX = 0;
             counter0 = 0;
             for (int j = 0; j < field[i].length; j++) {
                 if (field[j][i].equals(playerToCheck)) {
                     counterX++;
-                } else if (field[j][i].equals(ticTacToeRole)) {
+                } else if (field[j][i].equals(ourRole)) {
                     counter0++;
                 }
                 if (j == field[i].length - 1 && counterX == 2 && counter0 == 0) {
@@ -371,5 +567,10 @@ class MariannaAI {
 
     public void setTicTacToeRole(String ticTacToeRole) {
         this.ticTacToeRole = ticTacToeRole;
+    }
+
+    public void randomTactic() {
+        Random random = new Random();
+        this.tactic = random.nextInt(2) == 1;
     }
 }
