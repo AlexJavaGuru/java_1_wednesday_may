@@ -15,13 +15,13 @@ class Player {
     }
 
     void chooseRole() {
-        String[] roles = {"X","0"};
+        String[] roles = {"X", "0" };
         Scanner inputRole = new Scanner(System.in);
         System.out.print("Please choose \"X\" or \"0\": ");
         String role = inputRole.next();
-        if (role.equals("x") || role.equals("X")){
+        if (role.equals("x") || role.equals("X")) {
             this.ticTacToeRole = roles[0];
-        }else if (role.equals("o") || role.equals("O") || role.equals("0")){
+        } else if (role.equals("o") || role.equals("O") || role.equals("0")) {
             this.ticTacToeRole = roles[1];
         } else {
             Random randomRole = new Random();

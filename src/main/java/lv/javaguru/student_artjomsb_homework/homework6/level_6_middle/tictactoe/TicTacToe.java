@@ -29,7 +29,6 @@ class TicTacToe {
         }
     }
 
-
     public void playWithAI() {
         MariannaAI ticTacToeAI = new MariannaAI(0, 0, "0", true);
         ticTacToeAI.randomTactic();
@@ -167,8 +166,7 @@ class TicTacToe {
         }
     }
 
-
-    public boolean isWinPositionForHorizontals(String[][] field, String playerToCheck) {
+    boolean isWinPositionForHorizontals(String[][] field, String playerToCheck) {
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field[i].length; j++) {
                 if (!field[i][j].equals(playerToCheck)) {
@@ -181,7 +179,7 @@ class TicTacToe {
         return false;
     }
 
-    public boolean isWinPositionForVerticals(String[][] field, String playerToCheck) {
+    boolean isWinPositionForVerticals(String[][] field, String playerToCheck) {
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field[i].length; j++) {
                 if (!field[j][i].equals(playerToCheck)) {
@@ -194,7 +192,7 @@ class TicTacToe {
         return false;
     }
 
-    public boolean isWinDiagonalFromTopToBottom(String[][] field, String playerToCheck) {
+    boolean isWinDiagonalFromTopToBottom(String[][] field, String playerToCheck) {
         for (int i = 0; i < field.length; i++) {
             if (!field[i][i].equals(playerToCheck)) {
                 return false;
@@ -203,7 +201,7 @@ class TicTacToe {
         return true;
     }
 
-    public boolean isWinDiagonalFromBottomToTop(String[][] field, String playerToCheck) {
+    boolean isWinDiagonalFromBottomToTop(String[][] field, String playerToCheck) {
         for (int i = 0; i < field.length; i++) {
             if (!field[i][field[i].length - 1 - i].equals(playerToCheck)) {
                 return false;
@@ -212,7 +210,7 @@ class TicTacToe {
         return true;
     }
 
-    public boolean isWinPositionForDiagonals(String[][] field, String playerToCheck) {
+    boolean isWinPositionForDiagonals(String[][] field, String playerToCheck) {
         return isWinDiagonalFromBottomToTop(field, playerToCheck) || isWinDiagonalFromTopToBottom(field, playerToCheck);
     }
 
