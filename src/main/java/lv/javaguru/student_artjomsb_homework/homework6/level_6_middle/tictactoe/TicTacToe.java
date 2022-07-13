@@ -31,7 +31,7 @@ class TicTacToe {
 
 
     public void playWithAI() {
-        MariannaAI ticTacToeAI = new MariannaAI(0, 0, "0", false);
+        MariannaAI ticTacToeAI = new MariannaAI(0, 0, "0", true);
         ticTacToeAI.randomTactic();
         Player ticTacToePlayer = new Player(0, 0, "X");
         String[][] field = createField();
