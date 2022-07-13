@@ -5,17 +5,21 @@ public class Calculator {
         return firstNumber + secondNumber;
     }
 
-    public int sum1(int firstNumber, int secondNumber) {
+    public int minus(int firstNumber, int secondNumber) {
         return firstNumber - secondNumber;
     }
 
-    public int sum2(int firstNumber, int secondNumber) {
+    public int multiply(int firstNumber, int secondNumber) {
         return firstNumber * secondNumber;
     }
 
-    public int sum3(int firstNumber, int secondNumber) {
-        return firstNumber / secondNumber;
+    public double divise(int firstNumber, int secondNumber) {
+        return firstNumber / (double) secondNumber;
     }
 
+    public boolean isEven(int number) {
+        return number % 2 == 0;
 
     }
+
+}
