@@ -9,74 +9,35 @@ class NumberChecker {
         NumberChecker numberChecker = new NumberChecker();
         Scanner scanner = new Scanner(System.in);
 
-//        System.out.println("Enter number for positive or negative checking please :");
-//
-//        int inputNumber = scanner.nextInt();
-//
-//        numberChecker.positiveOrNegative(inputNumber);
-//
-//        System.out.println("Enter number the day of a week number please :");
-//
-//        int dayNumber = scanner.nextInt();
-//
-//        numberChecker.whatIsDayOfTheWeek(dayNumber);
-//
-//        System.out.println("Enter number1 for get max number :");
-//
-//        int number1 = scanner.nextInt();
-//
-//        System.out.println("Enter number2 for get max number :");
-//
-//        int number2 = scanner.nextInt();
-//
-//        numberChecker.getMaxNumber(number1, number2);
-
         numberChecker.areAllEqualOrDifferent(3, 6, 6);
 
-//        System.out.println("Enter number1 :");
-//
-//        int number1 = scanner.nextInt();
-//
-//        System.out.println("Enter number2 :");
-//
-//        int number2 = scanner.nextInt();
-//
-//        System.out.println("Enter number3 :");
-//
-//        int number3 = scanner.nextInt();
-//
-//        numberChecker.areIncreasingOrDecreasingOrder(number1, number2, number3);
         System.out.println("Enter number1 :");
-
         int number1 = scanner.nextInt();
-
         System.out.println("Enter number2 :");
-
         int number2 = scanner.nextInt();
-
         System.out.println("Enter number3 :");
-
         int number3 = scanner.nextInt();
 
-        numberChecker.getMaxNumberWithThreeNumbers(number1, number2, number3);
+        numberChecker.areIncreasingOrDecreasingOrder(number1, number2, number3);
+
+        System.out.println("Enter number1 :");
+        number1 = scanner.nextInt();
+        System.out.println("Enter number2 :");
+        number2 = scanner.nextInt();
+        System.out.println("Enter number3 :");
+        number3 = scanner.nextInt();
+
+        System.out.println("Max number :" +
+                numberChecker.getMaxNumberWithThreeNumbers(number1, number2, number3)
+        );
 
 
     }
 
     //task 2
-    String positiveOrNegative(int number) {
+    boolean isPositive(int number) {
 
-        String result = "positive";
-
-        if (number < 0) {
-            result = "negative";
-        } else if (number == 0) {
-            result = "zero";
-        }
-
-        System.out.println(result);
-
-        return result;
+        return number > 0;
     }
 
     //task 3
@@ -114,71 +75,30 @@ class NumberChecker {
     }
 
     //task 4
-    String oddOrEven (int number) {
+    boolean isEven (int number) {
 
-        String result = "Odd";
-
-        if (number % 2 == 0) {
-            result = "Even";
-        }
-
-        System.out.println("This number is: " + result);
-
-        return result;
+        return number % 2 == 0;
     }
 
     //task 5
     int getMaxNumber(int number1, int number2) {
-
-        int max = number1;
-
-        if (number1 != number2 ) {
-            if (number1 < number2 ) {
-                max = number2 ;
-            }
-        } else {
-            System.out.println("Numbers are equal!");
+        if (number1 > number2 ) {
+            return number1;
         }
 
-        System.out.println("Max number is " + max);
-
-        return max;
+        return number2;
     }
 
     //task 6
     int getMinNumber(int number1, int number2) {
 
-        int min = number1;
-
-        if (number1 != number2 ) {
-            if (number1 > number2 ) {
-                min = number2 ;
-            }
-        } else {
-            System.out.println("Numbers are equal!");
-        }
-
-        System.out.println("Min number is " + min);
-
-        return min;
+        return (number1 < number2) ? number1 : number2;
     }
 
     //task 7
     boolean areEqualNumbers(int number1, int number2) {
 
-        //boolean for test assertion
-        boolean equal = true;
-        String result = "equal";
-
-        if (number1 != number2 ) {
-
-            equal = false;
-            result = "not equal";
-        }
-
-        System.out.println("Numbers are "+ result +"!");
-
-        return equal;
+        return number1 == number2;
     }
 
     //task 8
@@ -205,15 +125,12 @@ class NumberChecker {
 
     //task 10
     int getMaxNumberWithThreeNumbers(int number1, int number2, int number3) {
-        int max = number1;
         if (number2 > number1 && number2 > number3) {
-            max = number2;
+            return number2;
         } else if (number3 > number1 && number3 > number2) {
-            max = number3;
+            return number3;
         }
 
-        System.out.println("Max number is " + max);
-
-        return max;
+        return number1;
     }
 }

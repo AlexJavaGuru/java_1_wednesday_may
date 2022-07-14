@@ -16,10 +16,10 @@ class NumberCheckerTest {
 
     public void testPositiveOrNegative() {
         NumberChecker numberChecker = new NumberChecker();
-        int number = -5;
-        String expectedResult = "negative";
-        String actualResult = numberChecker.positiveOrNegative(number);
-        this.check(expectedResult, actualResult,"Test Number is Positive or Negative");
+        this.check(
+                !numberChecker.isPositive(-5),
+                "Test Number is Positive or Negative"
+        );
     }
 
     public void testWhatIsDayOfTheWeek() {
@@ -34,9 +34,7 @@ class NumberCheckerTest {
 
         NumberChecker numberChecker = new NumberChecker();
         int number = 4;
-        String expectedResult = "Even";
-        String actualResult = numberChecker.oddOrEven(number);
-        this.check(expectedResult, actualResult,"Test Odd Or Even");
+        this.check(numberChecker.isEven(number),"Test Odd Or Even");
     }
 
     public void testGetMaxNumber() {
@@ -54,14 +52,13 @@ class NumberCheckerTest {
         int number2  = 9;
         int expectedResult = 2;
         int actualResult = numberChecker.getMinNumber(number1, number2);
-        this.check(expectedResult, actualResult,"Test Get Max Number");
+        this.check(expectedResult, actualResult,"Test Get Min Number");
     }
 
     public void testAreEqualNumbers() {
         NumberChecker numberChecker = new NumberChecker();
         int number1  = 9;
         int number2  = 9;
-        boolean expectedResult = true;
         boolean actualResult = numberChecker.areEqualNumbers(number1, number2);
         this.check(actualResult,"test Are Equal Numbers");
     }

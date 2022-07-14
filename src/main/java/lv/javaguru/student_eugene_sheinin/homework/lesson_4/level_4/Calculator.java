@@ -24,27 +24,22 @@ class Calculator {
     }
 
     public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
-        int max = firstNumber;
 
         if(secondNumber > firstNumber ) {
-            max = secondNumber;
-        } else if (firstNumber == secondNumber) {
-            System.out.println("Numbers are equal");
+            return secondNumber;
         }
 
-        return max;
+        return firstNumber;
     }
 
     public int maxOfThreeNumbers(int number1, int number2, int number3) {
-        int max = number1;
+
         if (number2 > number1 && number2 > number3) {
-            max = number2;
+            return number2;
         } else if (number3 > number1 && number3 > number2) {
-            max = number3;
+            return number3;
         }
 
-        System.out.println("Max number is " + max);
-
-        return max;
+        return number1;
     }
 }
