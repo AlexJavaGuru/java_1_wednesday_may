@@ -18,10 +18,10 @@ class MariannaAI {
     void getMove(String[][] field, String playerToCheck) {
         if (isPossibleToWin(field, getTicTacToeRole())) {
             System.out.println(1);
-            tryToWin(field, getTicTacToeRole());
-        } else if (checkOnBlocking(field, playerToCheck)) {
+            defenceOrWin(field,getTicTacToeRole());
+        } else if (isPossibleToWin(field, playerToCheck)) {
             System.out.println(2);
-            blockOpponent(field, playerToCheck);
+            defenceOrWin(field,playerToCheck);
         } else if (isDoubleWinPositionPossible(field, getTicTacToeRole())) {
             System.out.println(3);
         } else if (isDoubleWinPositionPossible(field, playerToCheck) && !defenceFromWinTactic(field, playerToCheck)) {
@@ -29,12 +29,10 @@ class MariannaAI {
         } else if (isWinTacticPossible(field) && tactic) {
             System.out.println(5);
             moveToOppositeCornerOrRandomCorner(field);
-        }
-        else if (isMiddleOpen(field)) {
+        } else if (isMiddleOpen(field)) {
             System.out.println(6);
             goToMiddle();
-        }
-        else if (defenceFromWinTactic(field, playerToCheck)) {
+        } else if (defenceFromWinTactic(field, playerToCheck)) {
             System.out.println(7);
             defenceMove(field);
         } else if (howManyCornersOpen(field) > 1) {
@@ -42,6 +40,30 @@ class MariannaAI {
             moveToBestCorner(field, playerToCheck);
         } else {
             noobMove();
+        }
+    }
+
+    void defenceOrWin(String[][] field, String player) {
+        TicTacToe isWin = new TicTacToe();
+        String[][] fakeField = field;
+        boolean isBreak = false;
+        for (int i = 0; i < fakeField.length; i++) {
+            if (isBreak){break;}
+            for (int j = 0; j < fakeField[i].length; j++) {
+                if (fakeField[i][j].equals("-")) {
+                    fakeField[i][j] = player;
+                    if (isWin.isWin(fakeField, player)) {
+                        fakeField[i][j] = "-";
+                        this.x = i;
+                        this.y = j;
+                        isBreak = true;
+                        break;
+                    }
+                    fakeField[i][j] = "-";
+                }
+
+
+            }
         }
     }
 
@@ -161,11 +183,6 @@ class MariannaAI {
 
         }
 
-    }
-
-    boolean checkOnBlocking(String[][] field, String playerToCheck) {
-        return lineOfWinForHorizontals(field, playerToCheck) != -1 || lineOfWinPositionForVerticals(field, playerToCheck) != -1
-                || isWinFromLeftTopToRightBottom(field, playerToCheck) || isWinFromTopRightToLeftBottom(field, playerToCheck);
     }
 
     boolean defenceFromWinTactic(String[][] field, String playerToCheck) {
