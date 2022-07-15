@@ -10,7 +10,7 @@ class TicTacToe {
         printFieldToConsole(field);
         while (true) {
             player.getNextMove();
-            while (field[player.getX()][player.getY()].equals("X") || field[player.getX()][player.getY()].equals("0")) {
+            while (!field[player.getX()][player.getY()].equals("-")) {
                 System.out.println("Wrong Move!");
                 player.getNextMove();
             }
@@ -43,7 +43,7 @@ class TicTacToe {
         while (true) {
             if (isPlayerTurn) {
                 ticTacToePlayer.getNextMove();
-                while (field[ticTacToePlayer.getX()][ticTacToePlayer.getY()].equals("X") || field[ticTacToePlayer.getX()][ticTacToePlayer.getY()].equals("0")) {
+                while (!field[ticTacToePlayer.getX()][ticTacToePlayer.getY()].equals("-")) {
                     System.out.println("Wrong Move!");
                     ticTacToePlayer.getNextMove();
                 }
@@ -61,10 +61,6 @@ class TicTacToe {
                 isPlayerTurn = false;
             } else {
                 ticTacToeAI.getMove(field, ticTacToePlayer.getTicTacToeRole());
-                while (field[ticTacToeAI.getX()][ticTacToeAI.getY()].equals("X") || field[ticTacToeAI.getX()][ticTacToeAI.getY()].equals("0")) {
-                    ticTacToeAI.getMove(field, ticTacToePlayer.getTicTacToeRole());
-                }
-                field[ticTacToeAI.getX()][ticTacToeAI.getY()] = ticTacToeAI.getTicTacToeRole();
                 printFieldToConsole(field);
                 if (isWin(field, ticTacToeAI.getTicTacToeRole())) {
                     System.out.println("Player " + ticTacToeAI.getTicTacToeRole() + " WIN!");
@@ -81,25 +77,17 @@ class TicTacToe {
     }
 
     public void computerVersusComputer() {
-        MariannaAI ticTacToeBot = new MariannaAI(1, 1, "X", false);
-        ticTacToeBot.randomTactic();
+        MariannaAI ticTacToeBot = new MariannaAI(1, 1, "X", true);
+        //ticTacToeBot.randomTactic();
         String[][] field = createField();
         printFieldToConsole(field);
         int turnCounter = 1;
         String playerToCheck = "0";
         while (true) {
             System.out.println(ticTacToeBot.getTicTacToeRole() + " Turn " + turnCounter);
-//            ticTacToeBot.getMove(field, playerToCheck);
             if (turnCounter % 2 == 0) {
-                ticTacToeBot.noobMove();
+                ticTacToeBot.noobMove(field);
             } else ticTacToeBot.getMove(field, playerToCheck);
-            while (field[ticTacToeBot.getX()][ticTacToeBot.getY()].equals("X") || field[ticTacToeBot.getX()][ticTacToeBot.getY()].equals("0")) {
-                // ticTacToeBot.getMove(field, playerToCheck);
-                if (turnCounter % 2 == 0) {
-                    ticTacToeBot.noobMove();
-                } else ticTacToeBot.getMove(field, playerToCheck);
-            }
-            field[ticTacToeBot.getX()][ticTacToeBot.getY()] = ticTacToeBot.getTicTacToeRole();
             if (isWin(field, ticTacToeBot.getTicTacToeRole())) {
                 System.out.println("Player " + ticTacToeBot.getTicTacToeRole() + " WIN!");
                 printFieldToConsole(field);

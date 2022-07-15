@@ -10,9 +10,9 @@ class MariannaAITest {
     static void checkNumberOfWins() {
         MariannaAI testAI = new MariannaAI(0, 0, "0", false);
         String[][] testField = {{"X", "-", "X" },
-                {"-", "0", "-" },
-                {"0", "-", "X" }};
-        int result = testAI.opponentPossibleWins(testField, "X");
+                                {"-", "0", "-" },
+                                {"0", "-", "X" }};
+        int result = testAI.howManyWinsIsPossible(testField, "X");
         int expectedResult = 2;
         check(result == expectedResult, "Check number of wins");
     }
@@ -20,8 +20,8 @@ class MariannaAITest {
     static void testCheckIfNextMoveWillMakeTwoPositionForWin() {
         MariannaAI testAI = new MariannaAI(0, 0, "0", false);
         String[][] testField = {{"-", "X", "-" },
-                {"-", "0", "-" },
-                {"0", "-", "X" }};
+                                {"-", "-", "0" },
+                                {"0", "-", "X" }};
         check(testAI.isDoubleWinPositionPossible(testField, "X"), "Check is next position have two options to win");
 
     }
