@@ -22,7 +22,7 @@ class MariannaAI {
             makeMove(field);
         } else if (isDoubleWinPositionPossible(field, getTicTacToeRole())) {
             makeMove(field);
-        } else if (isDoubleWinPositionPossible(field, playerToCheck) && !isOneOfDiagonalIsFull(field, playerToCheck)) {
+        } else if (isDoubleWinPositionPossible(field, playerToCheck) && !isOneOfDiagonalIsFull(field)) {
             makeMove(field);
         } else if (isWinTacticPossible(field) && tactic) {
             if (!isPossibleToMoveInOppositeCorner(field)) {
@@ -30,7 +30,7 @@ class MariannaAI {
             } else makeMove(field);
         } else if (isMiddleOpen(field)) {
             makeMove(field);
-        } else if (isOneOfDiagonalIsFull(field, playerToCheck)) {
+        } else if (isOneOfDiagonalIsFull(field)) {
             if (!defenceMove(field)) {
                 moveToRandomCorner(field);
             } else makeMove(field);
@@ -45,6 +45,45 @@ class MariannaAI {
 
     void makeMove(String[][] field) {
         field[x][y] = ticTacToeRole;
+    }
+
+    void moveToRandomCorner(String[][] field) {
+        Random randomCorner = new Random();
+        switch (randomCorner.nextInt(4)) {
+            case 0 -> {
+                this.x = 2;
+                this.y = 2;
+            }
+            case 1 -> {
+                this.x = 0;
+                this.y = 0;
+            }
+            case 2 -> {
+                this.x = 0;
+                this.y = 2;
+            }
+            case 3 -> {
+                this.x = 2;
+                this.y = 0;
+            }
+        }
+        if (field[x][y].equals("-")) {
+            makeMove(field);
+        } else {
+            moveToRandomCorner(field);
+        }
+    }
+
+    void noobMove(String[][] field) {
+        Random randomXY = new Random();
+        while (true) {
+            this.x = randomXY.nextInt(3);
+            this.y = randomXY.nextInt(3);
+            if (field[x][y].equals("-")) {
+                makeMove(field);
+                break;
+            }
+        }
     }
 
     boolean isNextMoveWillGetWinOrLose(String[][] field, String player) {
@@ -103,8 +142,8 @@ class MariannaAI {
         return winCounter;
     }
 
-    boolean isOneOfDiagonalIsFull(String[][] field, String playerToCheck) {
-        return (isDiagonalBottomTopFull(field, playerToCheck) || isDiagonalTopBottomFull(field, playerToCheck));
+    boolean isOneOfDiagonalIsFull(String[][] field) {
+        return (isDiagonalBottomTopFull(field) || isDiagonalTopBottomFull(field));
     }
 
     boolean moveToBestCorner(String[][] field, String playerToCheck) {
@@ -138,6 +177,7 @@ class MariannaAI {
     boolean isWinTacticPossible(String[][] field) {
         return (isFieldEmpty(field) || isCornersOpenAndMyRoleInCorner(field));
     }
+
     boolean isFieldEmpty(String[][] field) {
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field[i].length; j++) {
@@ -204,33 +244,6 @@ class MariannaAI {
         return false;
     }
 
-    void moveToRandomCorner(String[][] field) {
-        Random randomCorner = new Random();
-        switch (randomCorner.nextInt(4)) {
-            case 0 -> {
-                this.x = 2;
-                this.y = 2;
-            }
-            case 1 -> {
-                this.x = 0;
-                this.y = 0;
-            }
-            case 2 -> {
-                this.x = 0;
-                this.y = 2;
-            }
-            case 3 -> {
-                this.x = 2;
-                this.y = 0;
-            }
-        }
-        if (field[x][y].equals("-")) {
-            makeMove(field);
-        } else {
-            moveToRandomCorner(field);
-        }
-    }
-
     String symmetricCornerFieldValue(String[][] field, int x, int y) {
         String fieldValue = "";
         if (x == y && x == 0) {
@@ -259,30 +272,22 @@ class MariannaAI {
         }
     }
 
-    boolean isDiagonalTopBottomFull(String[][] field, String opponent) {
-        int opponentCounter = 0;
-        int yourselfCounter = 0;
+    boolean isDiagonalTopBottomFull(String[][] field) {
         for (int i = 0; i < field.length; i++) {
-            if (field[i][i].equals(opponent)) {
-                opponentCounter++;
-            } else if (field[i][i].equals(ticTacToeRole)) {
-                yourselfCounter++;
+            if (field[i][i].equals("-")) {
+                return false;
             }
         }
-        return opponentCounter == 2 && yourselfCounter == 1;
+        return true;
     }
 
-    boolean isDiagonalBottomTopFull(String[][] field, String opponent) {
-        int opponentCounter = 0;
-        int yourselfCounter = 0;
+    boolean isDiagonalBottomTopFull(String[][] field) {
         for (int i = 0; i < field.length; i++) {
-            if (field[i][field.length - 1 - i].equals(opponent)) {
-                opponentCounter++;
-            } else if (field[i][field.length - 1 - i].equals(ticTacToeRole)) {
-                yourselfCounter++;
+            if (field[i][field.length - 1 - i].equals("-")) {
+                return false;
             }
         }
-        return opponentCounter == 2 && yourselfCounter == 1;
+        return true;
     }
 
     boolean isMiddleOpen(String[][] gamingField) {
@@ -292,18 +297,6 @@ class MariannaAI {
             return true;
         } else {
             return false;
-        }
-    }
-
-    void noobMove(String[][] field) {
-        Random randomXY = new Random();
-        while (true) {
-            this.x = randomXY.nextInt(3);
-            this.y = randomXY.nextInt(3);
-            if (field[x][y].equals("-")) {
-                makeMove(field);
-                break;
-            }
         }
     }
 

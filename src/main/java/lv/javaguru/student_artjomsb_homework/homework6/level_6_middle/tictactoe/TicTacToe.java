@@ -78,7 +78,7 @@ class TicTacToe {
 
     public void computerVersusComputer() {
         MariannaAI ticTacToeBot = new MariannaAI(1, 1, "X", true);
-        //ticTacToeBot.randomTactic();
+        ticTacToeBot.randomTactic();
         String[][] field = createField();
         printFieldToConsole(field);
         int turnCounter = 1;
