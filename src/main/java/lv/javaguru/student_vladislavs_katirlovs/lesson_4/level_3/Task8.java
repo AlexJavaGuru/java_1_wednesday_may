@@ -15,20 +15,13 @@ class Task8 {
 
         String result;
 
-        if (variableA == variableB) {
-            if (variableB == variableC) {
-                result = "All numbers are equal";
-            } else {
-                result = "Neither all are equal or different";
-            }
-        } else if (variableA == variableC) {
-            result = "Neither all are equal or different";
-        } else if (variableB == variableC) {
-            result = "Neither all are equal or different";
-        } else {
+        if (variableA == variableB && variableB == variableC) {
+            result = "All numbers are equal";
+        } else if (variableA != variableB && variableB != variableC && variableA != variableC) {
             result = "All numbers are different";
+        } else {
+            result = "Neither all are equal or different";
         }
-
         System.out.println(result);
     }
 }
