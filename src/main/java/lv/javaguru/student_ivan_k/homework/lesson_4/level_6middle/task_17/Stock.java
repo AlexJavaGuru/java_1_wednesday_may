@@ -8,6 +8,8 @@ class Stock {
     int maximalPrice;
 
     Stock(String nameOfCompany, int newPrice) {
+        this.minimalPrice = newPrice;
+        this.maximalPrice = newPrice;
         this.nameOfCompany = nameOfCompany;
         this.currentPrice = newPrice;
     }
@@ -18,10 +20,7 @@ class Stock {
 
     void getPriceInformation() {
 
-       if ( maximalPrice == 0 || minimalPrice == 0){
-           this.maximalPrice = currentPrice;
-           this.minimalPrice = currentPrice;
-       }
+
         System.out.println("Company = " + " '" + nameOfCompany + "' ," + " Current Price = " + currentPrice +
         ", Min Price = " + minimalPrice + ", Max Price = " + maximalPrice);
 
@@ -31,11 +30,9 @@ class Stock {
         this.currentPrice = newPrice;
         if (newPrice >= maximalPrice) {
             this.maximalPrice = newPrice;
-        }else if(newPrice<= minimalPrice){
+        }else if(newPrice <= minimalPrice){
             this.minimalPrice = newPrice;
-
         }
-
     }
 
     public int getMaximalPrice() {

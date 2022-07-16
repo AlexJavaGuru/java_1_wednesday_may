@@ -9,6 +9,7 @@ class StockDemo {
         google.getPriceInformation();
         google.updatePrice(15);
         google.updatePrice(7);
+        google.getPriceInformation();
         google.updatePrice(14);
         google.getPriceInformation();
         google.updatePrice(10);
