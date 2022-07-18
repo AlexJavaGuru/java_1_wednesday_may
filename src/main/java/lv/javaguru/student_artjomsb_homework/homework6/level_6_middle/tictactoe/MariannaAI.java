@@ -190,16 +190,17 @@ class MariannaAI {
     }
 
     boolean isCornersOpenAndMyRoleInCorner(String[][] field) {
-        int emptyCorners = 0;
         boolean myRoleInCorner = false;
+        boolean isOneCornerEmpty = false;
         for (int i = 0; i < field.length; i += 2) {
             for (int j = 0; j < field[i].length; j += 2) {
-                if (field[i][j].equals("-")) {
-                    emptyCorners++;
-                } else if (field[i][j].equals(ticTacToeRole)) {
+              if (field[i][j].equals(ticTacToeRole)) {
                     myRoleInCorner = true;
-                }
-                if (myRoleInCorner && i == j && i == field.length - 1 && emptyCorners > 0) {
+                } else if (field[i][j].equals("-")) {
+                  isOneCornerEmpty = true;
+
+              }
+                if (myRoleInCorner && isOneCornerEmpty) {
                     return true;
                 }
             }

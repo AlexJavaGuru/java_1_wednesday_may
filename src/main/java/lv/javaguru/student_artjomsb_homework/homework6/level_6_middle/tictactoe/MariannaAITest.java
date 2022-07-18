@@ -18,6 +18,36 @@ class MariannaAITest {
         checkNotMoveInBestCorner();
         testEmptyField();
         testNotEmptyField();
+        testDefenceMove();
+        testDefenceMoveTwo();
+        testNotMakeDefenceMove();
+    }
+    static void testDefenceMove(){
+        MariannaAI testAI = new MariannaAI(1, 0, "0", false);
+        String[][] testField = {{"X", "X", "-" },
+                                {"X", "0", "X" },
+                                {"-", "-", "X" }};
+        boolean result = testAI.defenceMove(testField);
+        testAI.makeMove(testField);
+        check(result && testField[2][1].equals("0"), "Test check correct move");
+    }
+    static void testDefenceMoveTwo(){
+        MariannaAI testAI = new MariannaAI(1, 0, "0", false);
+        String[][] testField = {{"X", "-", "-" },
+                                {"-", "0", "-" },
+                                {"-", "-", "X" }};
+        boolean result = testAI.defenceMove(testField);
+        testAI.makeMove(testField);
+        check(result && testField[0][1].equals("0"), "Test check correct move");
+    }
+    static void testNotMakeDefenceMove(){
+        MariannaAI testAI = new MariannaAI(2, 0, "0", false);
+        String[][] testField = {{"X", "-", "X" },
+                                {"-", "X", "-" },
+                                {"-", "-", "0" }};
+        boolean result = testAI.defenceMove(testField);
+        testAI.makeMove(testField);
+        check(!result && testField[2][0].equals("0"), "Test check that not go in defence move");
     }
     static void testEmptyField(){
         MariannaAI testAI = new MariannaAI(1, 0, "0", false);
