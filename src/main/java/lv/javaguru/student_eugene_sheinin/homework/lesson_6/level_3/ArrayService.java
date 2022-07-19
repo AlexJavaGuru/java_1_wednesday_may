@@ -5,15 +5,6 @@ import java.util.Arrays;
 
 public class ArrayService {
 
-
-    public static void main(String[] args) {
-        ArrayService arrayService = new ArrayService();
-
-        int [] arr = {9, 3, 5 , 2, 5};
-        arrayService.sort(arr);
-        System.out.println(Arrays.toString(arr));
-
-    }
     //task 12
     boolean contains(int[] arr, int numberToSearch){
         for (int item: arr) {
