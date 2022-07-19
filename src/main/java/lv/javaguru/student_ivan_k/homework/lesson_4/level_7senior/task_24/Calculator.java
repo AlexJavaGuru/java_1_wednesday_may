@@ -14,8 +14,8 @@ class Calculator {
         return firstNumber * secondNumber;
     }
 
-    public int div(int firstNumber, int secondNumber) {
-        return firstNumber / secondNumber;
+    public double  div(int firstNumber, int secondNumber) {
+        return  firstNumber /   (double)  secondNumber;
     }
 
     public boolean isEven(int number) {
