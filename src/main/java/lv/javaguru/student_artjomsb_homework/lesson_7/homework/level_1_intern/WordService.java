@@ -4,14 +4,18 @@ import java.util.Arrays;
 
 class WordService {
 
-     String findMostFrequentWord(String text) {
+    String textToArrayThenSortAndFindMostFrequent(String text) {
         String[] textInArray = stringToArray(text);
         sortArray(textInArray);
-        String wordToCheck= "";
+        return findMostFrequentWordInArray(textInArray);
+    }
+
+    String findMostFrequentWordInArray(String[] array) {
+        String wordToCheck = "";
         int counter = 1;
         int maxCounts = 0;
-        String mostFrequentWord = textInArray[0];
-        for (String word : textInArray
+        String mostFrequentWord = array[0];
+        for (String word : array
         ) {
             if (word.equals(wordToCheck)) {
                 counter++;
@@ -21,17 +25,17 @@ class WordService {
                     mostFrequentWord = wordToCheck;
                 }
                 counter = 1;
-                wordToCheck= word;
+                wordToCheck = word;
             }
         }
         return mostFrequentWord;
     }
 
-    static String[] stringToArray(String text) {
+    String[] stringToArray(String text) {
         return text.split(" ");
     }
 
-    static void sortArray(String[] array) {
+    void sortArray(String[] array) {
         Arrays.sort(array);
     }
 }
