@@ -6,19 +6,11 @@ public class ArrayUtilDemo {
     public static void main(String[] args) {
         ArrayUtil arrayUtil = new ArrayUtil();
 
-        int[] Array = arrayUtil.createArray(10);
+        int[] Array = arrayUtil.createArray(5);
 
         arrayUtil.fillArrayWithRandomNumbers(Array);
         System.out.println(Arrays.toString(Array));
 
-        /* Task 34 */
-        arrayUtil.printArrayYoConsole(Array);
-        System.out.println(Arrays.toString(Array));
-
-
-        int max = arrayUtil.findMaxNumber(Array);
-        System.out.println("Max number is - " + max);
-
+        arrayUtil.printArrayToConsole(Array);
     }
-
 }

@@ -9,13 +9,13 @@ public class Task14 {
         Random random = new Random();
 
         for (int i = 0; i < array.length; i++) {
-            array[i]= random.nextInt(10);
+            array[i] = random.nextInt(10);
         }
         System.out.println(Arrays.toString(array));
 
-        double avg=0;
-        for (double m: array){
-            avg +=m;
+        double avg = 0;
+        for (double m : array) {
+            avg += m;
         }
         System.out.println(avg / array.length);
 
