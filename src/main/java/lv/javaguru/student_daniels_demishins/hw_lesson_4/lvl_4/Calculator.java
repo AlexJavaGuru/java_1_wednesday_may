@@ -53,22 +53,19 @@ public class Calculator {
     public int maxOfThreeNumbers(int first, int second, int third) {
 
         if (first > second && first > third) {
-            return first;
-        } else if (second > first && second > third) {
-            return second;
-        } else if (third > first && third > second) {
-            return third;
-        } else if (first == second && first > third) {
-            return first;
-        } else if (second == third && second > first) {
-            return second;
-        } else if (third == first && third > second) {
-            return third;
+        } else
+            if (second > first && second > third) {
+        } else
+            if (third > first && third > second) {
+        } else
+            if (first == second && first > third) {
+        } else
+            if (second == third && second > first) {
+        } else
+            if (third == first && third > second) {
         } else {
-            return first;
-
         }
-
+        return first;
     }
 }
 
