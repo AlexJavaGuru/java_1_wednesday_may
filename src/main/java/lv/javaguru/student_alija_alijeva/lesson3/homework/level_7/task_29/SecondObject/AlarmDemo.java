@@ -2,7 +2,7 @@ package main.java.lv.javaguru.student_alija_alijeva.lesson3.homework.level_7.tas
 
 public class AlarmDemo {
     public static void main(String[] args) {
-        Alarm electronic = new Alarm("Electronic", "signal", "off");
+        Alarm electronic = new Alarm("Electronic", false);
         electronic.wakeUp();
         electronic.turnOff();
 

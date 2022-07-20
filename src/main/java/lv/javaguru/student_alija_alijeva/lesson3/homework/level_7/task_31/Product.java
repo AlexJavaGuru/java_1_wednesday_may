@@ -11,8 +11,8 @@ class Product {
         this.discount = discount;
     }
 
-    void doubleActualPrice() {
-        System.out.println("Actual price is " + (regularPrice - (regularPrice * discount / 100)));
+    double doubleActualPrice() {
+       return (regularPrice - (regularPrice * discount / 100));
     }
 
     void printInformation() {

@@ -4,7 +4,7 @@ package main.java.lv.javaguru.student_alija_alijeva.lesson3.homework.level_5.tas
 class SecondDogDemo {
     public static void main(String[] args) {
         SecondDog sharik = new SecondDog("Sharik", 5);
-        sharik.dogvoice();
+        sharik.dogVoice();
     }
 }
 
