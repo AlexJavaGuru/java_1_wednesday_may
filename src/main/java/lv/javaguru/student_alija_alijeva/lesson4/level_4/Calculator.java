@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_alija_alijeva.lesson4.level_4.task_11_12_13_14_15;
+package main.java.lv.javaguru.student_alija_alijeva.lesson4.level_4;
 
 class Calculator {
     public int sum(int firstNumber, int secondNumber) {
@@ -28,10 +28,8 @@ class Calculator {
     public int maxNumber(int firstNumber, int secondNumber) {
         if (firstNumber > secondNumber) {
             return firstNumber;
-        } else if (firstNumber < secondNumber) {
-            return secondNumber;
         } else {
-            return firstNumber;
+            return secondNumber;
         }
     }
 
@@ -42,18 +40,10 @@ class Calculator {
             return secondNumber;
         } else if (thirdNumber > firstNumber && thirdNumber > secondNumber) {
             return thirdNumber;
-        } else if (secondNumber == firstNumber && secondNumber > thirdNumber) {
+        } else if (secondNumber == thirdNumber && thirdNumber > firstNumber) {
             return secondNumber;
-        } else if (firstNumber == thirdNumber && firstNumber > secondNumber) {
+        } else if (secondNumber == firstNumber) {
             return firstNumber;
-        } else if (secondNumber == thirdNumber && secondNumber > firstNumber) {
-            return secondNumber;
-        } else if (secondNumber == firstNumber && secondNumber < thirdNumber) {
-            return thirdNumber;
-        } else if (secondNumber == thirdNumber && secondNumber < firstNumber) {
-            return firstNumber;
-        } else if (firstNumber == thirdNumber && firstNumber < secondNumber) {
-            return secondNumber;
         } else {
             return firstNumber;
         }

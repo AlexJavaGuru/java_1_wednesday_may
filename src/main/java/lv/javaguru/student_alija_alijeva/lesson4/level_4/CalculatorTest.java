@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_alija_alijeva.lesson4.level_4.task_11_12_13_14_15;
+package main.java.lv.javaguru.student_alija_alijeva.lesson4.level_4;
 
 class CalculatorTest {
     public static void main(String[] args) {
