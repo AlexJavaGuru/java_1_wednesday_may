@@ -22,7 +22,8 @@ class PowerCalculator {
         setDegree(numberInput.nextDouble());
     }
 
-    String exponentiation() {
+    String
+    exponentiation() {
         if (degree == 0) {
             numberToThePower = 1;
         } else if (number == 0) {
@@ -59,11 +60,11 @@ class PowerCalculator {
     }
 
     void exponentiationDegreeFractionalPositive() {                      //Это вариант менее точный, но в одну строку
-                                                                        //numberToThePower = Math.exp(Math.log(number) / (1 / degree));
+                                                                        //numberToThePower = Math.exp(Math.log(number) * (degree));
         for (int i = 0; i < degree - 1; i++) {
             numberToThePower *= number;
         }
-        numberToThePower *= Math.exp(Math.log(number) / (1 / findNumberAfterComaInDegree()));
+        numberToThePower *= Math.exp(Math.log(number) * (findNumberAfterComaInDegree()));
     }
 
     double findNumberAfterComaInDegree() {
