@@ -28,10 +28,15 @@ class UserEntityDemo {
         tester.deleteUser("201093-59372");
         System.out.println(tester.getUserByName("user4"));
         System.out.println(Arrays.toString(tester.getAllUsers()));
-        tester.saveUser(test3User);
-        System.out.println(Arrays.toString(tester.getAllUsers()));
+        System.out.println(tester.getUserWithId(2));
         tester.saveUser(testUser);
+        tester.editUser("311093-59372", 1, 3);
+        System.out.println(tester.getUserWithId(1));
         System.out.println(Arrays.toString(tester.getAllUsers()));
+//        tester.saveUser(test3User);
+//        System.out.println(Arrays.toString(tester.getAllUsers()));
+//        tester.saveUser(testUser);
+//        System.out.println(Arrays.toString(tester.getAllUsers()));
 
     }
 }
