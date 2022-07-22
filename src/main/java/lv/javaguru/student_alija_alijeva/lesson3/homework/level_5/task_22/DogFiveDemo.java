@@ -3,9 +3,9 @@ package main.java.lv.javaguru.student_alija_alijeva.lesson3.homework.level_5.tas
 
 class DogFiveDemo {
     public static void main(String[] args) {
-        DogFive Bobik = new DogFive("Bobik", 7, "Black");
-        Bobik.voice();
-        Bobik.changeColor();
-        Bobik.voice();
+        DogFive bobik = new DogFive("Bobik", 7, "Black");
+        bobik.voice();
+        bobik.changeColor();
+        bobik.voice();
     }
 }
