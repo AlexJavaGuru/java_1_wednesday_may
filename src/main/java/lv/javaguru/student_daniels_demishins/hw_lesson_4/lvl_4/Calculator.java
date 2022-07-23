@@ -53,13 +53,10 @@ public class Calculator {
     public int maxOfThreeNumbers(int first, int second, int third) {
 
         if (first > second && first > third) {
+            return first;
+        } else if (second > first && second > third) {
+            return second;
         }
-        return first;
-        else {
-        if (second > first && second > third) {
-        } else {
-        }
-        return second;
         return third;
     }
 }

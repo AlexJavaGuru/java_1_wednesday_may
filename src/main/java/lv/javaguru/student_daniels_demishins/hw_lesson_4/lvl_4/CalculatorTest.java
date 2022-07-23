@@ -159,9 +159,9 @@ public class CalculatorTest {
         int first = 5;
         int second = 5;
         int third = 3;
-        int expectedResult = 5;
+        int expectedResult = 3;
         int actualResult = calculator.maxOfThreeNumbers(first, second, third);
-        check(expectedResult, actualResult, "Three ");
+        check(expectedResult, actualResult, "Four ");
     }
 
     public void maxOfThreeNumbers5() {
@@ -200,6 +200,7 @@ public class CalculatorTest {
             System.out.println(testName + "has passed");
         } else {
             System.out.println(testName + "has failed");
+            System.out.println("Expected : " + expectedResult + " but Actual is : " +actualResult);
         }
     }
 }
