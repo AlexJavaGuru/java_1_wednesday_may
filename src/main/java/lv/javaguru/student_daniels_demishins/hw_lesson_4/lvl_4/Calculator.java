@@ -55,11 +55,11 @@ public class Calculator {
         if (first > second && first > third) {
         }
         return first;
+        else {
         if (second > first && second > third) {
+        } else {
         }
         return second;
-        if (third > first && third > second) {
-        }
         return third;
     }
 }
