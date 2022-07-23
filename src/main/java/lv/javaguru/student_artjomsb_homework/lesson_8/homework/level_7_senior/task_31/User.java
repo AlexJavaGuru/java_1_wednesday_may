@@ -1,6 +1,6 @@
 package main.java.lv.javaguru.student_artjomsb_homework.lesson_8.homework.level_7_senior.task_31;
 
-class User implements UserInterface{
+class User  {
     protected String userName;
     protected String surname;
     protected int phoneNumber;
@@ -18,26 +18,5 @@ class User implements UserInterface{
                 ", surname='" + surname + '\'' +
                 ", phoneNumber=" + phoneNumber +
                 '}';
-    }
-
-    @Override
-    public User showInfo(int phoneNumber) {
-        //также вся инфа о пользователе
-        return null;
-    }
-
-    @Override
-    public void orderBook(String bookInfo) {
-        //тут просто пользователь резервирует книгу
-    }
-
-    @Override
-    public void editData(int dataToChange) {
-        //меняет инфу о себе
-    }
-
-    @Override
-    public void findBook(String author, String bookName) {
-//поиск книги
     }
 }
