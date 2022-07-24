@@ -43,7 +43,7 @@ class CalculatorTest {
         int firstNumber = 40;
         int secondNumber = 8;
         Calculator calculator = new Calculator();
-        int actualResult = calculator.div(firstNumber, secondNumber);
+        double actualResult = calculator.div(firstNumber, secondNumber);
         int expectedResult = 5;
         chekResult(actualResult,expectedResult,"DIVISION test");
     }
@@ -61,7 +61,7 @@ class CalculatorTest {
 
 
     }
-    void chekResult (int actualResult, int expectedResult, String nameOfTest){
+    void chekResult (double actualResult, int expectedResult, String nameOfTest){
         if(actualResult == expectedResult){
             System.out.println(nameOfTest + " has been PASSED.OK");
         }else{
