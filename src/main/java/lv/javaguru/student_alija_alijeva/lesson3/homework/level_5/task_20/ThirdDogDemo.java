@@ -2,10 +2,10 @@ package main.java.lv.javaguru.student_alija_alijeva.lesson3.homework.level_5.tas
 
 class ThirdDogDemo {
     public static void main(String[] args) {
-        ThirdDog Bobik = new ThirdDog("Bobik", 6);
-        Bobik.voice();
-        Bobik.happyBirthday();
-        Bobik.setDogAge(Bobik.dogAge + 1);
-        Bobik.voice();
+        ThirdDog bobik = new ThirdDog("Bobik", 6);
+        bobik.voice();
+        bobik.happyBirthday();
+        bobik.setDogAge(bobik.dogAge + 1);
+        bobik.voice();
     }
 }
