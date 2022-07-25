@@ -1,10 +1,11 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_5.level_6middle.task_34;
+package main.java.lv.javaguru.student_ivan_k.homework.lesson_5.level_5middle.task_31;
 
 import java.util.Arrays;
 
-class ArrayUtilDemo {
+public class ArrayUtilDemo {
 
     public static void main(String[] args) {
+
         ArrayUtil arrayUtil = new ArrayUtil();
 
 
@@ -14,7 +15,7 @@ class ArrayUtilDemo {
         System.out.println();
         arrayUtil.printArray(myArray);
         System.out.println(Arrays.toString(myArray));
-        arrayUtil.printArrayToConsole(myArray);
+        arrayUtil.printEvenNumbers(myArray);
         arrayUtil.findMinNumber(myArray);
 
     }

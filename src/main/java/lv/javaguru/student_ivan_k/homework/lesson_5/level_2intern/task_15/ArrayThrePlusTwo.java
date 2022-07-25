@@ -8,10 +8,10 @@ public class ArrayThrePlusTwo {
         for (int num : numbers) {
             System.out.println(num);
         }
-        for (int i =0; i<1; i++){
-            numbers[0] += 2;
-            numbers[1] += 2;
-            numbers[2] += 2;
+        for (int i = 2; i < 3; i++){
+            numbers[0] += i;
+            numbers[1] += i;
+            numbers[2] += i;
         }
 
         System.out.println("*************************");
