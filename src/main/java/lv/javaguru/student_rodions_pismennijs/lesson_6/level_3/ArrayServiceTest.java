@@ -29,13 +29,13 @@ class ArrayServiceTest {
     ArrayService arrayService = new ArrayService();
 
     public void findNumberIn() {
-        int[] array = {1, 2, 3, 4, 5};
-        check(arrayService.findNumber(array, 3), "Number in array");
+        int[] array = {648, 213, 3457, 894, 12, 842, 143, 75, 482};
+        check(arrayService.findNumber(array, 842), "Number in array");
     }
 
     public void findNumberOut() {
-        int[] array = {1, 2, 3, 4, 5};
-        check(!arrayService.findNumber(array, 6), "Number out array");
+        int[] array = {648, 213, 3457, 894, 12, 842, 143, 75, 482};
+        check(!arrayService.findNumber(array, 20), "Number not in array");
     }
 
     public void counter() {
