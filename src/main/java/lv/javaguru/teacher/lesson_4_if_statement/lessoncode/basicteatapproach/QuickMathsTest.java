@@ -9,8 +9,8 @@ public class QuickMathsTest {
 
     public void testQuickMathIsWorking() {
         QuickMaths subject = new QuickMaths();
-        int varA = 10;
-        int varB = 20;
+        int varA = 30;
+        int varB = 5;
         int expectedResult = 20;
         int actualResult = subject.max(varA, varB);
         if (expectedResult == actualResult) {
