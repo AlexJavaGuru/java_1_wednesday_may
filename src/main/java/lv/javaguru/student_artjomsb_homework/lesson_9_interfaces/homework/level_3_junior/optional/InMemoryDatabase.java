@@ -1,6 +1,7 @@
-package main.java.lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.homework.level_3_junior;
+package main.java.lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.homework.level_3_junior.optional;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 class InMemoryDatabase implements ProductDatabase {
     private ArrayList<Product> listOfProduct = new ArrayList<>();
@@ -11,16 +12,12 @@ class InMemoryDatabase implements ProductDatabase {
     }
 
     @Override
-    public Product findByTitle(String productTitle) {
+    public Optional<Product> findByTitle(String productTitle) {
         for (Product product : listOfProduct) {
             if (product.getTitle().equals(productTitle)) {
-                return product;
+                return Optional.of(product);
             }
         }
-        return null;
-    }
-
-    ArrayList<Product> getListOfProduct() {
-        return listOfProduct;
+        return Optional.empty();
     }
 }
