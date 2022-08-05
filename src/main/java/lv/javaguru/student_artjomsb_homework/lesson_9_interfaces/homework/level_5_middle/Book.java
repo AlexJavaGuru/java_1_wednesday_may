@@ -9,4 +9,17 @@ class Book {
         this.author = author;
         this.nameOfBook = nameOfBook;
     }
+
+    public String getNameOfBook() {
+        return nameOfBook;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    @Override
+    public String toString() {
+        return nameOfBook + " [ " + author + " ] ";
+    }
 }
