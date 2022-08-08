@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 class BookRepository implements Library {
     ArrayList<Book> books = new ArrayList<>();
+    ArrayList<Book> booksRead = new ArrayList<>();
+    ArrayList<Book> booksNotRead = new ArrayList<>();
 
     @Override
     public boolean addBook(Book book) {
@@ -37,6 +39,45 @@ class BookRepository implements Library {
             }
         }
         return thisAuthorBooks;
+    }
+
+    @Override
+    public ArrayList<Book> findBooksByName(String title) {
+        ArrayList<Book> thisTitleBooks = new ArrayList<>();
+        for (Book book : books) {
+            if (book.getNameOfBook().startsWith(title)) {
+                thisTitleBooks.add(book);
+            }
+        }
+        return thisTitleBooks;
+    }
+
+    @Override
+    public boolean markBookAsRead(Book book) {
+        if (books.contains(book)) {
+            booksRead.add(book);
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public boolean markBookAsNotRead(Book book) {
+        if (books.contains(book)) {
+            booksNotRead.add(book);
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public ArrayList<Book> getReadBookList() {
+        return booksRead;
+    }
+
+    @Override
+    public ArrayList<Book> getNotReadBookList() {
+        return booksNotRead;
     }
 
     boolean isHaveAuthorAndName(Book book) {

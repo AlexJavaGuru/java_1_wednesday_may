@@ -10,4 +10,14 @@ interface Library {
     ArrayList<Book> getBookList();
 
     ArrayList<Book> findBooksByAuthor(String author);
+
+    ArrayList<Book> findBooksByName(String title);
+
+    boolean markBookAsRead(Book book);
+
+    boolean markBookAsNotRead(Book book);
+
+    ArrayList<Book> getReadBookList();
+
+    ArrayList<Book> getNotReadBookList();
 }
