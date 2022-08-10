@@ -61,11 +61,11 @@ public class CalculatorTest {
     }
 
     public void divTest() {
-        int firstNumber = 33;
-        int secondNumber = 3;
-        int expectedResult = 11;
+        int firstNumber = 10;
+        int secondNumber = 4;
+        double expectedResult = 2.5;
         Calculator calculator = new Calculator();
-        int realResult = calculator.div(firstNumber, secondNumber);
+        double realResult = calculator.div(firstNumber, secondNumber);
         if (realResult == expectedResult) {
             System.out.println("Div Test = OK");
         } else {

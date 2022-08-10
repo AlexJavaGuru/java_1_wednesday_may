@@ -3,7 +3,7 @@ package main.java.lv.javaguru.student_vladislavs_katirlovs.lesson_5.level_5_and_
 import java.util.Arrays;
 import java.util.Random;
 
-class ArrayUtil {
+public class ArrayUtil {
 
     Random random = new Random();
 

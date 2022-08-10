@@ -14,8 +14,8 @@ class Calculator {
         return firstNumber * secondNumber;
     }
 
-    public int div(int firstNumber, int secondNumber) {
-        return firstNumber / secondNumber;
+    public double div(int firstNumber, int secondNumber) {
+        return (double)firstNumber / secondNumber;
     }
 
     public boolean isEven(int number) {
@@ -37,28 +37,20 @@ class Calculator {
     }
 
     public int maxOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
-        if (firstNumber > secondNumber) {
-            if (firstNumber > thirdNumber) {
-                return firstNumber;
-            } else if (thirdNumber > firstNumber) {
-                return thirdNumber;
-            } else {
-                return firstNumber & thirdNumber;
-            }
-        } else if (secondNumber > thirdNumber) {
-            if (secondNumber > firstNumber) {
-                return secondNumber;
-            } else {
-                return firstNumber & secondNumber;
-            }
-        } else if (thirdNumber > secondNumber) {
+        if (firstNumber > secondNumber && firstNumber > thirdNumber) {
+            return firstNumber;
+        } else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
+            return secondNumber;
+        } else if (thirdNumber > firstNumber && thirdNumber > secondNumber) {
             return thirdNumber;
+        } else if (firstNumber == secondNumber && firstNumber > thirdNumber) {
+            return firstNumber & secondNumber;
+        } else if (firstNumber == thirdNumber && firstNumber > secondNumber) {
+            return firstNumber & thirdNumber;
+        } else if (secondNumber == thirdNumber && secondNumber > firstNumber) {
+            return secondNumber & thirdNumber;
         } else {
-            if (firstNumber == thirdNumber) {
-                return firstNumber & secondNumber & thirdNumber;
-            } else {
-                return secondNumber & thirdNumber;
-            }
+            return firstNumber & secondNumber & thirdNumber;
         }
     }
 }

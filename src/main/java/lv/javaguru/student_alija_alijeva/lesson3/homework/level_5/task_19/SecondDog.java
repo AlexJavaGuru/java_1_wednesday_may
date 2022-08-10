@@ -9,7 +9,7 @@ class SecondDog {
         this.age = age;
     }
 
-    void voice() {
+    void dogVoice() {
         System.out.println(dogsName + " " + age);
     }
 }
