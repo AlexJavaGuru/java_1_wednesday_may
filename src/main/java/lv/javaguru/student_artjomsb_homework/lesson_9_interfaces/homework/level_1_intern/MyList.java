@@ -18,4 +18,5 @@ interface MyList {
     void addNumber(ArrayList<Integer> array, int number);// добавить число
 
     void increaseArraySize(ArrayList<Integer> array, int plusSize);// задаётся число на сколько увеличить размер массива
+
 }
