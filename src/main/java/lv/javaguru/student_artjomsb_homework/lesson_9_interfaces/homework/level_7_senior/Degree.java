@@ -8,6 +8,11 @@ class Degree {
     }
 
     public String convert(String toDegree, double degree) {
-        return temperatureConverter.convert(toDegree, degree);
+        return switch (toDegree) {
+            case "Celsius" -> "" + temperatureConverter.convertToCelsius(degree);
+            case "Kelvin" -> "" + temperatureConverter.convertToKelvin(degree);
+            case "Fahrenheit" -> "" + temperatureConverter.convertToFahrenheit(degree);
+            default -> "Error!";
+        };
     }
 }
