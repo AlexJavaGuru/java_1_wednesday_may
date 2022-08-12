@@ -13,9 +13,9 @@ interface Library {
 
     ArrayList<Book> findBooksByName(String title);
 
-    boolean markBookAsRead(Book book);
+    boolean markBookAsRead(Book... book);
 
-    boolean markBookAsNotRead(Book book);
+    boolean markBookAsNotRead(Book... book); //только под конец вспомнил когда тесты делал про varargs, по сути можно переделать половину с varargs
 
     ArrayList<Book> getReadBookList();
 

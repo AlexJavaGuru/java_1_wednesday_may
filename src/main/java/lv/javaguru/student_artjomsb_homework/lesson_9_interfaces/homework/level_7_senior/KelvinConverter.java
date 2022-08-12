@@ -9,7 +9,7 @@ class KelvinConverter implements TemperatureConverter {
 
     @Override
     public double convertToFahrenheit(double degree) {
-        return (degree + 273.15) * 1.8 + 32;
+        return (degree - 273.15) * 1.8 + 32;
     }
 
     @Override

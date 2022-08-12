@@ -4,7 +4,7 @@ class FahrenheitConverter implements TemperatureConverter {
 
     @Override
     public double convertToCelsius(double degree) {
-        return (degree - 32) * 1.8;
+        return (degree - 32) / 1.8;
     }
 
     @Override
@@ -14,6 +14,6 @@ class FahrenheitConverter implements TemperatureConverter {
 
     @Override
     public double convertToKelvin(double degree) {
-        return (degree - 32) * 1.8 + 273.15;
+        return (degree - 32) / 1.8 + 273.15;
     }
 }

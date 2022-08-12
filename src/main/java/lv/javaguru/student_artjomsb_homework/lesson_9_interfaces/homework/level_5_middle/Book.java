@@ -10,6 +10,18 @@ class Book {
         this.nameOfBook = nameOfBook;
     }
 
+    public Book() {
+
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void setNameOfBook(String nameOfBook) {
+        this.nameOfBook = nameOfBook;
+    }
+
     public String getNameOfBook() {
         return nameOfBook;
     }
