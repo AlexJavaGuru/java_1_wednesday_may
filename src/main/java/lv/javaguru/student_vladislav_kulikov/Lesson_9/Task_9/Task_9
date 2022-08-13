@@ -1,0 +1,17 @@
+Optional - новый класс в пакете java. util, является контейнером (оберткой) для значений,
+    которая также может безопасно содержать null.
+Благодаря опциональным типам можно забыть про проверки на null и NullPointerException.
+
+// Создание пустого экземпляра Optional
+Optional<Integer> zero = Optional.empty();
+
+// Создание экземпляра Optional с помощью метода of
+Integer one = 1;
+Optional<Integer> oneOptional = Optional.of(one);
+
+// Создание экземпляра Optional с помощью метода ofNullable
+Optional<Integer> optional = Optional.ofNullable(getInteger());
+private Integer getInteger(){
+    Integer one = 1;
+    return (one > 2) ? one : null;
+}
