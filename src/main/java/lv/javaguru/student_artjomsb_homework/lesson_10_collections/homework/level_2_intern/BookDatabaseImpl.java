@@ -2,17 +2,18 @@ package main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.ho
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 
 class BookDatabaseImpl implements BookDatabase {
     private final List<Book> books = new ArrayList<>();
-    private long id = 1;
+    private long id = 1L;
 
     @Override
     public Long save(Book book) {
         books.add(book);
         book.setId(id);
-        id += 1;
+        id++;
         return book.getId();
     }
 
@@ -25,5 +26,29 @@ class BookDatabaseImpl implements BookDatabase {
             }
         }
         return false;
+    }
+
+    @Override
+    public boolean delete(Book book) {
+        if (books.contains(book)) {
+            books.remove(book);
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public Optional<Book> findById(Long bookId) {
+        for (Book book : books) {
+            if (book.getId().equals(bookId)) {
+                return Optional.of(book);
+            }
+        }
+        return Optional.empty();
+    }
+
+    @Override
+    public List<Book> getBooks() {
+        return books;
     }
 }

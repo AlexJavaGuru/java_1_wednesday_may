@@ -33,7 +33,9 @@ class Book {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return id.equals(book.id) && title.equals(book.title) && author.equals(book.author);
+        return title.equals(book.title) && author.equals(book.author);
+        //по сути когда мы сравниваем книги нам айди не имеет значение сравнивать, поэтому я его убрал (id.equals(book.id))
+        //просто если книге ещё не присовоен айди, а мы хотим узнать есть ли книга в библиотеке, то получим ошибку
     }
 
     @Override
