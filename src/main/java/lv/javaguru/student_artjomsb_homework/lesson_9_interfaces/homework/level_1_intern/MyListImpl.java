@@ -1,6 +1,7 @@
 package main.java.lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.homework.level_1_intern;
 
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -68,10 +69,11 @@ class MyListImpl implements MyList {
     }
 
     @Override
-    public void increaseArraySize(List<Integer> array, int plusSize) {
-        //array.ensureCapacity(array.size() + plusSize);
+    public void increaseArraySize(ArrayList<Integer> array, int plusSize) {
+        array.ensureCapacity(array.size() + plusSize);
 
         //Для этого тест никак не написать я так понял. ArrayList увеличивать в размере есть смысл только для меньшей нагрузки на пямать?
         // Например если мы знаем что у нас будет операция по добавлению сотен обьектов в лист и мы заранее прописываем обьём
+        //Вообще наверное это бессмысленный метод и я так понимаю в разработке он не применяется :D
     }
 }

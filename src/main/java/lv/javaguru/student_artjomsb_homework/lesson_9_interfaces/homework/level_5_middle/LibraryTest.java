@@ -2,6 +2,7 @@ package main.java.lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.home
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 class LibraryTest {
     public static void main(String[] args) {
@@ -87,8 +88,8 @@ class LibraryTest {
         bookReader.addBook(book1);
         bookReader.addBook(book2);
         bookReader.addBook(book3);
-        ArrayList<Book> expectedResult = new ArrayList<>(Arrays.asList(book1, book2, book3));
-        ArrayList<Book> actualResult = bookReader.getBookList();
+        List<Book> expectedResult = new ArrayList<>(Arrays.asList(book1, book2, book3));
+        List<Book> actualResult = bookReader.getBookList();
         check(expectedResult.equals(actualResult), " Test get list of books");
     }
 
@@ -100,8 +101,8 @@ class LibraryTest {
         bookReader.addBook(book1);
         bookReader.addBook(book2);
         bookReader.addBook(book3);
-        ArrayList<Book> expectedResult = new ArrayList<>(Arrays.asList(book1, book3));
-        ArrayList<Book> actualResult = bookReader.findBooksByAuthor("Author1");
+        List<Book> expectedResult = new ArrayList<>(Arrays.asList(book1, book3));
+        List<Book> actualResult = bookReader.findBooksByAuthor("Author1");
         check(expectedResult.equals(actualResult), " Test find by author");
     }
 
@@ -113,8 +114,8 @@ class LibraryTest {
         bookReader.addBook(book1);
         bookReader.addBook(book2);
         bookReader.addBook(book3);
-        ArrayList<Book> expectedResult = new ArrayList<>(Arrays.asList(book1, book3));
-        ArrayList<Book> actualResult = bookReader.findBooksByName("Tit");
+        List<Book> expectedResult = new ArrayList<>(Arrays.asList(book1, book3));
+        List<Book> actualResult = bookReader.findBooksByName("Tit");
         check(expectedResult.equals(actualResult), " Test find by title");
     }
 
@@ -129,6 +130,7 @@ class LibraryTest {
         boolean result = bookReader.markBookAsRead(book2);
         check(result, " Test mark as read");
     }
+
     void testCannotMarkAsRead() {
         Library bookReader = new BookReader();
         Book book1 = new Book("Author1", "Title1");
@@ -141,6 +143,7 @@ class LibraryTest {
         boolean result = bookReader.markBookAsRead(book2);
         check(!result, " Test cannot mark as read, cuz book already marked");
     }
+
     void testCannotMarkAsReadTwo() {
         Library bookReader = new BookReader();
         Book book1 = new Book("Author1", "Title1");
@@ -151,6 +154,7 @@ class LibraryTest {
         boolean result = bookReader.markBookAsRead(book2);
         check(!result, " Test cannot mark as read,cuz book is not exist");
     }
+
     void testMarkAsNotRead() {
         Library bookReader = new BookReader();
         Book book1 = new Book("Author1", "Title1");
@@ -162,6 +166,7 @@ class LibraryTest {
         boolean result = bookReader.markBookAsNotRead(book2);
         check(result, " Test mark as not read");
     }
+
     void testCannotMarkAsNotRead() {
         Library bookReader = new BookReader();
         Book book1 = new Book("Author1", "Title1");
@@ -174,6 +179,7 @@ class LibraryTest {
         boolean result = bookReader.markBookAsNotRead(book2);
         check(!result, " Test cannot mark as not read, cuz book already marked");
     }
+
     void testCannotMarkAsNotReadTwo() {
         Library bookReader = new BookReader();
         Book book1 = new Book("Author1", "Title1");
@@ -184,6 +190,7 @@ class LibraryTest {
         boolean result = bookReader.markBookAsNotRead(book2);
         check(!result, " Test cannot mark as not read,cuz book is not exist");
     }
+
     void testGetAllNotReadBooks() {
         Library bookReader = new BookReader();
         Book book1 = new Book("Author1", "Title1");
@@ -192,11 +199,12 @@ class LibraryTest {
         bookReader.addBook(book1);
         bookReader.addBook(book2);
         bookReader.addBook(book3);
-        bookReader.markBookAsNotRead(book2,book3);
-        ArrayList<Book> expectedResult = new ArrayList<>(Arrays.asList(book2, book3));
-        ArrayList<Book> actualResult = bookReader.getNotReadBookList();
+        bookReader.markBookAsNotRead(book2, book3);
+        List<Book> expectedResult = new ArrayList<>(Arrays.asList(book2, book3));
+        List<Book> actualResult = bookReader.getNotReadBookList();
         check(expectedResult.equals(actualResult), " Test get list of not read books");
     }
+
     void testGetAllReadBooks() {
         Library bookReader = new BookReader();
         Book book1 = new Book("Author1", "Title1");
@@ -205,9 +213,9 @@ class LibraryTest {
         bookReader.addBook(book1);
         bookReader.addBook(book2);
         bookReader.addBook(book3);
-        bookReader.markBookAsRead(book2,book3);
-        ArrayList<Book> expectedResult = new ArrayList<>(Arrays.asList( book2, book3));
-        ArrayList<Book> actualResult = bookReader.getReadBookList();
+        bookReader.markBookAsRead(book2, book3);
+        List<Book> expectedResult = new ArrayList<>(Arrays.asList(book2, book3));
+        List<Book> actualResult = bookReader.getReadBookList();
         check(expectedResult.equals(actualResult), " Test get list of read books");
     }
 

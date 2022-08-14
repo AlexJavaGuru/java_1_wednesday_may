@@ -1,10 +1,11 @@
 package main.java.lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.homework.level_3_junior.optional;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 class InMemoryDatabase implements ProductDatabase {
-    private ArrayList<Product> listOfProduct = new ArrayList<>();
+    private List<Product> listOfProduct = new ArrayList<>();
 
     @Override
     public void save(Product product) {

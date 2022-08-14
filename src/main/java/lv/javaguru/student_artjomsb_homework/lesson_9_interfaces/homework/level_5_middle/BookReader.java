@@ -1,11 +1,12 @@
 package main.java.lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.homework.level_5_middle;
 
 import java.util.ArrayList;
+import java.util.List;
 
 class BookReader implements Library {
-    ArrayList<Book> books = new ArrayList<>();
-    ArrayList<Book> booksRead = new ArrayList<>();
-    ArrayList<Book> booksNotRead = new ArrayList<>();
+    List<Book> books = new ArrayList<>();
+    List<Book> booksRead = new ArrayList<>();
+    List<Book> booksNotRead = new ArrayList<>();
 
     @Override
     public boolean addBook(Book book) {
@@ -26,12 +27,12 @@ class BookReader implements Library {
     }
 
     @Override
-    public ArrayList<Book> getBookList() {
+    public List<Book> getBookList() {
         return books;
     }
 
     @Override
-    public ArrayList<Book> findBooksByAuthor(String author) {
+    public List<Book> findBooksByAuthor(String author) {
         ArrayList<Book> thisAuthorBooks = new ArrayList<>();
         for (Book book : books) {
             if (book.getAuthor().startsWith(author)) {
@@ -42,7 +43,7 @@ class BookReader implements Library {
     }
 
     @Override
-    public ArrayList<Book> findBooksByName(String title) {
+    public List<Book> findBooksByName(String title) {
         ArrayList<Book> thisTitleBooks = new ArrayList<>();
         for (Book book : books) {
             if (book.getNameOfBook().startsWith(title)) {
@@ -93,12 +94,12 @@ class BookReader implements Library {
     }
 
     @Override
-    public ArrayList<Book> getReadBookList() {
+    public List<Book> getReadBookList() {
         return booksRead;
     }
 
     @Override
-    public ArrayList<Book> getNotReadBookList() {
+    public List<Book> getNotReadBookList() {
         return booksNotRead;
     }
 

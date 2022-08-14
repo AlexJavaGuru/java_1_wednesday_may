@@ -8,30 +8,35 @@ class DayOfTheWeekDetectorTest {
         runner.testCorrectInputOne();
         runner.testCorrectInputTwo();
     }
-    void testWrongInputOne(){
+
+    void testWrongInputOne() {
         DayOfTheWeekDetector detector = new DayOfTheWeekDetectorArrayVersion();
         String expectedResult = "Please input a valid number between 1 and 7";
         String actualResult = detector.detectDayName(0);
         check(expectedResult.equals(actualResult), "Test check wrong input one");
     }
-    void testWrongInputTwo(){
+
+    void testWrongInputTwo() {
         DayOfTheWeekDetector detector = new DayOfTheWeekDetectorArrayVersion();
         String expectedResult = "Please input a valid number between 1 and 7";
         String actualResult = detector.detectDayName(8);
         check(expectedResult.equals(actualResult), "Test check wrong input two");
     }
-    void testCorrectInputOne(){
+
+    void testCorrectInputOne() {
         DayOfTheWeekDetector detector = new DayOfTheWeekDetectorArrayVersion();
         String expectedResult = "Monday";
         String actualResult = detector.detectDayName(1);
         check(expectedResult.equals(actualResult), "Test check correct input one");
     }
-    void testCorrectInputTwo(){
+
+    void testCorrectInputTwo() {
         DayOfTheWeekDetector detector = new DayOfTheWeekDetectorArrayVersion();
         String expectedResult = "Sunday";
         String actualResult = detector.detectDayName(7);
         check(expectedResult.equals(actualResult), "Test check correct input two");
     }
+
     static void check(boolean isPassed, String testName) {
         if (isPassed) {
             System.out.println("Test - " + testName + ", is Passed");

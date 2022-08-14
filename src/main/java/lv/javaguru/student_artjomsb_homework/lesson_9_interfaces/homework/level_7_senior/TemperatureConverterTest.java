@@ -37,6 +37,7 @@ class TemperatureConverterTest {
         String actualResult = converter.convert("Kelvin", degree);
         check(actualResult.equals("" + expectedResult), "Test converting Kelvin to Kelvin");
     }
+
     public void testCelsiusConvertToKelvin() {
         Degree converter = new Degree(new CelsiusConverter());
         double degree = 5;
@@ -44,6 +45,7 @@ class TemperatureConverterTest {
         String actualResult = converter.convert("Kelvin", degree);
         check(actualResult.equals("" + expectedResult), "Test converting Celsius to Kelvin");
     }
+
     public void testCelsiusConvertToFahrenheit() {
         Degree converter = new Degree(new CelsiusConverter());
         double degree = 45;
@@ -51,6 +53,7 @@ class TemperatureConverterTest {
         String actualResult = converter.convert("Fahrenheit", degree);
         check(actualResult.equals("" + expectedResult), "Test converting Celsius to Fahrenheit");
     }
+
     public void testCelsiusConvertToCelsius() {
         Degree converter = new Degree(new CelsiusConverter());
         double degree = -25.5;
@@ -58,6 +61,7 @@ class TemperatureConverterTest {
         String actualResult = converter.convert("Celsius", degree);
         check(actualResult.equals("" + expectedResult), "Test converting Celsius to Celsius");
     }
+
     public void testFahrenheitConvertToCelsius() {
         Degree converter = new Degree(new FahrenheitConverter());
         double degree = 113;
@@ -65,6 +69,7 @@ class TemperatureConverterTest {
         String actualResult = converter.convert("Celsius", degree);
         check(actualResult.equals("" + expectedResult), "Test converting Fahrenheit to Celsius");
     }
+
     public void testFahrenheitConvertToKelvin() {
         Degree converter = new Degree(new FahrenheitConverter());
         double degree = 41;
@@ -72,6 +77,7 @@ class TemperatureConverterTest {
         String actualResult = converter.convert("Kelvin", degree);
         check(actualResult.equals("" + expectedResult), "Test converting Fahrenheit to Kelvin");
     }
+
     public void testFahrenheitConvertToFahrenheit() {
         Degree converter = new Degree(new FahrenheitConverter());
         double degree = 45;

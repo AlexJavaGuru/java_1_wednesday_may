@@ -3,10 +3,10 @@ package main.java.lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.home
 class LibraryDemo {
     public static void main(String[] args) {
         Library library = new BookReader();
-        Book book1 = new Book("1","a");
-        Book book2 = new Book("252 562","b");
-        Book book3 = new Book("3","c");
-        Book book4 = new Book("252 672","d");
+        Book book1 = new Book("1", "a");
+        Book book2 = new Book("252 562", "b");
+        Book book3 = new Book("3", "c");
+        Book book4 = new Book("252 672", "d");
         library.addBook(book1);
         library.addBook(book2);
         library.addBook(book3);

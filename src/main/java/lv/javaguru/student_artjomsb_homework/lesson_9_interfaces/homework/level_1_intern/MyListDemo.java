@@ -20,7 +20,7 @@ class MyListDemo {
         System.out.println(numbers + " Size - " + numbers.size());
         System.out.println(arrayService.findMostFrequentNumber(numbers));
         System.out.println("---------------------------------");
-        arrayService.increaseArraySize(numbers, 5);
+        arrayService.increaseArraySize((ArrayList<Integer>) numbers, 5);
         System.out.println(numbers.size());
     }
 }

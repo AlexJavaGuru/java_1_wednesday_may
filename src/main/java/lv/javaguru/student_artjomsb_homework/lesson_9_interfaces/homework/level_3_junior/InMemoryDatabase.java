@@ -1,9 +1,10 @@
 package main.java.lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.homework.level_3_junior;
 
 import java.util.ArrayList;
+import java.util.List;
 
 class InMemoryDatabase implements ProductDatabase {
-    private ArrayList<Product> listOfProduct = new ArrayList<>();
+    private List<Product> listOfProduct = new ArrayList<>();
 
     @Override
     public void save(Product product) {
@@ -20,7 +21,7 @@ class InMemoryDatabase implements ProductDatabase {
         return null;
     }
 
-    ArrayList<Product> getListOfProduct() {
+    List<Product> getListOfProduct() {
         return listOfProduct;
     }
 }

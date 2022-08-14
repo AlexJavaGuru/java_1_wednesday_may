@@ -1,5 +1,6 @@
 package main.java.lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.homework.level_1_intern;
 
+import java.util.ArrayList;
 import java.util.List;
 
 interface MyList {
@@ -17,6 +18,6 @@ interface MyList {
 
     void addNumber(List<Integer> array, int number);// добавить число
 
-    void increaseArraySize(List<Integer> array, int plusSize);// задаётся число на сколько увеличить размер массива
+    void increaseArraySize(ArrayList<Integer> array, int plusSize);// задаётся число на сколько увеличить размер массива
 
 }

@@ -2,6 +2,7 @@ package main.java.lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.home
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 class InMemoryDatabaseTest {
     public static void main(String[] args) {
@@ -21,7 +22,7 @@ class InMemoryDatabaseTest {
         testBase.save(one);
         testBase.save(two);
         testBase.save(four);
-        ArrayList<Product> expectedResult = new ArrayList<>(Arrays.asList(three, one, two, four));
+        List<Product> expectedResult = new ArrayList<>(Arrays.asList(three, one, two, four));
         check(testBase.getListOfProduct().equals(expectedResult), "Test saving products");
     }
 
