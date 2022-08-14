@@ -1,42 +1,43 @@
 package main.java.lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.homework.level_1_intern;
 
-import java.util.ArrayList;
+
 import java.util.Collections;
+import java.util.List;
 
 class MyListImpl implements MyList {
 
     @Override
-    public void sortMinMax(ArrayList<Integer> array) {
+    public void sortMinMax(List<Integer> array) {
         Collections.sort(array);
     }
 
     @Override
-    public void sortMaxMin(ArrayList<Integer> array) {
+    public void sortMaxMin(List<Integer> array) {
         array.sort(Collections.reverseOrder());
     }
 
     @Override
-    public int getArraySize(ArrayList<Integer> array) {
+    public int getArraySize(List<Integer> array) {
         return array.size();
     }
 
     @Override
-    public void deleteNumberByID(ArrayList<Integer> array, int id) {
+    public void deleteNumberByID(List<Integer> array, int id) {
         array.remove(id);
     }
 
     @Override
-    public void deleteNumber(ArrayList<Integer> array, int number) {
+    public void deleteNumber(List<Integer> array, int number) {
         array.remove(Integer.valueOf(number));
     }
 
     @Override
-    public int findMostFrequentNumber(ArrayList<Integer> array) {
+    public int findMostFrequentNumber(List<Integer> array) {
         int[] numberCountArray = createMassiveWhichReplaceNumbersWithItAmount(array);
         return array.get(findPositionOfBiggestNumber(numberCountArray));
     }
 
-    private int[] createMassiveWhichReplaceNumbersWithItAmount(ArrayList<Integer> array) {
+    private int[] createMassiveWhichReplaceNumbersWithItAmount(List<Integer> array) {
         int numberCounter = 0;
         int[] numberCountArray = new int[array.size()];
         for (int numberCount = 0; numberCount < array.size(); numberCount++) {
@@ -62,13 +63,14 @@ class MyListImpl implements MyList {
     }
 
     @Override
-    public void addNumber(ArrayList<Integer> array, int number) {
+    public void addNumber(List<Integer> array, int number) {
         array.add(number);
     }
 
     @Override
-    public void increaseArraySize(ArrayList<Integer> array, int plusSize) {
-        array.ensureCapacity(array.size() + plusSize);
+    public void increaseArraySize(List<Integer> array, int plusSize) {
+        //array.ensureCapacity(array.size() + plusSize);
+
         //Для этого тест никак не написать я так понял. ArrayList увеличивать в размере есть смысл только для меньшей нагрузки на пямать?
         // Например если мы знаем что у нас будет операция по добавлению сотен обьектов в лист и мы заранее прописываем обьём
     }

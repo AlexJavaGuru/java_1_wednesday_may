@@ -1,11 +1,12 @@
 package main.java.lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.homework.level_1_intern;
 
 import java.util.ArrayList;
+import java.util.List;
 
 class MyListDemo {
     public static void main(String[] args) {
         MyList arrayService = new MyListImpl();
-        ArrayList<Integer> numbers
+        List<Integer> numbers
                 = new ArrayList<>(3);
         arrayService.addNumber(numbers, 15);
         arrayService.addNumber(numbers, 20);
