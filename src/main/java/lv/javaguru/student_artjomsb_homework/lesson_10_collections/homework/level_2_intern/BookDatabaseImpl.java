@@ -48,6 +48,55 @@ class BookDatabaseImpl implements BookDatabase {
     }
 
     @Override
+    public List<Book> findByAuthor(String author) {
+        List<Book> authorBook = new ArrayList<>();
+        for (Book book : books) {
+            if (book.getAuthor().equals(author)) {
+                authorBook.add(book);
+            }
+        }
+        return authorBook;
+    }
+
+    @Override
+    public List<Book> findByTitle(String title) {
+        List<Book> bookTitles = new ArrayList<>();
+        for (Book book : books) {
+            if (book.getTitle().equals(title)) {
+                bookTitles.add(book);
+            }
+        }
+        return bookTitles;
+    }
+
+    @Override
+    public int countAllBooks() {
+        return books.size();
+    }
+
+    @Override
+    public void deleteByAuthor(String author) {
+        List<Book> authorBooks = new ArrayList<>();
+        for (Book book : books) {
+            if (book.getAuthor().equals(author)) {
+                authorBooks.add(book);
+            }
+        }
+        books.removeAll(authorBooks);
+    }
+
+    @Override
+    public void deleteByTitle(String title) {
+        List<Book> bookTitles = new ArrayList<>();
+        for (Book book : books) {
+            if (book.getTitle().equals(title)) {
+                bookTitles.add(book);
+            }
+        }
+        books.removeAll(bookTitles);
+    }
+
+    @Override
     public List<Book> getBooks() {
         return books;
     }
