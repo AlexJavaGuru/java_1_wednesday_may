@@ -1,5 +1,7 @@
 package main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.homework.level_2_intern;
 
+import main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.homework.level_2_intern.search_criteria.SearchCriteria;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -23,4 +25,6 @@ interface BookDatabase {
     void deleteByTitle(String title);
 
     List<Book> getBooks();
+    List<Book> find(SearchCriteria searchCriteria);
+
 }

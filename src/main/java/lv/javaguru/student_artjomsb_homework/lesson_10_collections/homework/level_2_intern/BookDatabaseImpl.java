@@ -1,5 +1,7 @@
 package main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.homework.level_2_intern;
 
+import main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.homework.level_2_intern.search_criteria.SearchCriteria;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -99,5 +101,16 @@ class BookDatabaseImpl implements BookDatabase {
     @Override
     public List<Book> getBooks() {
         return books;
+    }
+
+    @Override
+    public List<Book> find(SearchCriteria searchCriteria) {
+        List<Book> foundedBooks = new ArrayList<>();
+        for (Book book : books) {
+            if (searchCriteria.match(book)) {
+                foundedBooks.add(book);
+            }
+        }
+        return foundedBooks;
     }
 }

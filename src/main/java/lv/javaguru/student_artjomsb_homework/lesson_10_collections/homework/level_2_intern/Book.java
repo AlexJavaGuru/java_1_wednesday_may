@@ -2,14 +2,29 @@ package main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.ho
 
 import java.util.Objects;
 
-class Book {
+public class Book {
     private Long id;
     private String title;
     private String author;
+    private String yearOfIssue;
 
-    Book(String author, String title) {
+    Book(String author, String title, String yearOfIssue) {
         this.author = author;
         this.title = title;
+        this.yearOfIssue = yearOfIssue;
+    }
+
+    public Book(String author, String title) {
+        this.author = author;
+        this.title = title;
+    }
+
+    public String getYearOfIssue() {
+        return yearOfIssue;
+    }
+
+    public void setYearOfIssue(String yearOfIssue) {
+        this.yearOfIssue = yearOfIssue;
     }
 
     public void setId(Long id) {

@@ -1,6 +1,6 @@
-Продолжаем разработку интерфейса BookDatabase.
+package main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.homework.level_2_intern.search_criteria;
 
-Создайте класс AndSearchCriteria:
+import main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.homework.level_2_intern.Book;
 
 class AndSearchCriteria implements SearchCriteria {
 
@@ -14,11 +14,7 @@ class AndSearchCriteria implements SearchCriteria {
     }
 
     public boolean match(Book book) {
-        // допишите реализацию метода
-        // return true - если книга удовлетворяет и левому и правому условию
-        // иначе return false
+        return leftCondition.match(book) && rightCondition.match(book);
     }
 
 }
-
-Протестируйте этот класс.

@@ -15,6 +15,16 @@ class BookDatabaseTest {
         runner.testNotDeleteBook();
         runner.testFindByID();
         runner.testNotFindByID();
+        runner.testFindByAuthor();
+        runner.testNotFindByAuthor();
+        runner.testFindByTitle();
+        runner.testNotFindByTitle();
+        runner.testFirstCountBook();
+        runner.testSecondCountBook();
+        runner.testDeleteByAuthor();
+        runner.testNotDeleteByAuthor();
+        runner.testDeleteByTitle();
+        runner.testNotDeleteByTitle();
     }
 
     void testSave() {
@@ -101,6 +111,130 @@ class BookDatabaseTest {
         Optional<Book> expectedResult = Optional.empty();
         Optional<Book> actualResult = database.findById(4L);
         check(expectedResult.equals(actualResult), "Test not find book by ID");
+    }
+
+    void testFindByAuthor() {
+        BookDatabase database = new BookDatabaseImpl();
+        Book book1 = new Book("Author1", "Title1");
+        Book book2 = new Book("Author2", "Title2");
+        Book book3 = new Book("Author1", "Title3");
+        database.save(book1);
+        database.save(book2);
+        database.save(book3);
+        List<Book> expectedList = new ArrayList<>(Arrays.asList(book1, book3));
+        List<Book> result = database.findByAuthor("Author1");
+        check(result.equals(expectedList), "Test Find books by Author");
+    }
+
+    void testNotFindByAuthor() {
+        BookDatabase database = new BookDatabaseImpl();
+        Book book1 = new Book("Author1", "Title1");
+        Book book2 = new Book("Author2", "Title2");
+        Book book3 = new Book("Author1", "Title3");
+        database.save(book1);
+        database.save(book2);
+        database.save(book3);
+        List<Book> expectedList = new ArrayList<>();
+        List<Book> result = database.findByAuthor("Author3");
+        check(result.equals(expectedList), "Test not Find books by Author");
+    }
+
+    void testFindByTitle() {
+        BookDatabase database = new BookDatabaseImpl();
+        Book book1 = new Book("Author1", "Title1");
+        Book book2 = new Book("Author2", "Title2");
+        Book book3 = new Book("Author1", "Title1");
+        database.save(book1);
+        database.save(book2);
+        database.save(book3);
+        List<Book> expectedList = new ArrayList<>(Arrays.asList(book1, book3));
+        List<Book> result = database.findByTitle("Title1");
+        check(result.equals(expectedList), "Test Find books by Title");
+    }
+
+    void testNotFindByTitle() {
+        BookDatabase database = new BookDatabaseImpl();
+        Book book1 = new Book("Author1", "Title1");
+        Book book2 = new Book("Author2", "Title2");
+        Book book3 = new Book("Author1", "Title1");
+        database.save(book1);
+        database.save(book2);
+        database.save(book3);
+        List<Book> expectedList = new ArrayList<>();
+        List<Book> result = database.findByTitle("Title3");
+        check(result.equals(expectedList), "Test not Find books by Title");
+    }
+
+    void testFirstCountBook() {
+        BookDatabase database = new BookDatabaseImpl();
+        Book book1 = new Book("Author1", "Title1");
+        Book book2 = new Book("Author2", "Title2");
+        Book book3 = new Book("Author1", "Title1");
+        database.save(book1);
+        database.save(book2);
+        database.save(book3);
+        int expectedResult = 3;
+        int result = database.countAllBooks();
+        check(result == expectedResult, "Test count books");
+    }
+
+    void testSecondCountBook() {
+        BookDatabase database = new BookDatabaseImpl();
+        int expectedResult = 0;
+        int result = database.countAllBooks();
+        check(result == expectedResult, "Test count books");
+    }
+
+    void testDeleteByAuthor() {
+        BookDatabase database = new BookDatabaseImpl();
+        Book book1 = new Book("Author1", "Title1");
+        Book book2 = new Book("Author2", "Title2");
+        Book book3 = new Book("Author1", "Title1");
+        database.save(book1);
+        database.save(book2);
+        database.save(book3);
+        List<Book> expectedList = new ArrayList<>(Arrays.asList(book1, book3));
+        database.deleteByAuthor("Author2");
+        check(database.getBooks().equals(expectedList), "Test delete books by Author");
+    }
+
+    void testNotDeleteByAuthor() {
+        BookDatabase database = new BookDatabaseImpl();
+        Book book1 = new Book("Author1", "Title1");
+        Book book2 = new Book("Author2", "Title2");
+        Book book3 = new Book("Author1", "Title1");
+        database.save(book1);
+        database.save(book2);
+        database.save(book3);
+        List<Book> expectedList = new ArrayList<>(Arrays.asList(book1, book2, book3));
+        database.deleteByAuthor("Author3");
+        check(database.getBooks().equals(expectedList), "Test not delete books by Author");
+    }
+
+    void testDeleteByTitle() {
+        BookDatabase database = new BookDatabaseImpl();
+        Book book1 = new Book("Author1", "Title1");
+        Book book2 = new Book("Author2", "Title2");
+        Book book3 = new Book("Author1", "Title1");
+        database.save(book1);
+        database.save(book2);
+        database.save(book3);
+        List<Book> expectedList = new ArrayList<>(Arrays.asList(book1, book3));
+        database.deleteByTitle("Title2");
+        check(database.getBooks().equals(expectedList), "Test delete books by Title");
+    }
+
+    void testNotDeleteByTitle() {
+        BookDatabase database = new BookDatabaseImpl();
+        Book book1 = new Book("Author1", "Title1");
+        Book book2 = new Book("Author2", "Title2");
+        Book book3 = new Book("Author1", "Title1");
+        database.save(book1);
+        database.save(book2);
+        database.save(book3);
+        List<Book> expectedList = new ArrayList<>(Arrays.asList(book1, book2, book3));
+        database.deleteByTitle("Author3");
+        check(database.getBooks().equals(expectedList), "Test not delete books by Title");
     }
 
     private static void check(boolean actualResult, String testName) {
