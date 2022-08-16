@@ -3,11 +3,6 @@ package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_7.level_6;
 import java.util.Arrays;
 
 public class Palindrome {
-    public static void main(String[] args) {
-
-        //System.out.println(Arrays.toString(" fuck off".toCharArray()));
-    }
-
     boolean isPalindrome(String text){
         char[] chars = cleanAndReformatChars(text.toCharArray());
         for(int i = 0; i < chars.length/2; i++){

@@ -5,14 +5,19 @@ class WordService {
     public String findMostFrequentWord(String text) {
 
         int[] wordCounts = calculateWorldCountInArray(text.split(" "));
+        int max = getMaxWordCount(wordCounts);
+
+        return text.split(" ")[max];
+    }
+
+    private int getMaxWordCount(int[] wordCounts) {
         int max = 0;
-        for (int count =0; count < wordCounts.length; count++) {
+        for (int count = 0; count < wordCounts.length; count++) {
             if (wordCounts[count] > max) {
                 max = count;
             }
         }
-
-        return text.split(" ")[max];
+        return max;
     }
 
     private int[] calculateWorldCountInArray(String[] textArray) {

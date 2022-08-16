@@ -4,7 +4,10 @@ class ArrayCopy {
 
     int[] copyInRange(int[] in, int numberFrom, int numberTo) {
 
-        int[] newArray = new int[this.getFilteredNumberCount(in, numberFrom, numberTo)];
+        int[] newArray = new int[
+                this.getFilteredNumberCount(in, numberFrom, numberTo)
+                ];
+
         int newArrayIndex = 0;
         for(int i = 0; i < in.length; i++) {
             if(in[i] >= numberFrom && in[i] <=numberTo) {
