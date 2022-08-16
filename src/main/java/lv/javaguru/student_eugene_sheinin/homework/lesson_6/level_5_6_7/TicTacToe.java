@@ -111,8 +111,8 @@ class TicTacToe {
         int x = 0;
         int y = 0;
         while (field[x][y] != -1) {
-            x = random.nextInt(0, 3);
-            y = random.nextInt(0, 3);
+//            x = random.nextInt(0, 3);
+//            y = random.nextInt(0, 3);
             //System.out.println(x + " " + y + " " + field[x][y]);
         }
 
