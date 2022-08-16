@@ -1,0 +1,49 @@
+package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_10.Task_From_6_to_37.UIAction;
+
+import main.java.lv.javaguru.student_vladislav_kulikov.Lesson_10.Task_From_6_to_37.BookDataBaseImpl;
+import main.java.lv.javaguru.student_vladislav_kulikov.Lesson_10.Task_From_6_to_37.BookDatabase;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+class BookLibrary {
+
+    private Map<Integer, UIAction> menuNumberToActionMap;
+
+    public BookLibrary() {
+        BookDatabase bookDatabase = new BookDataBaseImpl();
+
+        menuNumberToActionMap = new HashMap();
+        menuNumberToActionMap.put(1, new SaveBookUIAction(bookDatabase));
+        menuNumberToActionMap.put(2, new FindByIdUIAction(bookDatabase));
+        menuNumberToActionMap.put(3, new FindByAuthorUIAction(bookDatabase));//// Fix
+        menuNumberToActionMap.put(4, new FindByTitleUIAction(bookDatabase));///// Fix
+        menuNumberToActionMap.put(5, new DeleteByIdUIAction(bookDatabase));
+    }
+
+    public void run() {
+        Scanner sc = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("Please enter menu number: ");
+            int userSelectedMenuNumber = Integer.parseInt(sc.nextLine());
+            if (userSelectedMenuNumber == 0) {
+                System.out.println("Thank you! Good by!");
+                break;
+            } else {
+                executeUIAction(userSelectedMenuNumber);
+            }
+        }
+    }
+
+    private void executeUIAction(int userSelectedMenuNumber) {
+        UIAction uiAction = menuNumberToActionMap.get(userSelectedMenuNumber);
+        if (uiAction != null) {
+            uiAction.execute();
+        } else {
+            System.out.println("Menu item not exist: " + userSelectedMenuNumber);
+        }
+    }
+
+}
