@@ -6,19 +6,21 @@ import java.util.*;
 
 public class BookDataBaseImpl implements BookDatabase {
 
-    List<Book> books = new ArrayList<>();
+    private List<Book> books = new ArrayList<>();
+    private Long id = 0L;
 
-    @Override///////Need to fix
+    @Override
     public Long save(Book book) {
         books.add(book);
-        book.setId(books.indexOf(book) + 1L);
+        id++;
+        book.setId(id);
         return book.getId();
     }
 
     @Override
     public boolean delete(Long bookId) {
         for (Book book : books) {
-            if (book.getId() == bookId) {
+            if (Objects.equals(book.getId(), bookId)) {
                 books.remove(book);
                 return true;
             }
