@@ -1,6 +1,6 @@
 package main.java.lv.javaguru.student_ivan_k.homework.lesson_6.level_4junior.task_21;
 
-import main.java.lv.javaguru.student_vladislav_kulikov.homework.Lesson_5.Task_26.Array;
+
 
 import java.util.Arrays;
 

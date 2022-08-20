@@ -12,13 +12,6 @@ class FizzBuzzTest {
 
 
 
-
-
-
-
-
-
-
     }
     public void isFizzBuzz(){
         FizzBuzz fizzBuzz = new FizzBuzz();
