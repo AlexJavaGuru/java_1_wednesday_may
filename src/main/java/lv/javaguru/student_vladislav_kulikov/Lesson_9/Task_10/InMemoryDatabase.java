@@ -33,11 +33,10 @@ class InMemoryDatabase implements ProductDatabase {
     @Override
     public Optional<Product> findByTitle(String productTitle) {
         for (Product product : products) {
-            Optional<Product> product2 = Optional.of(product);
-            if (Objects.equals(product, new Product(productTitle))) {
-                return product2;
+            if (Objects.equals(product.getTitle(), productTitle)) {
+                return Optional.of(product);
             }
         }
-        return null;
+        return Optional.empty();
     }
 }

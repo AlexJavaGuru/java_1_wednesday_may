@@ -10,7 +10,7 @@ class BookReaderImpl implements BookReader {
 
     Book[] books;
     List<Book> readBooks = new ArrayList<>();
-    List<Book> unread = new ArrayList<>();
+    List<Book> unRead = new ArrayList<>();
 
     BookReaderImpl(Book[] books) {
         this.books = books;
@@ -57,9 +57,8 @@ class BookReaderImpl implements BookReader {
 
     @Override
     public List<Book> findBookByAuthor(String author) {
-        List<Book> bookList = new ArrayList<>(List.of(books));
         List<Book> bookCopy = new ArrayList<>();
-        for (Book book : bookList) {
+        for (Book book : books) {
             if (book.getAuthor().contains(author)) {
                 bookCopy.add(book);
             }
@@ -69,9 +68,8 @@ class BookReaderImpl implements BookReader {
 
     @Override
     public List<Book> findBookByTitle(String title) {
-        List<Book> bookList = new ArrayList<>(List.of(books));
         List<Book> bookCopy = new ArrayList<>();
-        for (Book book : bookList) {
+        for (Book book : books) {
             if (book.getTitle().contains(title)) {
                 bookCopy.add(book);
             }
@@ -82,20 +80,22 @@ class BookReaderImpl implements BookReader {
 
     @Override
     public boolean markBookAsRead(Book readBook) {
-        List<Book> bookList = new ArrayList<>(List.of(books));
-        if (bookList.contains(readBook)) {
-            readBooks.add(readBook);
-            return true;
+        for (Book book : books) {
+            if (book.equals(readBook)) {
+                readBooks.add(readBook);
+                return true;
+            }
         }
         return false;
     }
 
     @Override
-    public boolean markBookAsUnread(Book readBook) {
-        List<Book> bookList = new ArrayList<>(List.of(books));
-        if (bookList.contains(readBook)) {
-            unread.add(readBook);
-            return true;
+    public boolean markBookAsUnread(Book unReadBook) {
+        for (Book book : books) {
+            if (book.equals(unReadBook)) {
+                unRead.add(unReadBook);
+                return true;
+            }
         }
         return false;
     }
@@ -113,7 +113,7 @@ class BookReaderImpl implements BookReader {
 
     void theBooksThatAreUnread() {
 
-        System.out.println("Books you haven't read: " + unread);
+        System.out.println("Books you haven't read: " + unRead);
     }
 
     @Override
@@ -124,7 +124,7 @@ class BookReaderImpl implements BookReader {
 
     @Override
     public boolean nullCheck(Book book) {
-        return book.getTitle() != null && book.getAuthor() != null;
+        return book != null && book.getTitle() != null && book.getAuthor() != null;
     }
 
     private boolean checkBook() {
