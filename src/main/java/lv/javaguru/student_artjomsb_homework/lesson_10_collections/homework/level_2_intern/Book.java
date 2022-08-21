@@ -8,7 +8,7 @@ public class Book {
     private String author;
     private String yearOfIssue;
 
-    Book(String author, String title, String yearOfIssue) {
+    public Book(String author, String title, String yearOfIssue) {
         this.author = author;
         this.title = title;
         this.yearOfIssue = yearOfIssue;
@@ -56,5 +56,15 @@ public class Book {
     @Override
     public int hashCode() {
         return Objects.hash(id, title, author);
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", yearOfIssue='" + yearOfIssue + '\'' +
+                '}';
     }
 }

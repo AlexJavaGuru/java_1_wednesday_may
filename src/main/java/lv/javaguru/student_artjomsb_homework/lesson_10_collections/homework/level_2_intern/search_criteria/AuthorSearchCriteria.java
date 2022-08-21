@@ -2,7 +2,7 @@ package main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.ho
 
 import main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.homework.level_2_intern.Book;
 
-class AuthorSearchCriteria implements SearchCriteria {
+public class AuthorSearchCriteria implements SearchCriteria {
 
     private String authorToSearch;
 

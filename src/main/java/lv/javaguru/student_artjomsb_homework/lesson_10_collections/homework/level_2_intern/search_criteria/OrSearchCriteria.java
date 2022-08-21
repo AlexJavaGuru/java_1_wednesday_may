@@ -2,7 +2,7 @@ package main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.ho
 
 import main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.homework.level_2_intern.Book;
 
-class OrSearchCriteria implements SearchCriteria {
+public class OrSearchCriteria implements SearchCriteria {
 
     private SearchCriteria leftCondition;
     private SearchCriteria rightCondition;

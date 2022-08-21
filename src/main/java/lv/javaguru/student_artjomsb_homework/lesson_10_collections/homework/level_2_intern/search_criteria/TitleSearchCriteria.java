@@ -2,7 +2,7 @@ package main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.ho
 
 import main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.homework.level_2_intern.Book;
 
-class TitleSearchCriteria implements SearchCriteria {
+public class TitleSearchCriteria implements SearchCriteria {
 
     private String titleToSearch;
 
@@ -11,7 +11,7 @@ class TitleSearchCriteria implements SearchCriteria {
     }
 
     public boolean match(Book book) {
-        return book.getAuthor().equals(titleToSearch);
+        return book.getTitle().equals(titleToSearch);
     }
 
 }
