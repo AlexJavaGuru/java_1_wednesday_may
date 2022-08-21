@@ -13,13 +13,7 @@ public class ArrayService {
         return false;
     }
 
-    public void printResultofFounding(boolean isFound) {
-        if (isFound == true) {
-            System.out.println("The desired number contains!");
-        } else {
-            System.out.println("The desired number is NOT contains!!!!");
-        }
-    }
+
 
     public int numOfOccurOfNum(int[] array, int numOfSearch) {
         int counter = 0;
