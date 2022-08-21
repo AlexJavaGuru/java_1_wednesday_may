@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.homework.Lesson_7.Task_11;
+package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_7.Task_11;
 
 
 class Palindrome {
