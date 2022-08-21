@@ -13,7 +13,7 @@ class FizzBuzz {
             return "Fizz";
         } else if ( result2 ==0) {
             return "Buzz";
-        }
+        }else
         return "" + number;
 
     }
