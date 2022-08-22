@@ -15,6 +15,8 @@ class BookDatabaseImplDemo {
         database.save(book4);
         database.save(book5);
         database.save(book6);
+        System.out.println(database.getBooks());
+        System.out.println();
         System.out.println(database.getAuthorToBooksMap());
         System.out.println(database.getAuthorToBooksMap().entrySet());
         System.out.println(database.getAuthorToBooksMap().get("Author1"));

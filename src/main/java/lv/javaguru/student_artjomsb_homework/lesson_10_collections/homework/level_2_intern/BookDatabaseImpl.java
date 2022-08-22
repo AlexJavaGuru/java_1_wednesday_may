@@ -5,7 +5,7 @@ import main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.hom
 import java.util.*;
 
 
-class BookDatabaseImpl implements BookDatabase {
+public class BookDatabaseImpl implements BookDatabase {
     private final List<Book> books = new ArrayList<>();
     private long id = 1L;
     private final Set<String> uniqueAuthor = new HashSet<>();

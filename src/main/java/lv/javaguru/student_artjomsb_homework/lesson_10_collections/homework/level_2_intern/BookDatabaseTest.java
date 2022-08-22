@@ -418,6 +418,7 @@ class BookDatabaseTest {
         database.save(book3);
         check(database.contains(book1), "Test check that book contains");
     }
+
     private void testGetEachAuthorBookCount() {
         BookDatabase database = new BookDatabaseImpl();
         Book book1 = new Book("Author1", "Title1");
@@ -436,7 +437,7 @@ class BookDatabaseTest {
         expectedResult.put("Author1", 3);
         expectedResult.put("Author2", 1);
         expectedResult.put("Author3", 2);
-        check(expectedResult.equals(database.getEachAuthorBookCount()),"Test each author book count");
+        check(expectedResult.equals(database.getEachAuthorBookCount()), "Test each author book count");
     }
 
     private void testGetAuthorToBooksMap() {
@@ -458,7 +459,7 @@ class BookDatabaseTest {
         List<Book> secondAuthorBooks = new ArrayList<>(Arrays.asList(book4, book5, book6));
         expectedResult.put("Author", firstAuthorBooks);
         expectedResult.put("AuthorTwo", secondAuthorBooks);
-        check(expectedResult.equals(database.getAuthorToBooksMap()),"Test creating authors book list");
+        check(expectedResult.equals(database.getAuthorToBooksMap()), "Test creating authors book list");
     }
 
     private static void check(boolean actualResult, String testName) {

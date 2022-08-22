@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 
-interface BookDatabase {
+public interface BookDatabase {
     Long save(Book book);
 
     boolean delete(Long bookId);
