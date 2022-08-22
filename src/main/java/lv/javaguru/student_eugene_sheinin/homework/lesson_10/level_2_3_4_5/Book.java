@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_10.level_2;
+package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_10.level_2_3_4_5;
 
 import java.util.Objects;
 
@@ -7,9 +7,17 @@ public class Book {
     private String title;
     private String author;
 
+    private String yearOfIssue;
+
     Book(String author, String title) {
         this.author = author;
         this.title = title;
+    }
+
+    Book(String author, String title, String yearOfIssue) {
+        this.author = author;
+        this.title = title;
+        this.yearOfIssue = yearOfIssue;
     }
 
     public void setId(Long id) {
@@ -26,6 +34,10 @@ public class Book {
 
     public String getAuthor() {
         return this.author;
+    }
+
+    public String getYearOfIssue() {
+        return yearOfIssue;
     }
 
     @Override
