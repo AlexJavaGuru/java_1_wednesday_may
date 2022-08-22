@@ -9,12 +9,12 @@ public class Book {
 
     private String yearOfIssue;
 
-    Book(String author, String title) {
+    public Book(String author, String title) {
         this.author = author;
         this.title = title;
     }
 
-    Book(String author, String title, String yearOfIssue) {
+    public Book(String author, String title, String yearOfIssue) {
         this.author = author;
         this.title = title;
         this.yearOfIssue = yearOfIssue;
@@ -51,5 +51,10 @@ public class Book {
     @Override
     public int hashCode() {
         return Objects.hash(id, title, author);
+    }
+
+    @Override
+    public String toString() {
+        return "Book id: " + id + " author: " +  author  + " title " + title;
     }
 }
