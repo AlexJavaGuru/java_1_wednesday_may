@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_4.level_4junior.task_12;
+package lv.javaguru.student_ivan_k.homework.lesson_4.level_4junior.task_12;
 
 public class Calculator {
 

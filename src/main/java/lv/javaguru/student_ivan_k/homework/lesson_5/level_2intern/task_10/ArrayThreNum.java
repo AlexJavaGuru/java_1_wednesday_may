@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_5.level_2intern.task_10;
+package lv.javaguru.student_ivan_k.homework.lesson_5.level_2intern.task_10;
 
 import java.util.Arrays;
 

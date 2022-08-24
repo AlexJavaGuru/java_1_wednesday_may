@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_rodions_pismennijs.lesson_6.level_5_6_7;
+package lv.javaguru.student_rodions_pismennijs.lesson_6.level_5_6_7;
 
 class Move {
 

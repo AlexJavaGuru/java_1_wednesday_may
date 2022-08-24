@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_9.Task_28;
+package lv.javaguru.student_vladislav_kulikov.Lesson_9.Task_28;
 
 class CelsiusConverter implements TemperatureConverter {
 

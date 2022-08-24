@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_6.level_3junior.task_12;
+package lv.javaguru.student_ivan_k.homework.lesson_6.level_3junior.task_12;
 
 public class ArrayServiceDemo {
     public static void main(String[] args) {

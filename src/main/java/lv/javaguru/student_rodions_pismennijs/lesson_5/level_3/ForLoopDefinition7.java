@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_rodions_pismennijs.lesson_5.level_3;
+package lv.javaguru.student_rodions_pismennijs.lesson_5.level_3;
 
 class ForLoopDefinition7 {
 

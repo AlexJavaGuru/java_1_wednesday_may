@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_2.level_7_senior;
+package lv.javaguru.student_ivan_k.homework.lesson_2.level_7_senior;
 
 public class Task30 {
 

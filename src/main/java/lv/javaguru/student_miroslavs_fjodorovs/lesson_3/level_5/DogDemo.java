@@ -1,6 +1,6 @@
-package main.java.lv.javaguru.student_miroslavs_fjodorovs.lesson_3.level_5;
+package lv.javaguru.student_miroslavs_fjodorovs.lesson_3.level_5;
 
-import main.java.lv.javaguru.student_miroslavs_fjodorovs.lesson_3.level_5.Dog;
+import lv.javaguru.student_miroslavs_fjodorovs.lesson_3.level_5.Dog;
 
 class DogDemo {
 

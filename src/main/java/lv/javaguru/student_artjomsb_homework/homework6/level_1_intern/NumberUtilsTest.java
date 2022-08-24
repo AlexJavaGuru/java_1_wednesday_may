@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.homework6.level_1_intern;
+package lv.javaguru.student_artjomsb_homework.homework6.level_1_intern;
 
 class NumberUtilsTest {
     public static void main(String[] args) {

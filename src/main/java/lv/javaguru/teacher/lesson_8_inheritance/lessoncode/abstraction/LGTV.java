@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_8_inheritance.lessoncode.abstraction;
+package lv.javaguru.teacher.lesson_8_inheritance.lessoncode.abstraction;
 
 public class LGTV implements TV {
 

@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.lesson_2.homework.level_7_senior;
+package lv.javaguru.student_artjomsb_homework.lesson_2.homework.level_7_senior;
 
 public class Task29AB {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vadims_vilhovojs.lesson_3;
+package lv.javaguru.student_vadims_vilhovojs.lesson_3;
 
 class Dog {
     private String name;

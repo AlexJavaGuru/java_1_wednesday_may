@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.lesson_8.homework.level_4_junior;
+package lv.javaguru.student_artjomsb_homework.lesson_8.homework.level_4_junior;
 
 class RectangleTest {
     public static void main(String[] args) {
