@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_alija_alijeva.lesson3.homework.level_7.task_32;
+package lv.javaguru.student_alija_alijeva.lesson3.homework.level_7.task_32;
 
 class BankAccountDemo {
     public static void main(String[] args) {

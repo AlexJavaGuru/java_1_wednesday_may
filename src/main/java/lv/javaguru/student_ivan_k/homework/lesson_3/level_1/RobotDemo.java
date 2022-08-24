@@ -1,6 +1,6 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_3.level_1;
+package lv.javaguru.student_ivan_k.homework.lesson_3.level_1;
 
-import main.java.lv.javaguru.student_ivan_k.homework.lesson_3.level_1.Robot;
+import lv.javaguru.student_ivan_k.homework.lesson_3.level_1.Robot;
 
 public class RobotDemo {
 

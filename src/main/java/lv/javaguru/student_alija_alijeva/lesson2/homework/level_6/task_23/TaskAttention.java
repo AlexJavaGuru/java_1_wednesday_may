@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_alija_alijeva.lesson2.homework.level_6.task_23;
+package lv.javaguru.student_alija_alijeva.lesson2.homework.level_6.task_23;
 
 
     class AttentionPlease {

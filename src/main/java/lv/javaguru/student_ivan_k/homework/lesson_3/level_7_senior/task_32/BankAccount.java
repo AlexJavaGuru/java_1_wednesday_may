@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_3.level_7_senior.task_32;
+package lv.javaguru.student_ivan_k.homework.lesson_3.level_7_senior.task_32;
 
 public class BankAccount {
 

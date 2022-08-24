@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_8.Task_20_to_28;
+package lv.javaguru.student_vladislav_kulikov.Lesson_8.Task_20_to_28;
 
 class Rectangle extends Shape{
 

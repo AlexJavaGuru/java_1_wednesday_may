@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_5.Task_12;
+package lv.javaguru.student_vladislav_kulikov.Lesson_5.Task_12;
 
 import java.util.Random;
 

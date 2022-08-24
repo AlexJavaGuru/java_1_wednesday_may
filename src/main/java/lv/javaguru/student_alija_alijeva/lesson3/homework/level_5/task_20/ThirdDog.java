@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_alija_alijeva.lesson3.homework.level_5.task_20;
+package lv.javaguru.student_alija_alijeva.lesson3.homework.level_5.task_20;
 
 class ThirdDog {
 

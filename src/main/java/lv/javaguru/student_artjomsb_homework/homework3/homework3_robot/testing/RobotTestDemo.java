@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.homework3.homework3_robot.testing;
+package lv.javaguru.student_artjomsb_homework.homework3.homework3_robot.testing;
 
 public class RobotTestDemo {
     public static void main(String[] args) {

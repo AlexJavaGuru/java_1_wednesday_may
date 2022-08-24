@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_3.Task_29;
+package lv.javaguru.student_vladislav_kulikov.Lesson_3.Task_29;
 
 class BankAccountDemo {
 

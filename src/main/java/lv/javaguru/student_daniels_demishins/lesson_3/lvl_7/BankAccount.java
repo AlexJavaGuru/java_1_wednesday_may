@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_daniels_demishins.lesson_3.lvl_7;
+package lv.javaguru.student_daniels_demishins.lesson_3.lvl_7;
 
 public class BankAccount {
     String owner;

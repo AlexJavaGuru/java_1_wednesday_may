@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.lesson_8.homework.level_2_intern;
+package lv.javaguru.student_artjomsb_homework.lesson_8.homework.level_2_intern;
 
 
 class Player {
