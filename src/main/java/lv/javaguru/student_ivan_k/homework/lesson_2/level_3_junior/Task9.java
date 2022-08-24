@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_2.level_3_junior;
+package lv.javaguru.student_ivan_k.homework.lesson_2.level_3_junior;
 
 //Напишите программу, которая запрашивает у пользователя целое число
 //        и печатает на консоль таблицу умножения для этого числа до 10.

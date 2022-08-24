@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_2.level_7.task_32;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_2.level_7.task_32;
 
 public class CommentsExamples {
 

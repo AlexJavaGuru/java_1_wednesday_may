@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_4.level_4;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_4.level_4;
 
 class Calculator {
 

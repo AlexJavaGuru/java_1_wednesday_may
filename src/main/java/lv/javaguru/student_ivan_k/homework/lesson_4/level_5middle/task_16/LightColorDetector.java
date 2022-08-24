@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_4.level_5middle.task_16;
+package lv.javaguru.student_ivan_k.homework.lesson_4.level_5middle.task_16;
 
 class LightColorDetector {
     public String detect (int wavelength){

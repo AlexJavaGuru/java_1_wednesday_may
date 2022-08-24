@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_daniels_demishins.hw_lesson_4.lvl_4;
+package lv.javaguru.student_daniels_demishins.hw_lesson_4.lvl_4;
 
 public class Calculator {
     public int sum(int firstNumber, int secondNumber) {

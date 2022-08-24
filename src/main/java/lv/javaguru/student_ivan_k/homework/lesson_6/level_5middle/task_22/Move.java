@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_6.level_5middle.task_22;
+package lv.javaguru.student_ivan_k.homework.lesson_6.level_5middle.task_22;
 
 class Move {
 

@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislava_lutkevichus.lesson_3.level_7.task_30;
+package lv.javaguru.student_vladislava_lutkevichus.lesson_3.level_7.task_30;
 
 public class Circle {
     double radius;

@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_3.level_5.task18_19_20_21_22;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_3.level_5.task18_19_20_21_22;
 
 public class DogDemo {
 

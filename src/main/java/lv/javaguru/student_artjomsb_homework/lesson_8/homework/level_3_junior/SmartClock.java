@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.lesson_8.homework.level_3_junior;
+package lv.javaguru.student_artjomsb_homework.lesson_8.homework.level_3_junior;
 
 class SmartClock extends Clock {
     private int battery;

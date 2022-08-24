@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislava_lutkevichus.lesson_3;
+package lv.javaguru.student_vladislava_lutkevichus.lesson_3;
 
 public class Robot {
     String name;

@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_maksims_sokolovs.homework_lesson4.task11_12_13_14_15;
+package lv.javaguru.student_maksims_sokolovs.homework_lesson4.task11_12_13_14_15;
 
 class CalculatorTest {
 

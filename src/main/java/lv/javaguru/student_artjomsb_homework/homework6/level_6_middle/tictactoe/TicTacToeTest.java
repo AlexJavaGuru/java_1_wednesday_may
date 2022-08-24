@@ -1,5 +1,5 @@
 
-package main.java.lv.javaguru.student_artjomsb_homework.homework6.level_6_middle.tictactoe;
+package lv.javaguru.student_artjomsb_homework.homework6.level_6_middle.tictactoe;
 
 
 class TicTacToeTest {

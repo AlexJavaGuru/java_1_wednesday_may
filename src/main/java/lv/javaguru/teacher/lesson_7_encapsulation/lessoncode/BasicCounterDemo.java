@@ -1,6 +1,6 @@
-package main.java.lv.javaguru.teacher.lesson_7_encapsulation.lessoncode;
+package lv.javaguru.teacher.lesson_7_encapsulation.lessoncode;
 
-import main.java.lv.javaguru.teacher.lesson_7_encapsulation.lessoncode.BasicCounter;
+import lv.javaguru.teacher.lesson_7_encapsulation.lessoncode.BasicCounter;
 
 public class BasicCounterDemo {
 

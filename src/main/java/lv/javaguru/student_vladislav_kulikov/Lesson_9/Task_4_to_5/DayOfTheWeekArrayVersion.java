@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_9.Task_4_to_5;
+package lv.javaguru.student_vladislav_kulikov.Lesson_9.Task_4_to_5;
 
 class DayOfTheWeekArrayVersion implements DayOfTheWeekDetector {
 

@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_7_encapsulation.lessoncode.alisa;
+package lv.javaguru.teacher.lesson_7_encapsulation.lessoncode.alisa;
 
 //task22-26-31
 public class TicTacToeTest {
