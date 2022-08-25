@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislavs_katirlovs.lesson_8.level_4_5;
+package lv.javaguru.student_vladislavs_katirlovs.lesson_8.level_4_5;
 
 public class ShapeUtilDemo {
 
