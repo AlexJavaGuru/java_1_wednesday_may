@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_rodions_pismennijs.lesson_5.level_7;
+package lv.javaguru.student_rodions_pismennijs.lesson_5.level_7;
 
 import java.util.Random;
 import java.util.Scanner;

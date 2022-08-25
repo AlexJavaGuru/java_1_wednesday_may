@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.homework6.level_4_junior;
+package lv.javaguru.student_artjomsb_homework.homework6.level_4_junior;
 
 import java.util.Random;
 

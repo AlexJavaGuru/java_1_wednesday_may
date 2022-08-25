@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_maksims_sokolovs.homework_lesson2;
+package lv.javaguru.student_maksims_sokolovs.homework_lesson2;
 
 public class Task30 {
 

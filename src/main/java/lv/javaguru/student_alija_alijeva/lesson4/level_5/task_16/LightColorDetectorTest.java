@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_alija_alijeva.lesson4.level_5.task_16;
+package lv.javaguru.student_alija_alijeva.lesson4.level_5.task_16;
 
 
 class LightColorDetectorTest {

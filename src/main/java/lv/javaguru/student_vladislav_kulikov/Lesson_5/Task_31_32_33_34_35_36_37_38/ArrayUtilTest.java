@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_5.Task_31_32_33_34_35_36_37_38;
+package lv.javaguru.student_vladislav_kulikov.Lesson_5.Task_31_32_33_34_35_36_37_38;
 
 class ArrayUtilTest {
 

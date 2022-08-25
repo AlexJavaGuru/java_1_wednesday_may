@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.lesson_7.homework.level_6_middle;
+package lv.javaguru.student_artjomsb_homework.lesson_7.homework.level_6_middle;
 
 class CreditCardTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.homework3.senior;
+package lv.javaguru.student_artjomsb_homework.homework3.senior;
 import java.util.Scanner;
 
 class CircleDemo {

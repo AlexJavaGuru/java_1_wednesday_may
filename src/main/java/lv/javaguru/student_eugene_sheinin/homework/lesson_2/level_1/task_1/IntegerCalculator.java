@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_2.level_1.task_1;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_2.level_1.task_1;
 
 import java.util.Scanner;
 

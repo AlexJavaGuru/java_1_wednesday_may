@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_3_oop_first_look.lessoncode;
+package lv.javaguru.teacher.lesson_3_oop_first_look.lessoncode;
 
 public class Dog {
 

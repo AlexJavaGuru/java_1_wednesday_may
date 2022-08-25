@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_12_exceptions.lessoncode;
+package lv.javaguru.teacher.lesson_12_exceptions.lessoncode;
 
 import java.util.Objects;
 
