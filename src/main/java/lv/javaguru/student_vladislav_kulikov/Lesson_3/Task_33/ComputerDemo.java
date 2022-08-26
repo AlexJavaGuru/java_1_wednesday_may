@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_3.Task_33;
+package lv.javaguru.student_vladislav_kulikov.Lesson_3.Task_33;
 
 public class ComputerDemo {
     public static void main(String[] args) {

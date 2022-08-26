@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_miroslavs_fjodorovs.lesson_3.level_2;
+package lv.javaguru.student_miroslavs_fjodorovs.lesson_3.level_2;
 
 import java.util.Scanner;
 

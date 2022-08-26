@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_4.Task_7;
+package lv.javaguru.student_vladislav_kulikov.Lesson_4.Task_7;
 
 import java.util.Scanner;
 

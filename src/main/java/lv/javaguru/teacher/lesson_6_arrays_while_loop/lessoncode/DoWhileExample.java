@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_6_arrays_while_loop.lessoncode;
+package lv.javaguru.teacher.lesson_6_arrays_while_loop.lessoncode;
 
 public class DoWhileExample {
 

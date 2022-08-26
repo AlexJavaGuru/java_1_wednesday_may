@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_6.level_4junior.task_20;
+package lv.javaguru.student_ivan_k.homework.lesson_6.level_4junior.task_20;
 
 public class ForLoopContinue {
 

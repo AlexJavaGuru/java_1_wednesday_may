@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_6.level_3junior.task_13;
+package lv.javaguru.student_ivan_k.homework.lesson_6.level_3junior.task_13;
 
 import java.util.Arrays;
 
@@ -13,13 +13,7 @@ public class ArrayService {
         return false;
     }
 
-    public void printResultofFounding(boolean isFound) {
-        if (isFound == true) {
-            System.out.println("The desired number contains!");
-        } else {
-            System.out.println("The desired number is NOT contains!!!!");
-        }
-    }
+
 
     public int numOfOccurOfNum(int[] array, int numOfSearch) {
         int counter = 0;

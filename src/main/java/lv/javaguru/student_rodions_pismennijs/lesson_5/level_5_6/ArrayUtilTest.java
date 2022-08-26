@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_rodions_pismennijs.lesson_5.level_5_6;
+package lv.javaguru.student_rodions_pismennijs.lesson_5.level_5_6;
 
 class ArrayUtilTest {
 

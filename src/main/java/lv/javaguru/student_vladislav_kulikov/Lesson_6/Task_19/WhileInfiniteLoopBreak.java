@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_6.Task_19;
+package lv.javaguru.student_vladislav_kulikov.Lesson_6.Task_19;
 
 class WhileInfiniteLoopBreak {
 

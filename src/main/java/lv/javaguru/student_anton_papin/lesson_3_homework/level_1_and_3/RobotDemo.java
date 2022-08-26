@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_anton_papin.lesson_3_homework.level_1_and_3;
+package lv.javaguru.student_anton_papin.lesson_3_homework.level_1_and_3;
 
 class RobotDemo {
     public static void main(String[] args) {

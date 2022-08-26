@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_rodions_pismennijs.lesson_7.level_1;
+package lv.javaguru.student_rodions_pismennijs.lesson_7.level_1;
 
 import java.util.Objects;
 

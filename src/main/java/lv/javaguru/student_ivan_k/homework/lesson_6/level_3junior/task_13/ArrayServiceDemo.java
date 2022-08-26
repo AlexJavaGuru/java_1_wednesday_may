@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_6.level_3junior.task_13;
+package lv.javaguru.student_ivan_k.homework.lesson_6.level_3junior.task_13;
 
 import java.util.Arrays;
 
@@ -18,8 +18,6 @@ public class ArrayServiceDemo {
         array[7] = 3;
         array[8] = 71;
 
-        boolean isfound = arrayService.contains(array,100);
-        arrayService.printResultofFounding(isfound);
         int xNum = arrayService.numOfOccurOfNum(array,100);
         System.out.println("Number occurrences " + xNum +" times!");
         System.out.println(Arrays.toString(array));
