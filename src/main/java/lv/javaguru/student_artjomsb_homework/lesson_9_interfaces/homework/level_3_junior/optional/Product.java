@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.homework.level_3_junior.optional;
+package lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.homework.level_3_junior.optional;
 
 import java.util.Objects;
 

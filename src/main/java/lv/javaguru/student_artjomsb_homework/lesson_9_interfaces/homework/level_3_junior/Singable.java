@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.homework.level_3_junior;
+package lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.homework.level_3_junior;
 
 @FunctionalInterface //как я понял это во первых для того чтобы компилятор проверил действительно ли это функц. интерфейс и также для другого програмиста пометка)
 interface Singable {

@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.homework.level_2_intern;
+package lv.javaguru.student_artjomsb_homework.lesson_9_interfaces.homework.level_2_intern;
 
 class DayOfTheWeekDetectorArrayVersion implements DayOfTheWeekDetector {
     @Override
