@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vadims_vilhovojs.lesson_6;
+package lv.javaguru.student_vadims_vilhovojs.lesson_6;
 
 import java.util.Arrays;
 
