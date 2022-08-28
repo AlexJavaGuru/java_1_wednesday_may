@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.homework4.level_3_junior;
+package lv.javaguru.student_artjomsb_homework.homework4.level_3_junior;
 
 public class ThreeNumbersEqualTest {
     public static void main(String[] args) {

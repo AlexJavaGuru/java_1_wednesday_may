@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_4.level_6;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_4.level_6;
 
 class Stock {
 

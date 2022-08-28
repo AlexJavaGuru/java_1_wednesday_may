@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.homework4.level_6_middle;
+package lv.javaguru.student_artjomsb_homework.homework4.level_6_middle;
 
 class Stock {
     final private String companyName;

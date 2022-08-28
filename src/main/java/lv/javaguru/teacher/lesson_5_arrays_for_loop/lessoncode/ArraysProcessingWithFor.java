@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_5_arrays_for_loop.lessoncode;
+package lv.javaguru.teacher.lesson_5_arrays_for_loop.lessoncode;
 
 
 import java.lang.reflect.Array;

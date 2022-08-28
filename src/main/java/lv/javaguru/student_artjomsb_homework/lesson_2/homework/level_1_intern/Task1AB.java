@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.lesson_2.homework.level_1_intern;
+package lv.javaguru.student_artjomsb_homework.lesson_2.homework.level_1_intern;
 import java.util.Scanner;
 
 public class Task1AB {

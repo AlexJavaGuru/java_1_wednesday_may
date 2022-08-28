@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_arturs_s;
+package lv.javaguru.student_arturs_s;
 
 public class HelloWorld {
 

@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_daniels_demishins.hw_lesson_4.lvl_5;
+package lv.javaguru.student_daniels_demishins.hw_lesson_4.lvl_5;
 
 public class LightColorDetectorTest {
     public static void main(String[] args) {

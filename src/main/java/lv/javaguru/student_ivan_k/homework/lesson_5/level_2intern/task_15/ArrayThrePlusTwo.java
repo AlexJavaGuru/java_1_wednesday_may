@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_5.level_2intern.task_15;
+package lv.javaguru.student_ivan_k.homework.lesson_5.level_2intern.task_15;
 
 public class ArrayThrePlusTwo {
     public static void main(String[] args) {

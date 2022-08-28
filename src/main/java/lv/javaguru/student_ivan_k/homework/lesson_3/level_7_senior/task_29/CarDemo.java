@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_3.level_7_senior.task_29;
+package lv.javaguru.student_ivan_k.homework.lesson_3.level_7_senior.task_29;
 
 import java.util.concurrent.Callable;
 
