@@ -10,22 +10,45 @@ class Field {
         field = createField();
     }
 
-    void printBoard() {
+    void makeMove(Move move, Player player) {
+        int column = move.getColumnNum();
+        String role = player.getRole();
+        for (int i = field.length - 1; i >= 0; i--) {
+            if (field[i][column].equals("-")) {
+                field[i][column] = role;
+                break;
+            }
+        }
+    }
+
+    boolean isMovePossible(Move move) {
+        return field[0][move.getColumnNum()].equals("-");
+    }
+
+    boolean isDraw() {
+        for (int i = 0; i < field[0].length; i++) {
+            if (field[0][i].equals("-")) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    void printField() {
         for (String[] cell : field) {
             System.out.println(Arrays.toString(cell));
         }
     }
 
-    public String[][] createField() {
+    private String[][] createField() {
         String[][] gameField = new String[6][7];
-        for (int i = 0; i < gameField.length; i++) {
-            Arrays.fill(gameField[i], "-");
+        for (String[] strings : gameField) {
+            Arrays.fill(strings, "-");
         }
         return gameField;
     }
 
-    public static void main(String[] args) {
-        Field desk = new Field();
-        desk.printBoard();
+    public String[][] getField() {
+        return field;
     }
 }
