@@ -18,7 +18,7 @@ class Game {
         new Game();
         playerTurn = playerOne;
         while (true) {
-          //  Random random = new Random();
+            //  Random random = new Random();
             field.printField();
             System.out.println(playerTurn.getName() + " Turn!");
             Move move = new Move(playerTurn.askForMove());

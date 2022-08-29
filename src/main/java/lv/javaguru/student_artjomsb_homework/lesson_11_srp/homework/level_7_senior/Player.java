@@ -17,7 +17,7 @@ class Player {
         int columnNum;
         do {
             System.out.print("Enter column number from 1 to 7 - ");
-            columnNum = in.nextInt() ;
+            columnNum = in.nextInt();
         } while (!isMoveInRange(columnNum));
         return columnNum - 1;
     }
