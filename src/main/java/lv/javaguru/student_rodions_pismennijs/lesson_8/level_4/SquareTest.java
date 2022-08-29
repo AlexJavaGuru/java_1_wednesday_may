@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_rodions_pismennijs.lesson_8.level_4;
+package lv.javaguru.student_rodions_pismennijs.lesson_8.level_4;
 
 class SquareTest {
 

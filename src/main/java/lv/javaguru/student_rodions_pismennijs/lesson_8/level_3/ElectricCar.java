@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_rodions_pismennijs.lesson_8.level_3;
+package lv.javaguru.student_rodions_pismennijs.lesson_8.level_3;
 
 class ElectricCar extends Car {
 

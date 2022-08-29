@@ -1,6 +1,6 @@
-package main.java.lv.javaguru.student_rodions_pismennijs.lesson_8.level_7.Math;
+package lv.javaguru.student_rodions_pismennijs.lesson_8.level_7.math;
 
-class MAthOperationDemo {
+class MathOperationDemo {
 
 	public static void main(String[] args) {
 		// build and calculate: 10 + 20
