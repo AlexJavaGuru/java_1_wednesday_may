@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_3;
+package lv.javaguru.student_vladislav_kulikov.Lesson_3;
 
 public class Task_7_Lesson_3 {
 

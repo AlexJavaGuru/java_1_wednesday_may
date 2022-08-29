@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_7_encapsulation.lessoncode.alisaV2;
+package lv.javaguru.teacher.lesson_7_encapsulation.lessoncode.alisaV2;
 
 public class TicTacToeGame {
 

@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vadim_zamjatin.lesson_4.Calculator;
+    package lv.javaguru.student_vadim_zamjatin.lesson_4.Calculator;
 
 public class CalculatorTest {
     public static void main(String[] args) {

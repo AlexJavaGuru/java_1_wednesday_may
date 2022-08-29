@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_4_if_statement.lessoncode;
+package lv.javaguru.teacher.lesson_4_if_statement.lessoncode;
 
 public class Car {
 

@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_rodions_pismennijs.lesson_3.level_7;
+package lv.javaguru.student_rodions_pismennijs.lesson_3.level_7;
 
 class BottleDemo {
 

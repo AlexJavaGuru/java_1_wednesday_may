@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_maksims_sokolovs.homework_lesson3.task33;
+package lv.javaguru.student_maksims_sokolovs.homework_lesson3.task33;
 
 class ComputerDemo {
 

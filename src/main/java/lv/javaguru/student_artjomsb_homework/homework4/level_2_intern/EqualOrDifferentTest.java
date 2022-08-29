@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.homework4.level_2_intern;
+package lv.javaguru.student_artjomsb_homework.homework4.level_2_intern;
 
 public class EqualOrDifferentTest {
 

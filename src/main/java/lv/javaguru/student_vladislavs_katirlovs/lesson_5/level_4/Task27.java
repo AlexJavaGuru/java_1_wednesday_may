@@ -1,6 +1,6 @@
-package main.java.lv.javaguru.student_vladislavs_katirlovs.lesson_5.level_4;
+package lv.javaguru.student_vladislavs_katirlovs.lesson_5.level_4;
 
-import main.java.lv.javaguru.student_vladislavs_katirlovs.lesson_5.level_5_and_6.ArrayUtil;
+import lv.javaguru.student_vladislavs_katirlovs.lesson_5.level_5_and_6.ArrayUtil;
 
 class Task27 {
 

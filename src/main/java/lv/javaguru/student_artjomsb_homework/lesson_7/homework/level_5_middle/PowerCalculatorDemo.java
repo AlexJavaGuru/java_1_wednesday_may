@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.lesson_7.homework.level_5_middle;
+package lv.javaguru.student_artjomsb_homework.lesson_7.homework.level_5_middle;
 
 class PowerCalculatorDemo {
     public static void main(String[] args) {
