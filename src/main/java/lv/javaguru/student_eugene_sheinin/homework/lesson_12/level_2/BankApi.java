@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_12.level_2;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_12.level_2;
 
 import java.util.Optional;
 
