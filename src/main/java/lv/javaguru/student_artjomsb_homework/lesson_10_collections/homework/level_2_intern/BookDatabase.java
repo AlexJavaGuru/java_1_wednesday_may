@@ -1,6 +1,6 @@
-package main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.homework.level_2_intern;
+package lv.javaguru.student_artjomsb_homework.lesson_10_collections.homework.level_2_intern;
 
-import main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.homework.level_2_intern.search_criteria.SearchCriteria;
+import lv.javaguru.student_artjomsb_homework.lesson_10_collections.homework.level_2_intern.search_criteria.SearchCriteria;
 
 import java.util.List;
 import java.util.Map;

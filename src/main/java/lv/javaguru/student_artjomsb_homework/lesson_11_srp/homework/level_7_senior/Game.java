@@ -1,5 +1,7 @@
 package lv.javaguru.student_artjomsb_homework.lesson_11_srp.homework.level_7_senior;
 
+import java.util.Random;
+
 class Game {
     private Field field;
     private Player playerOne;
@@ -16,16 +18,19 @@ class Game {
         new Game();
         playerTurn = playerOne;
         while (true) {
+          //  Random random = new Random();
             field.printField();
             System.out.println(playerTurn.getName() + " Turn!");
             Move move = new Move(playerTurn.askForMove());
+            //Move move = new Move(random.nextInt(7));
             if (field.isMovePossible(move)) {
                 field.makeMove(move, playerTurn);
             } else {
                 System.out.println("Move not possible!");
                 continue;
             }
-            if (false) {
+            WinDetection isWin = new WinDetection(field, playerTurn);
+            if (isWin.detect()) {
                 System.out.println(playerTurn.getName() + " WIN!");
                 field.printField();
                 break;

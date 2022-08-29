@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.lesson_10_collections.homework.level_4_junior;
+package lv.javaguru.student_artjomsb_homework.lesson_10_collections.homework.level_4_junior;
 
 import java.util.Arrays;
 import java.util.HashSet;
