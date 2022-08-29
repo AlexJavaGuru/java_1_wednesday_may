@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_7.level_7;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_7.level_7;
 
 class UserEntity {
     private int id;

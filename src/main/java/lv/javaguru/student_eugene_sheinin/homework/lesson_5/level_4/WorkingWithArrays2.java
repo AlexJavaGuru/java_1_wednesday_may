@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_5.level_4;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_5.level_4;
 
 import java.util.Random;
 import java.util.Scanner;

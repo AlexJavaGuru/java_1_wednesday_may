@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_9.Task_26;
+package lv.javaguru.student_vladislav_kulikov.Lesson_9.Task_26;
 
 interface MyList {
 

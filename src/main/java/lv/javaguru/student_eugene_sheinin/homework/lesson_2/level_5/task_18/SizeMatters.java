@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_2.level_5.task_18;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_2.level_5.task_18;
 
 class SizeMatters {
 

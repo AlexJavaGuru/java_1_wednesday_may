@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_alija_alijeva.lesson2.homework.level_3.task_10;
+package lv.javaguru.student_alija_alijeva.lesson2.homework.level_3.task_10;
 
 import java.util.Scanner;
 

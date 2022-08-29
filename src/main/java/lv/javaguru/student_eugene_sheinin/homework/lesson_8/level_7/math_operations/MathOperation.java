@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_8.level_7.math_operations;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_8.level_7.math_operations;
 
 abstract class MathOperation {
 

@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_11_srp.lessoncode;
+package lv.javaguru.teacher.lesson_11_srp.lessoncode;
 
 import java.util.List;
 

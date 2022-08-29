@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_rodions_pismennijs.lesson_7.level_6;
+package lv.javaguru.student_rodions_pismennijs.lesson_7.level_6;
 
 class CreditCardTest {
 

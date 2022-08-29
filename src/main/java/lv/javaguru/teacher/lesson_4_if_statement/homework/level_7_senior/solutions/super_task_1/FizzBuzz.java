@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_4_if_statement.homework.level_7_senior.solutions.super_task_1;
+package lv.javaguru.teacher.lesson_4_if_statement.homework.level_7_senior.solutions.super_task_1;
 
 public class FizzBuzz {
 

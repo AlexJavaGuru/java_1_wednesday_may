@@ -1,6 +1,6 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_3.level_4_junior;
+package lv.javaguru.student_ivan_k.homework.lesson_3.level_4_junior;
 
-import main.java.lv.javaguru.student_ivan_k.homework.lesson_3.level_4_junior.BankAccount;
+import lv.javaguru.student_ivan_k.homework.lesson_3.level_4_junior.BankAccount;
 
  class BankAccountDemo {
 
