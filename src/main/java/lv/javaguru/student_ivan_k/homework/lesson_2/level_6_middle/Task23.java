@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_2.level_6_middle;
+package lv.javaguru.student_ivan_k.homework.lesson_2.level_6_middle;
 
 public class Task23 {
     public static void main(String[] args) {

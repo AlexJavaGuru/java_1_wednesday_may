@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vadim_zamjatin.leeson_3;
+package lv.javaguru.student_vadim_zamjatin.leeson_3;
 
 import org.w3c.dom.ls.LSOutput;
 

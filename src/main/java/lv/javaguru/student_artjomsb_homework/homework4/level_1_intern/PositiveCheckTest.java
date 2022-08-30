@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.homework4.level_1_intern;
+package lv.javaguru.student_artjomsb_homework.homework4.level_1_intern;
 
 
 class PositiveCheckTest {

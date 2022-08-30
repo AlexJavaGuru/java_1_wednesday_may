@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_4.level_7senior.task_24;
+package lv.javaguru.student_ivan_k.homework.lesson_4.level_7senior.task_24;
 
 class CalculatorTest {
 
@@ -40,13 +40,12 @@ class CalculatorTest {
     }
 
     public void divTest() {
-        //ivan, надо тест поправить
-//        int firstNumber = 40;
-//        int secondNumber = 8;
-//        Calculator calculator = new Calculator();
-//        int actualResult = calculator.div(firstNumber, secondNumber);
-//        int expectedResult = 5;
-//        chekResult(actualResult,expectedResult,"DIVISION test");
+        int firstNumber = 40;
+        int secondNumber = 8;
+        Calculator calculator = new Calculator();
+        double actualResult = calculator.div(firstNumber, secondNumber);
+        int expectedResult = 5;
+        chekResult(actualResult,expectedResult,"DIVISION test");
     }
 
     public void isEvenTest () {
@@ -62,7 +61,7 @@ class CalculatorTest {
 
 
     }
-    void chekResult (int actualResult, int expectedResult, String nameOfTest){
+    void chekResult (double actualResult, int expectedResult, String nameOfTest){
         if(actualResult == expectedResult){
             System.out.println(nameOfTest + " has been PASSED.OK");
         }else{

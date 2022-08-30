@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_alija_alijeva.lesson3.homework.level_7.task_29.SecondObject;
+package lv.javaguru.student_alija_alijeva.lesson3.homework.level_7.task_29.SecondObject;
 
 class Alarm {
     String alamModel;

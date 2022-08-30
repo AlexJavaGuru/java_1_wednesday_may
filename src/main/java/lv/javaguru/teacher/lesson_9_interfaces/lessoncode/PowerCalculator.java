@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_9_interfaces.lessoncode;
+package lv.javaguru.teacher.lesson_9_interfaces.lessoncode;
 
 public class PowerCalculator {
 

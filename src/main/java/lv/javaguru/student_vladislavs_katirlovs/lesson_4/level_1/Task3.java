@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislavs_katirlovs.lesson_4.level_1;
+package lv.javaguru.student_vladislavs_katirlovs.lesson_4.level_1;
 
 import java.util.Scanner;
 

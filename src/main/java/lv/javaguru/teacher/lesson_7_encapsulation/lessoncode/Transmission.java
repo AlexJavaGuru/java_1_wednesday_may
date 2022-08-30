@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_7_encapsulation.lessoncode;
+package lv.javaguru.teacher.lesson_7_encapsulation.lessoncode;
 
 import java.util.Objects;
 
