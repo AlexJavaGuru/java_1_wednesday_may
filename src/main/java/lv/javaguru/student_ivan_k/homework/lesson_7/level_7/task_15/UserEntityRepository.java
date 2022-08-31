@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_7.level_7.task_15;
+package lv.javaguru.student_ivan_k.homework.lesson_7.level_7.task_15;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,8 +60,6 @@ class UserEntityRepository {
                 userToEdite.setLastName(newLastName);
                 userToEdite.setPersonalNumber(newPersonalNumber);
                 System.out.println("Changes successfully made");
-            } else if (userToEdite.getId() != userId && userToEdite.equals(allUsers) ){
-                System.out.println("User with this ID not found");
             }
         }
     }
