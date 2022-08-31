@@ -1,6 +1,8 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_10.level_2_3_4_5;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_10.level_2_3_4_5;
 
+import lv.javaguru.student_eugene_sheinin.homework.lesson_10.level_2_3_4_5.Book;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class BookDatabaseImpl implements BookDatabase{
     List<Long> indexes = new ArrayList<>();
@@ -182,6 +184,11 @@ public class BookDatabaseImpl implements BookDatabase{
         }
 
         return booksMap;
+    }
+
+    public Map<String, List<Book>> getAuthorToBooksMapV2() {
+        return books.stream()
+                .collect(Collectors.groupingBy(Book::getAuthor));
     }
 
 }

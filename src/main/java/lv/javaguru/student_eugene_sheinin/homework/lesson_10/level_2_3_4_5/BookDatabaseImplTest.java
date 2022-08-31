@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_10.level_2_3_4_5;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_10.level_2_3_4_5;
 
 public class BookDatabaseImplTest {
 
@@ -36,7 +36,7 @@ public class BookDatabaseImplTest {
         bookDatabase.save(book4);
         bookDatabase.save(book5);
         bookDatabase.save(book6);
-        check(bookDatabase.getAuthorToBooksMap().get("Turgenev").size() == 2, "getAuthorToBooksMap");
+        check(bookDatabase.getAuthorToBooksMapV2().get("Turgenev").size() == 2, "getAuthorToBooksMap");
     }
 
     private static void getEachAuthorBookCountTest2() {

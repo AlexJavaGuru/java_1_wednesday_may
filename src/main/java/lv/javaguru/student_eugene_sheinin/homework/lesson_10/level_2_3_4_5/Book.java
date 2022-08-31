@@ -1,8 +1,9 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_10.level_2_3_4_5;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_10.level_2_3_4_5;
 
 import java.util.Objects;
 
 public class Book {
+
     private Long id;
     private String title;
     private String author;
