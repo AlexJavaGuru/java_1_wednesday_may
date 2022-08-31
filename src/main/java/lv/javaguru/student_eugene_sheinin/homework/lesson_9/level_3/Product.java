@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_9.level_3;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_9.level_3;
 
 public class Product {
     private String title;

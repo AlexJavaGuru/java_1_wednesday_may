@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_9.level_5_6;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_9.level_5_6;
 
 import java.util.List;
 import java.util.ArrayList;

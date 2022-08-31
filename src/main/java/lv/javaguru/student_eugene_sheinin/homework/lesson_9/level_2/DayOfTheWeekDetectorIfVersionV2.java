@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_9.level_2;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_9.level_2;
 
 public class DayOfTheWeekDetectorIfVersionV2 implements DayOfTheWeekDetector{
 
