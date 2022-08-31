@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_6.level_7;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_6.level_7;
 
 class FizzBuzz {
 

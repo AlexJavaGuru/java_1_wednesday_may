@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_3.Task_31;
+package lv.javaguru.student_vladislav_kulikov.Lesson_3.Task_31;
 //Task_31
 //Разработать класс - продукт,
 //у которого должны быть следующие характеристики:

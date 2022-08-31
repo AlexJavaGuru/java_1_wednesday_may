@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_daniels_demishins.hw_lesson_5.lvl_2;
+package lv.javaguru.student_daniels_demishins.hw_lesson_5.lvl_2;
 
 import java.util.Arrays;
 import java.util.Random;

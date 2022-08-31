@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_8.Task_15_to_19;
+package lv.javaguru.student_vladislav_kulikov.Lesson_8.Task_15_to_19;
 
 abstract class Shape {
     private String title;

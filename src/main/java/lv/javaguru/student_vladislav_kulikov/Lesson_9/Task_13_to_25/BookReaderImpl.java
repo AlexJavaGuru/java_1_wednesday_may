@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_9.Task_13_to_25;
+package lv.javaguru.student_vladislav_kulikov.Lesson_9.Task_13_to_25;
 
 import java.util.ArrayList;
 import java.util.Arrays;

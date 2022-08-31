@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_6.Task_22_to_30;
+package lv.javaguru.student_vladislav_kulikov.Lesson_6.Task_22_to_30;
 
 class TicTacToeDemo {
 

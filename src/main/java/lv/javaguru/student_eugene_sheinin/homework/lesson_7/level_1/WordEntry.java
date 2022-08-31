@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_7.level_1;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_7.level_1;
 
 public class WordEntry {
     private final String word;

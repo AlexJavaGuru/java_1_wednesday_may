@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vadims_vilhovojs.lesson_3.task_30;
+package lv.javaguru.student_vadims_vilhovojs.lesson_3.task_30;
 
 class CircleDemo {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_dmitri_nekljudov.DmitriN_lesson_3.DmitriN_lesson_3_task32;
+package lv.javaguru.student_dmitri_nekljudov.DmitriN_lesson_3.DmitriN_lesson_3_task32;
 
 class BankAccount {
     String ownerFirstName;

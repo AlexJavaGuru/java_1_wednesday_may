@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_4.level_7senior.task_22;
+package lv.javaguru.student_ivan_k.homework.lesson_4.level_7senior.task_22;
 
 class FizzBuzz {
 

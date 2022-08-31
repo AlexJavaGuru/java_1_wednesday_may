@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_anton_papin.lesson_3_homework.level_4;
+package lv.javaguru.student_anton_papin.lesson_3_homework.level_4;
 
 class CarDemo {
     public static void main(String[] args) {

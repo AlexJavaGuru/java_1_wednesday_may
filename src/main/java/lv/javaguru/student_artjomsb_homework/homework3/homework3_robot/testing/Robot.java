@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.homework3.homework3_robot.testing;
+package lv.javaguru.student_artjomsb_homework.homework3.homework3_robot.testing;
 import java.util.Scanner;
 
 class Robot {

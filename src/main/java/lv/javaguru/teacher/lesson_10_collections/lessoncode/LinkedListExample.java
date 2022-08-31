@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_10_collections.lessoncode;
+package lv.javaguru.teacher.lesson_10_collections.lessoncode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

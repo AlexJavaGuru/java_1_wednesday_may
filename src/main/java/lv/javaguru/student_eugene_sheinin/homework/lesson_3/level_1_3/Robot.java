@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_3.level_1_3;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_3.level_1_3;
 
 public class Robot {
 

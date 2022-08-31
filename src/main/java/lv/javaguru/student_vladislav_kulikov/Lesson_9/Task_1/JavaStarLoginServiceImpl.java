@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_9.Task_1;
+package lv.javaguru.student_vladislav_kulikov.Lesson_9.Task_1;
 
 class JavaStarLoginServiceImpl implements JavaStarLoginService {
 

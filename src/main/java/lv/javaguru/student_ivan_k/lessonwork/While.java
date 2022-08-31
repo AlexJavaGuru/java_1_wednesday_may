@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.lessonwork;
+package lv.javaguru.student_ivan_k.lessonwork;
 
 
 class WhileDefinition1 {

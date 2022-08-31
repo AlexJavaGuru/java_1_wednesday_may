@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_4_if_statement.lessoncode.basicteatapproach;
+package lv.javaguru.teacher.lesson_4_if_statement.lessoncode.basicteatapproach;
 
 public class QuickMathsTest {
 
