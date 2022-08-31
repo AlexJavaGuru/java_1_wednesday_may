@@ -15,7 +15,7 @@ class Main {
 }
 
 Какой результат мы получим?
-1. Got the Test Exception
+1. Got the Test Exception   <-----
    Inside finally block
 
 2. Got the Test Exception
