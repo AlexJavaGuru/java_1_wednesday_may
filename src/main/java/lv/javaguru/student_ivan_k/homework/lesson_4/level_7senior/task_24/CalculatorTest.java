@@ -18,7 +18,7 @@ class CalculatorTest {
         Calculator calculator = new Calculator();
         int actualResult = calculator.sum(firstNumber, secondNumber);
         int expectedResult = 75;
-        chekResult(actualResult,expectedResult,"SUM tets");
+        chekResult(actualResult, expectedResult, "SUM tets");
     }
 
     public void subTest() {
@@ -27,7 +27,7 @@ class CalculatorTest {
         Calculator calculator = new Calculator();
         int actualResult = calculator.sub(firstNumber, secondNumber);
         int expectedResult = 20;
-        chekResult(actualResult,expectedResult,"SUBTRACTION test");
+        chekResult(actualResult, expectedResult, "SUBTRACTION test");
     }
 
     public void mulTest() {
@@ -36,7 +36,7 @@ class CalculatorTest {
         Calculator calculator = new Calculator();
         int actualResult = calculator.mul(firstNumber, secondNumber);
         int expectedResult = 25;
-        chekResult(actualResult,expectedResult,"MULTIPLICATION test");
+        chekResult(actualResult, expectedResult, "MULTIPLICATION test");
     }
 
     public void divTest() {
@@ -45,33 +45,43 @@ class CalculatorTest {
         Calculator calculator = new Calculator();
         double actualResult = calculator.div(firstNumber, secondNumber);
         int expectedResult = 5;
-        chekResult(actualResult,expectedResult,"DIVISION test");
+        chekResult(actualResult, expectedResult, "DIVISION test");
     }
 
-    public void isEvenTest () {
+    public void isEvenTest() {
         Calculator calculator = new Calculator();
         boolean condition = calculator.isEven(40);
-        chekForBool(condition,"IsEvian test");
+        chekForBool(condition, "IsEvian test");
     }
 
-    public void isNotEvenTest () {
+    public void isNotEvenTest() {
         Calculator calculator = new Calculator();
         boolean condition = calculator.isEven(41);
-        chekForBool(!condition,"IsNotEvian test");
+        chekForBool(!condition, "IsNotEvian test");
 
 
     }
-    void chekResult (double actualResult, int expectedResult, String nameOfTest){
-        if(actualResult == expectedResult){
+
+    void chekResult(double actualResult, int expectedResult, String nameOfTest) {
+        if (actualResult == expectedResult) {
             System.out.println(nameOfTest + " has been PASSED.OK");
-        }else{
+        } else {
             System.out.println(nameOfTest + " has been NOT passed!!! ");
         }
     }
-    void chekForBool(boolean condition, String nameOfTest){
-        if( condition){
+
+    void chekResult(int actualResult, int expectedResult, String nameOfTest) {
+        if (actualResult == expectedResult) {
             System.out.println(nameOfTest + " has been PASSED.OK");
-        }else {
+        } else {
+            System.out.println(nameOfTest + " has been NOT passed!!! ");
+        }
+    }
+
+    void chekForBool(boolean condition, String nameOfTest) {
+        if (condition) {
+            System.out.println(nameOfTest + " has been PASSED.OK");
+        } else {
             System.out.println(nameOfTest + " has been NOT passed!!! ");
         }
     }
