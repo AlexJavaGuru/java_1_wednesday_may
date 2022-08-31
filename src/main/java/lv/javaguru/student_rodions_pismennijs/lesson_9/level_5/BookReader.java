@@ -8,6 +8,15 @@ interface BookReader {
 
     String getAllBooks();
 
-    String getBookByAuthor(String author);
+    String getBooksByAuthor(String author);
 
+    String getBooksByTitle(String title);
+
+    boolean markBookAsRead(Book book);
+
+    boolean markBookAsUnread(Book book);
+
+    String getAllReadBooks();
+
+    String getAllUnreadBooks();
 }

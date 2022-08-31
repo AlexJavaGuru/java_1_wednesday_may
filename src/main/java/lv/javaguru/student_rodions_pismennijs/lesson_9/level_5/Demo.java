@@ -21,14 +21,17 @@ class Demo {
 
         System.out.println(subject.getAllBooks());
 
-        System.out.println(subject.getBookByAuthor("George R. R. Martin"));
+        System.out.println(subject.getBooksByAuthor("George R. R. Martin"));
 
 
         subject.removeBook(book5);
 
         System.out.println(subject.getAllBooks());
 
-        System.out.println(subject.getBookByAuthor("George "));
+        System.out.println(subject.getBooksByAuthor("George "));
+
+        subject.markBookAsRead(book1);
+        System.out.println(book1.getBookIsRead());
 
     }
 }

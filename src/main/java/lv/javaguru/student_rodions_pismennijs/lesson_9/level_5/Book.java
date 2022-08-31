@@ -6,6 +6,7 @@ class Book {
 
     private String title;
     private String author;
+    private boolean isRead;
 
     public Book(String title, String author) {
         this.title = title;
@@ -28,6 +29,14 @@ class Book {
         this.author = author;
     }
 
+    public boolean getBookIsRead() {
+        return isRead;
+    }
+
+    public void setBookIsRead(boolean read) {
+        isRead = read;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -38,6 +47,6 @@ class Book {
 
     @Override
     public String toString() {
-        return "Book{" + "Title='" + title + '\'' + ", Author='" + author + '\'' + '}';
+        return title + " [" + author + ']';
     }
 }
