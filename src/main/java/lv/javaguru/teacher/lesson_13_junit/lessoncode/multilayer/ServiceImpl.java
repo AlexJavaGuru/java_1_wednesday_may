@@ -17,10 +17,11 @@ public class ServiceImpl implements Service {
 
     @Override
     public String readFromDB(Integer id) {
-        Optional<Integer> read = db.read(id);
-        if (read.isPresent()) {
-            return read.get().toString();
-        }
+        Integer read = db.read(id);
+        Integer integer = Optional.ofNullable(read)
+                .map(Integer::bitCount)
+                .orElse(0);
+
         return "Not Found";
     }
 }
