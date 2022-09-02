@@ -11,19 +11,15 @@ public class BookServiceConsumer {
 
         Optional<User> response = Optional.empty();
         try {
-            response = bankService.searchUserByUserName("Alex", null);
+            String result = bankService.searchUserByUserName("Alex", "1234ABC")
+                    .map(User::getPassword)
+                    .orElseThrow(IllegalStateException::new);
         } catch (IllegalStateException | IllegalArgumentException | HttpTimeoutException e) {
             System.out.println("Exception type: " + e.getClass());
             System.out.println("Message: " + e.getMessage());
 //            throw new IllegalStateException(e);
         } finally {
             System.out.println("Hello from finally");
-        }
-
-        if (response.isPresent()) {
-            User user = response.get();
-            System.out.println(user.getUsername());
-            System.out.println(user.getPassword());
         }
     }
 }

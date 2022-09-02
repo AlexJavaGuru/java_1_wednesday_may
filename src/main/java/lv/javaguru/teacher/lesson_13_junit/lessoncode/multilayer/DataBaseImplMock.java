@@ -18,10 +18,10 @@ public class DataBaseImplMock implements DataBase {
     }
 
     @Override
-    public Optional<Integer> read(Integer data) {
+    public Integer read(Integer data) {
         wasMethodReadWasTriggered = true;
         valueForMethodRead = data;
-        return Optional.empty();
+        return data;
     }
 
     public boolean isWasMethodSaveWasTriggered() {

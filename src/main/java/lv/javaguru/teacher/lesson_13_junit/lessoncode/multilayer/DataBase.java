@@ -6,5 +6,5 @@ public interface DataBase {
 
     void save(Integer data);
 
-    Optional<Integer> read(Integer data);
+    Integer read(Integer data);
 }

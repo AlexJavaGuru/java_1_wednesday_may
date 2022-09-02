@@ -12,12 +12,12 @@ public class DataBaseImpl implements DataBase {
         database.add(data);
     }
 
-    public Optional<Integer> read(Integer data) {
+    public Integer read(Integer data) {
         for (Integer integer : database) {
             if (data.equals(integer)) {
-                return Optional.of(integer);
+                return integer;
             }
         }
-        return Optional.empty();
+        return null;
     }
 }
