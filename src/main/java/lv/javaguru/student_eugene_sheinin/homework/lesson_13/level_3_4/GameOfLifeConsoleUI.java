@@ -1,4 +1,4 @@
-package lv.javaguru.student_eugene_sheinin.homework.lesson_13.level_3;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_13.level_3_4;
 
 public class GameOfLifeConsoleUI {
     public void show(boolean[][] field) {
