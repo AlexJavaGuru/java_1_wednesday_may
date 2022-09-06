@@ -1,4 +1,4 @@
-package lv.javaguru.student_vladislav_kulikov.lesson_14.task_18_to_24;
+package lv.javaguru.student_vladislav_kulikov.lesson_14.task_18_to_38;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -7,7 +7,7 @@ import static java.util.stream.Collectors.toList;
 
 class TransactionAnalysisService {
 
-    private List<Transaction> transactions = new ArrayList<>();
+    private List<Transaction> transactions;
 
     public TransactionAnalysisService(List<Transaction> transactions) {
         this.transactions = transactions;

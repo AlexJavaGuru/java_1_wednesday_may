@@ -1,4 +1,4 @@
-package lv.javaguru.student_vladislav_kulikov.lesson_14.task_18_to_24;
+package lv.javaguru.student_vladislav_kulikov.lesson_14.task_18_to_38;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
