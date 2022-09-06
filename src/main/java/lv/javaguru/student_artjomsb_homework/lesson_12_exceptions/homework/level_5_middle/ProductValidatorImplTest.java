@@ -42,7 +42,7 @@ class ProductValidatorImplTest {
     }
 
     private void rule2_v1() {
-        Product product = new Product("Title", 1, "description");
+        Product product = new Product("Ab", 1, "description");
         List<ValidationException> exceptions = validator.validate(product);
         checkResult(exceptions.size() == 1, "rule2");
         checkResult(exceptions.get(0).getRuleName().equals("Second RULE"), "rule2");
@@ -94,9 +94,9 @@ class ProductValidatorImplTest {
         Product product = new Product("Title", -1, "description");
         List<ValidationException> exceptions = validator.validate(product);
         checkResult(exceptions.size() == 1, "rule6");
-        checkResult(exceptions.get(0).getRuleName().equals("RULE-6"), "rule6");
+        checkResult(exceptions.get(0).getRuleName().equals("Price RULE"), "rule6");
         checkResult(exceptions.get(0).getFieldName().equals("price"), "rule6");
-        checkResult(exceptions.get(0).getDescription().equals("Price can not be 0"), "rule6");
+        checkResult(exceptions.get(0).getDescription().equals("Price can't be 0 or smaller"), "rule6");
     }
 
     private void rule6_v1() {
