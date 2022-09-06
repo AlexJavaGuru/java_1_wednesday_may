@@ -12,7 +12,7 @@ class WrongUserInputHandlingDemo {
                 int a = scanner.nextInt();
                 System.out.println("Good job, you did this!!");
                 break;
-            } catch (InputMismatchException e){
+            } catch (InputMismatchException e) {
                 System.out.println("1234567890 - numbers, abcdefg... - not numbers");
                 System.out.println("Try again, I believe in you");
             }

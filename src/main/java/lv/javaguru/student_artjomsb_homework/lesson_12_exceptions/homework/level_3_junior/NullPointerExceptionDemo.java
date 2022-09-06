@@ -8,6 +8,6 @@ class NullPointerExceptionDemo {
     public static void main(String[] args) {
         NullPointerExceptionDemo error = new NullPointerExceptionDemo();
         error.strings.add("Hello");// java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because "error.strings" is null
-                                    //(NullPointerExceptionDemo.java:10)
+        //(NullPointerExceptionDemo.java:10)
     }
 }

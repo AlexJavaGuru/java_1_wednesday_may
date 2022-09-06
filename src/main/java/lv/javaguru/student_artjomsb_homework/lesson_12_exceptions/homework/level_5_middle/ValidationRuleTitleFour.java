@@ -2,7 +2,7 @@ package lv.javaguru.student_artjomsb_homework.lesson_12_exceptions.homework.leve
 
 import java.util.regex.Pattern;
 
-public class ValidationRuleTitleFour implements FieldValidationRule{
+public class ValidationRuleTitleFour implements FieldValidationRule {
     @Override
     public void validate(Product product) throws ValidationException {
         String title = product.getName().trim();

@@ -2,8 +2,8 @@ package lv.javaguru.student_artjomsb_homework.lesson_12_exceptions.homework.leve
 
 class MyException extends Exception {
 
-    public MyException(String message) {super(message);
-
+    public MyException(String message) {
+        super(message);
     }
 
 }

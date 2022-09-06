@@ -1,6 +1,6 @@
 package lv.javaguru.student_artjomsb_homework.lesson_12_exceptions.homework.level_5_middle;
 
-public class ValidationRulePrice implements FieldValidationRule{
+public class ValidationRulePrice implements FieldValidationRule {
     @Override
     public void validate(Product product) throws ValidationException {
         double price = product.getPrice();

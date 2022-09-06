@@ -2,7 +2,7 @@ package lv.javaguru.student_artjomsb_homework.lesson_12_exceptions.homework.leve
 
 import java.util.regex.Pattern;
 
-public class ValidationRuleDescriptionTwo implements FieldValidationRule{
+public class ValidationRuleDescriptionTwo implements FieldValidationRule {
     public void validate(Product product) throws ValidationException {
         String ruleName = "Description RULE two";
         String description = "Contain English letters and digits";

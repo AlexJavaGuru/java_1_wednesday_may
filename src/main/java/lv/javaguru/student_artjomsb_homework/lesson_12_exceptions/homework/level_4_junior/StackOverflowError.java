@@ -5,7 +5,8 @@ class StackOverflowError {
         StackOverflowError error = new StackOverflowError();
         error.print();
     }
-    void print(){
+
+    void print() {
         System.out.println("Hello");
         print();
     }
