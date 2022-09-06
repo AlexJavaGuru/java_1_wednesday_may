@@ -4,25 +4,25 @@ import java.util.Objects;
 
 class Trader {
 
-        private String name;
-        private String city;
+    private String name;
+    private String city;
 
-        public Trader(String name, String city) {
-            this.name = name;
-            this.city = city;
-        }
+    public Trader(String name, String city) {
+        this.name = name;
+        this.city = city;
+    }
 
-        public String getName() {
-            return this.name;
-        }
+    public String getName() {
+        return this.name;
+    }
 
-        public String getCity() {
-            return this.city;
-        }
+    public String getCity() {
+        return this.city;
+    }
 
-        public String toString() {
-            return "Trader:"+this.name + " in " + this.city;
-        }
+    public String toString() {
+        return "Trader:" + this.name + " in " + this.city;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -31,5 +31,4 @@ class Trader {
         Trader trader = (Trader) o;
         return Objects.equals(name, trader.name) && Objects.equals(city, trader.city);
     }
-
 }
