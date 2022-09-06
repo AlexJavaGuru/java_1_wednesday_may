@@ -1,0 +1,11 @@
+Исправьте код:
+
+class MyExceptionOne extends Exception {
+
+}
+class MyExceptionTwo extends RuntimeException {
+
+}
+class MyExceptionThree extends Throwable {
+
+}
