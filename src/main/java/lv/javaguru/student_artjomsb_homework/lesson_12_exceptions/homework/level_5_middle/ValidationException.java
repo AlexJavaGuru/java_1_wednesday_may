@@ -1,5 +1,7 @@
 package lv.javaguru.student_artjomsb_homework.lesson_12_exceptions.homework.level_5_middle;
 
+import java.util.Objects;
+
 class ValidationException extends Exception {
     private String ruleName;
 
@@ -7,7 +9,7 @@ class ValidationException extends Exception {
 
     private String fieldName;
 
-    public ValidationException(String message, String ruleName, String description, String fieldName) {
+    public ValidationException(String ruleName, String description, String fieldName) {
         this.ruleName = ruleName;
         this.description = description;
         this.fieldName = fieldName;
@@ -23,5 +25,18 @@ class ValidationException extends Exception {
 
     public String getFieldName() {
         return fieldName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ValidationException that = (ValidationException) o;
+        return Objects.equals(ruleName, that.ruleName) && Objects.equals(description, that.description) && Objects.equals(fieldName, that.fieldName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(ruleName, description, fieldName);
     }
 }
