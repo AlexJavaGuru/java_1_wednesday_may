@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vadim_zamjatin.leeson_3;
+package lv.javaguru.student_vadim_zamjatin.leeson_3;
 
 public class BookDemo {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 
 
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_2;
+package lv.javaguru.student_vladislav_kulikov.Lesson_2;
 import java.util.Scanner;
 
 public class Lesson2_Task10 {

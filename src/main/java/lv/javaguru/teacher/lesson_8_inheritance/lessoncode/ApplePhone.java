@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_8_inheritance.lessoncode;
+package lv.javaguru.teacher.lesson_8_inheritance.lessoncode;
 
 public class ApplePhone extends SmartPhone {
 

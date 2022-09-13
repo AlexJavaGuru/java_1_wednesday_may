@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_rodions_pismennijs.lesson_4.level_7;
+package lv.javaguru.student_rodions_pismennijs.lesson_4.level_7;
 
 class LeapYear {
     public boolean isLeapYear(int year) {

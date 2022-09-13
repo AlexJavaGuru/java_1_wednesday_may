@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_7.Task_1_to_3;
+package lv.javaguru.student_vladislav_kulikov.homework.Lesson_7.Task_1_to_3;
 
 class WordService {
 

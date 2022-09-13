@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_6.Task_7_to_11;
+package lv.javaguru.student_vladislav_kulikov.Lesson_6.Task_7_to_11;
 
 import java.util.Objects;
 

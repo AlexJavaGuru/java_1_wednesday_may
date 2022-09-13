@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vadims_vilhovojs.lesson_3.task_29;
+package lv.javaguru.student_vadims_vilhovojs.lesson_3.task_29;
 
 class ParrotDemo {
     public static void main(String[] args) {

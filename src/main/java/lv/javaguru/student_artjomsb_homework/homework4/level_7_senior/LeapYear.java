@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.homework4.level_7_senior;
+package lv.javaguru.student_artjomsb_homework.homework4.level_7_senior;
 
 class LeapYear {
     boolean isLeapYear(int year) {
