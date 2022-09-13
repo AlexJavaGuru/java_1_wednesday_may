@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.homework5.level_5and6_middle;
+package lv.javaguru.student_artjomsb_homework.homework5.level_5and6_middle;
 
 import java.util.Arrays;
 

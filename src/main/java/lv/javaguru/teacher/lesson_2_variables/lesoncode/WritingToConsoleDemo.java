@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_2_variables.lesoncode;
+package lv.javaguru.teacher.lesson_2_variables.lesoncode;
 
 public class WritingToConsoleDemo {
 

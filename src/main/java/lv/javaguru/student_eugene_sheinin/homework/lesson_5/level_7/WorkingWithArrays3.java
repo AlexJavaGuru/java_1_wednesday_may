@@ -1,6 +1,6 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_5.level_7;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_5.level_7;
 
-import main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_5.level_5_6.ArrayUtil;
+import lv.javaguru.student_eugene_sheinin.homework.lesson_5.level_5_6.ArrayUtil;
 
 import java.util.Arrays;
 import java.util.Random;

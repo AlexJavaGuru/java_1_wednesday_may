@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_6.Task_20;
+package lv.javaguru.student_vladislav_kulikov.Lesson_6.Task_20;
 
 class ForLoopContinue {
 

@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_6.level_5_6_7;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_6.level_5_6_7;
 
 public class Move {
     private int x;

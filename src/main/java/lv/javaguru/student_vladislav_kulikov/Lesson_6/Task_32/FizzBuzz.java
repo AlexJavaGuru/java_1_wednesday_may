@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislav_kulikov.Lesson_6.Task_32;
+package lv.javaguru.student_vladislav_kulikov.Lesson_6.Task_32;
 
 class FizzBuzz {
 

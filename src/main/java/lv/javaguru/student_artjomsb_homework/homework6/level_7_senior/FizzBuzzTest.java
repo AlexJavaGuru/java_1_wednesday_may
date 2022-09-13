@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.homework6.level_7_senior;
+package lv.javaguru.student_artjomsb_homework.homework6.level_7_senior;
 
 class FizzBuzzTest {
     public static void main(String[] args) {
