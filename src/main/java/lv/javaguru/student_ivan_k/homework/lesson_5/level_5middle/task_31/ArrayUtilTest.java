@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_5.level_5middle.task_31;
+package lv.javaguru.student_ivan_k.homework.lesson_5.level_5middle.task_31;
 
 public class ArrayUtilTest {
 
@@ -8,7 +8,7 @@ public class ArrayUtilTest {
         }
 
         public void shouldCreateArray() {
-          main.java.lv.javaguru.student_ivan_k.homework.lesson_5.level_5middle.task_31.ArrayUtil arrayUtil = new main.java.lv.javaguru.student_ivan_k.homework.lesson_5.level_5middle.task_31.ArrayUtil();
+          lv.javaguru.student_ivan_k.homework.lesson_5.level_5middle.task_31.ArrayUtil arrayUtil = new lv.javaguru.student_ivan_k.homework.lesson_5.level_5middle.task_31.ArrayUtil();
           int[] result = arrayUtil.createArray(10);
             chek(result.length == 10,"Array created");
         }

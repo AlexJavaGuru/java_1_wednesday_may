@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_rodions_pismennijs.lesson_6.level_4;
+package lv.javaguru.student_rodions_pismennijs.lesson_6.level_4;
 
 class WhileLoopContinue {
     public static void main(String[] args) {

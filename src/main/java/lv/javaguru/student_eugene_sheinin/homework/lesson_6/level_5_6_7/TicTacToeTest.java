@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_eugene_sheinin.homework.lesson_6.level_5_6_7;
+package lv.javaguru.student_eugene_sheinin.homework.lesson_6.level_5_6_7;
 
 
 import java.util.Arrays;

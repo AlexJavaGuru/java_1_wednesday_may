@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_9_interfaces.lessoncode.boxexample;
+package lv.javaguru.teacher.lesson_9_interfaces.lessoncode.boxexample;
 
 import java.util.Random;
 

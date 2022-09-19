@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_rodions_pismennijs.lesson_5.level_1;
+package lv.javaguru.student_rodions_pismennijs.lesson_5.level_1;
 
 class ArrayDefinition4 {
     public static void main(String[] args) {

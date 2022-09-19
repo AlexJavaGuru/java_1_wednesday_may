@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vadim_zamjatin.lesson_4;
+package lv.javaguru.student_vadim_zamjatin.lesson_4;
 
 import java.util.Scanner;
 

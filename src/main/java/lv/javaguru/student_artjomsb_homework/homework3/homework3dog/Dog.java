@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.homework3.homework3dog;
+package lv.javaguru.student_artjomsb_homework.homework3.homework3dog;
 
 class Dog {
     private String dogName;

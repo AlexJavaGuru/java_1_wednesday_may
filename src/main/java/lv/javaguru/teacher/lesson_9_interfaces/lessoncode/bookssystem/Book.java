@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.teacher.lesson_9_interfaces.lessoncode.bookssystem;
+package lv.javaguru.teacher.lesson_9_interfaces.lessoncode.bookssystem;
 
 import java.util.Objects;
 

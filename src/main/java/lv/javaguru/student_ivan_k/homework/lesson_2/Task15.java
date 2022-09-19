@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_2;
+package lv.javaguru.student_ivan_k.homework.lesson_2;
 
 //Напишите программу, которая демонстрирует использование команды
 //        System.out.print("text");

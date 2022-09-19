@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_maksims_sokolovs.homework_lesson3.task3_4;
+package lv.javaguru.student_maksims_sokolovs.homework_lesson3.task3_4;
 
 class Robot {
 
