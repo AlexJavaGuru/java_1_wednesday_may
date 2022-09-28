@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vladislava_lutkevichus.lesson_3.level_7.task_29;
+package lv.javaguru.student_vladislava_lutkevichus.lesson_3.level_7.task_29;
 
 public class ChildDemo {
 

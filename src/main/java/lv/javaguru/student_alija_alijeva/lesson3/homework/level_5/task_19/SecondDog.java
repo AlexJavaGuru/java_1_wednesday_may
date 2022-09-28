@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_alija_alijeva.lesson3.homework.level_5.task_19;
+package lv.javaguru.student_alija_alijeva.lesson3.homework.level_5.task_19;
 
 class SecondDog {
     String dogsName;
@@ -9,7 +9,7 @@ class SecondDog {
         this.age = age;
     }
 
-    void voice() {
+    void dogVoice() {
         System.out.println(dogsName + " " + age);
     }
 }

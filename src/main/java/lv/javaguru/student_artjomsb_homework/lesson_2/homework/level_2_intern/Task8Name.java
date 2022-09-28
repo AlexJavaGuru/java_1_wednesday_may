@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.lesson_2.homework.level_2_intern;
+package lv.javaguru.student_artjomsb_homework.lesson_2.homework.level_2_intern;
 import java.util.Scanner;
 public class Task8Name {
     public static void main(String[] args) {

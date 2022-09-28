@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_alija_alijeva.lesson3.homework.level_7.task_31;
+package lv.javaguru.student_alija_alijeva.lesson3.homework.level_7.task_31;
 
 class Product {
     String name;
@@ -11,8 +11,8 @@ class Product {
         this.discount = discount;
     }
 
-    void doubleActualPrice() {
-        System.out.println("Actual price is " + (regularPrice - (regularPrice * discount / 100)));
+    double doubleActualPrice() {
+       return (regularPrice - (regularPrice * discount / 100));
     }
 
     void printInformation() {

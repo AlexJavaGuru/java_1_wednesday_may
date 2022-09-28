@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_anton_papin.lesson_3_homework.level_7;
+package lv.javaguru.student_anton_papin.lesson_3_homework.level_7;
 
 class MobilePhone {
     String model;

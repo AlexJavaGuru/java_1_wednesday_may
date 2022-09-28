@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_anton_papin.lesson_2_homework.level_5;
+package lv.javaguru.student_anton_papin.lesson_2_homework.level_5;
 
 public class SizeMatters {public static void main(String[] args) {
     System.out.println("Sorry, I have an errors.");

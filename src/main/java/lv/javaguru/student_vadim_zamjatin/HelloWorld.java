@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_vadim_zamjatin;
+package lv.javaguru.student_vadim_zamjatin;
 
 public class HelloWorld {
 

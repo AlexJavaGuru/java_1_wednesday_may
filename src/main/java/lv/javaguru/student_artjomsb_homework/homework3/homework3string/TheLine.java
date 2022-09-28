@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_artjomsb_homework.homework3.homework3string;
+package lv.javaguru.student_artjomsb_homework.homework3.homework3string;
 import java.util.Scanner;
 class TheLine {
     public static void main(TheLine[] args) {

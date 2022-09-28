@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_4.level_4junior.task_12;
+package lv.javaguru.student_ivan_k.homework.lesson_4.level_4junior.task_12;
 
 public class Calculator {
 
@@ -43,24 +43,16 @@ public class Calculator {
     }
 
     public int maxOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
-        int summFirAnSec = firstNumber + secondNumber;
-        int summSecAnThir = secondNumber + thirdNumber;
-        int summFirAnThird = firstNumber + thirdNumber;
+
+        int result = 0;
+
         if (firstNumber > secondNumber && firstNumber > thirdNumber) {
-            return firstNumber;
+            result = firstNumber;
         } else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
-            return secondNumber;
-        } else if (thirdNumber > firstNumber && thirdNumber > secondNumber) {
-            return thirdNumber;
-        } else if (firstNumber == secondNumber && summFirAnSec > thirdNumber) {
-            return summFirAnSec;
-        } else if (secondNumber == thirdNumber && summSecAnThir > firstNumber) {
-            return summSecAnThir;
-        } else if (firstNumber == thirdNumber && summFirAnThird > secondNumber) {
-            return summFirAnThird;
+            result = secondNumber;
+        } else {
+            result = thirdNumber;
         }
-        return summFirAnSec;
+        return result;
     }
 }
-
-

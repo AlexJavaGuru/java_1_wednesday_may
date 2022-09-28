@@ -1,7 +1,7 @@
-package main.java.lv.javaguru.student_ivan_k.homework.lesson_4.level_4junior.task_12;
+package lv.javaguru.student_ivan_k.homework.lesson_4.level_4junior.task_12;
 
 
-import main.java.lv.javaguru.student_ivan_k.homework.lesson_4.level_4junior.task_11.Calculator11;
+import lv.javaguru.student_ivan_k.homework.lesson_4.level_4junior.task_11.Calculator11;
 
 class CalculatorTest {
 
