@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_daniels_demishins.hw_lesson_6.lvl_3;
+package lv.javaguru.student_daniels_demishins.hw_lesson_6.lvl_3;
 
 import java.util.Arrays;
 
@@ -42,14 +42,14 @@ public class ArrayServiceTest {
         ArrayService victim = new ArrayService();
         int[] Array = {21, 30, 5, 57, 61, 23, 99};
         int[] expectedResult = {41, 30, 5, 57, 61, 23, 99};
-        check((victim.replaceFirstInArray(Array,21, 41) && Arrays.equals(Array, expectedResult)),"Test Replace First Number");
+        check((victim.replaceFirstInArray(Array, 21, 41) && Arrays.equals(Array, expectedResult)), "Test Replace First Number");
     }
 
-    public void replaceFirstNegative(){
+    public void replaceFirstNegative() {
         ArrayService victim = new ArrayService();
         int[] Array = {5, 16, 25, 87, 99, 10, 67};
         int[] expectedResult = {5, 16, 25, 87, 99, 10, 67};
-        check((victim.replaceFirstInArray(Array,5, 5) && Arrays.equals(Array, expectedResult)), "Test Replace First Number Negative");
+        check((victim.replaceFirstInArray(Array, 5, 5) && Arrays.equals(Array, expectedResult)), "Test Replace First Number Negative");
     }
 
 

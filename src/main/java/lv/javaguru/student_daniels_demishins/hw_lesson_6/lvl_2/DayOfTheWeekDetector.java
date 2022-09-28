@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_daniels_demishins.hw_lesson_6.lvl_2;
+package lv.javaguru.student_daniels_demishins.hw_lesson_6.lvl_2;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class DayOfTheWeekDetector {
 
     public String findDayOfTheWeek(int dayNumber) {
         String dayOfWeek;
-        switch(dayNumber){
+        switch (dayNumber) {
             case 1 -> dayOfWeek = "Monday";
             case 2 -> dayOfWeek = "Tuesday";
             case 3 -> dayOfWeek = "Wednesday";
@@ -19,7 +19,7 @@ public class DayOfTheWeekDetector {
             case 5 -> dayOfWeek = "Friday";
             case 6 -> dayOfWeek = "Saturday";
             case 7 -> dayOfWeek = "Sunday";
-            default -> dayOfWeek= "Not correct day of week";
+            default -> dayOfWeek = "Not correct day of week";
         }
         return dayOfWeek;
     }

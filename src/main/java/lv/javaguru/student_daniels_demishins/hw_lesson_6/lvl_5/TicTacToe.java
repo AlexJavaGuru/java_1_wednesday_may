@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_daniels_demishins.hw_lesson_6.lvl_5;
+package lv.javaguru.student_daniels_demishins.hw_lesson_6.lvl_5;
 
 public class TicTacToe {
     public boolean isWinPositionForHorizontals(int[][] field, int playerToCheck) {
@@ -70,7 +70,6 @@ public class TicTacToe {
             for (int j = 0; j < createField().length; j++) {
 
 
-
             }
 
         }
@@ -78,17 +77,11 @@ public class TicTacToe {
         return new int[0][];
     }
 
-
-
-
-
-
     /*   1 1 0
          0 0 1
          1 0 1
      */
 }
-
 /*
      playerToCheck = 1
 

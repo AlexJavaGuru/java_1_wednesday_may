@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_daniels_demishins.hw_lesson_6.lvl_3;
+package lv.javaguru.student_daniels_demishins.hw_lesson_6.lvl_3;
 
 public class ArrayService {
     boolean isArrayNumbers(int[] arr, int numberToSearch) {
@@ -33,7 +33,7 @@ public class ArrayService {
         return false;
     }
 
-     int[] replaceAllNumbersInArray(int[] arr, int numbersToReplace, int newNumbers) {
+    int[] replaceAllNumbersInArray(int[] arr, int numbersToReplace, int newNumbers) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == numbersToReplace) {
 

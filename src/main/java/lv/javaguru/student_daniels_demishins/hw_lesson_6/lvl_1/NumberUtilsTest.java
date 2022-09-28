@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_daniels_demishins.hw_lesson_6.lvl_1;
+package lv.javaguru.student_daniels_demishins.hw_lesson_6.lvl_1;
 
 public class NumberUtilsTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package main.java.lv.javaguru.student_daniels_demishins.hw_lesson_6.lvl_2;
+package lv.javaguru.student_daniels_demishins.hw_lesson_6.lvl_2;
 
 public class DayOfTheWeekDetectorTest {
     public static void main(String[] args) {
