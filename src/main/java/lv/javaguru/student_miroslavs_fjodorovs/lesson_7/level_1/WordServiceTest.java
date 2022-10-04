@@ -5,7 +5,8 @@ import java.util.Objects;
 class WordServiceTest {
 
     public static void main(String[] args) {
-        findMostFrequentWordTest();
+        WordServiceTest wordServiceTest = new WordServiceTest();
+        wordServiceTest.findMostFrequentWordTest();
     }
 
     static WordService wordService = new WordService();

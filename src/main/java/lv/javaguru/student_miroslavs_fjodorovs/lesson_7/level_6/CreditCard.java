@@ -47,13 +47,13 @@ class CreditCard {
 
     public void withdraw(String cardPin, double moneyAmount) {
         if (isCardPinCorrect(cardPin) && isPossibleToWithdraw(moneyAmount) && moneyAmount > 0) {
-            reduceBalance(moneyAmount);
+            decreaseBalance(moneyAmount);
         } else {
             System.out.println("Transaction declined");
         }
     }
 
-    private void reduceBalance(double moneyAmount) {
+    private void decreaseBalance(double moneyAmount) {
         if (balance - moneyAmount >= 0) {
             balance -= moneyAmount;
         } else {
