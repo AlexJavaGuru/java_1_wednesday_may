@@ -1,4 +1,4 @@
-package lv.javaguru.teacher.lesson_8_inheritance.homework.level_7_senior.task_32;
+package main.java.lv.javaguru.student_miroslavs_fjodorovs.lesson_8.level_7;
 
 class Addition extends TwoArgumentMathOperation {
 
