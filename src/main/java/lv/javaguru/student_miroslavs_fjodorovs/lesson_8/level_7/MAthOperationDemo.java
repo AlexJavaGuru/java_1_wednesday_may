@@ -1,4 +1,4 @@
-package lv.javaguru.teacher.lesson_8_inheritance.homework.level_7_senior.task_32;
+package main.java.lv.javaguru.student_miroslavs_fjodorovs.lesson_8.level_7;
 
 class MAthOperationDemo {
 
@@ -29,9 +29,12 @@ class MAthOperationDemo {
 		Argument fakeZero = new Argument(0);
 		MathOperation addition3 = new Addition(divide, fakeZero);
 		Multiply multiply = new Multiply(test, addition3);
-
 		System.out.println(multiply.calculate());
 
+		// build and calculate: (10 - 5) * (20 / 5)
+		MathOperation subtractionTwo = new Subtraction(new Argument(10), new Argument(5));
+		MathOperation divideTwo = new Divide(new Argument(20), new Argument(5));
+		MathOperation result = new Multiply(subtractionTwo, divideTwo);
+		System.out.println("Final Multiply result = " + result.calculate());
 	}
-
 }
